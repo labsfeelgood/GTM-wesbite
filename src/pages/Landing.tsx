@@ -1,9 +1,11 @@
-import React from 'react'
+import Colonize from '../components/landing/Colonize'
 import Gateway from '../components/landing/Gateway'
 
 const Landing = () => {
-  return (
+  return (<>
     <Gateway/>
+    <Colonize/>
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
 import buttonOutline from "../../assets/landing/Button outline.png";
 const Button = () => {
   return (
-    <button className=" absolute left-[630px] top-[650px]">
+    <button className=" absolute left-[800px] top-[800px]">
       <div className="relative">
         <img
           src={buttonOutline}
@@ -9,7 +9,7 @@ const Button = () => {
           alt="but gtm"
         ></img>
         <div className=" absolute inset-0 flex items-center justify-center">
-          <p className=" text-white uppercase font-d-din-bold text-[32px] shadow-text">
+          <p className=" text-white uppercase font-d-din-bold text-[32px] ">
             Buy $GTM
           </p>
         </div>

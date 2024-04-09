@@ -45,8 +45,8 @@ const Socials = () => {
     },
   ];
   return (
-    <div className=" flex  flex-col items-center gap-[13px]">
-      <div className="relative border h-[150px] w-[1px] bg-white  mb-[10px]"></div>
+    <div className=" flex  flex-col items-center gap-[15px] mt-7">
+      <div className="relative border h-[180px] w-[1px] bg-white  mb-[12px]"></div>
       {icons.map((icon) => (
         <a href={icon.url} target="_blank">
           <div className=" border rounded-full h-[35px] w-[35px] flex items-center justify-center text-[2px]">
@@ -54,7 +54,7 @@ const Socials = () => {
           </div>
         </a>
       ))}
-      <div className="relative border h-[150px] w-[1px] bg-white mt-[12px]"></div>
+      <div className="relative border h-[180px] w-[1px] bg-white mt-[14px]"></div>
     </div>
   );
 };
