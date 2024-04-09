@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'starcruiser';
+    src: url('./fonts/starcruiser.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'd-din-bold';
+    src: url('./fonts/D-DIN-Bold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'd-din-italic';
+    src: url('./fonts/D-DIN-Italic.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'd-din-regular';
+    src: url('./fonts/D-DIN.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'd-din-condensed';
+    src: url('./fonts/D-DINCondensed.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'd-din-condensed-bold';
+    src: url('./fonts/D-DINCondensed-Bold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'd-din-exp';
+    src: url('./fonts/D-DINExp.otf') format('opentype');
+  } 
+  @font-face {
+    font-family: 'd-din-exp-bold';
+    src: url('./fonts/D-DINExp-Bold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'd-din-exp-italic';
+    src: url('./fonts/D-DINExp-Italic.otf') format('opentype');
+  }
+
+  
