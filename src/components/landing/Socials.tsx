@@ -50,7 +50,7 @@ const Socials = () => {
       {icons.map((icon) => (
         <a href={icon.url} target="_blank">
           <div className=" border rounded-full h-[35px] w-[35px] flex items-center justify-center text-[2px]">
-            <img src={icon.logo} className=" w-[23px] h-[23px] m-auto" />
+            <img src={icon.logo} className=" w-[23px] h-[23px] m-auto" key={icon.key}/>
           </div>
         </a>
       ))}

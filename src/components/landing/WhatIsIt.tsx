@@ -1,7 +1,7 @@
 import whatIsItImage from "../../assets/landing/3.png"
 const WhatIsIt = () => {
   return (
-    <div className=' h-screen bg-[#000000] flex items-center justify-center gap-16'>
+    <div className=' h-[800px] bg-[#000000] flex items-center justify-center gap-16'>
         <img 
         src={whatIsItImage} 
         alt="loading"
