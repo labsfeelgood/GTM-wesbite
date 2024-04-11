@@ -53,7 +53,7 @@ const Ecosystem = () => {
           {ecosystemContents.map((content) => (
             <>
               <div className=" flex items-center  justify-between ">
-                <h4 className=" uppercase font-d-din-regular text-white text-[35px]">
+                <h4 className=" uppercase font-d-din-regular text-white text-[33px]">
                   {content.title}
                 </h4>
                 {content.logo === loader2 ? (
@@ -65,7 +65,9 @@ const Ecosystem = () => {
                   />
                 )}
               </div>
-              <div className=" w-[400px] text-[#7A8A99] bg-[#7A8A99] h-[2px]" />
+              {
+                content.key === 7 ? (<div></div>):(<div className=" w-[400px] text-[#7A8A99] bg-[#7A8A99] h-[1px]" />)
+              }
             </>
           ))}
           </div>

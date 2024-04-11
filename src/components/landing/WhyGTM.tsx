@@ -25,9 +25,10 @@ const WhyGTM = () => {
     },
   ]
   return (
-    <div className=' h-[800px] bg-[#000000] border border-white'>\
-    <h2 className=' uppercase text-white font-d-din-bold text-[75px]'>WHY $GTM</h2>
-    <div className=" flex justify-around">
+    <div className=' relative h-[800px] bg-[#000000] '>
+    <div className=" absolute left-[150px] flex flex-col gap-7">
+    <h2 className=' uppercase text-white font-d-din-bold text-[60px]'>WHY $GTM</h2>
+    <div className=" flex gap-32 items-center justify-center">
       {
         testimonialCardInfo.map((item)=>(
           <TestimonialCard 
@@ -38,6 +39,7 @@ const WhyGTM = () => {
           />
         ))
       }
+    </div>
     </div>
     </div>
   )
