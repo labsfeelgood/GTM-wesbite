@@ -7,7 +7,7 @@ const Navbar = () => {
         <h3 className=" text-[24px] text-white font-d-din-bold uppercase">UTILITY</h3>
         <img 
         src={logo}
-        alt="Gateway to Mars"
+              alt=""
         className=" mt-[-10px] h-[188px] w-[509px]"
         />
         <h3 className=" text-[24px] text-white font-d-din-bold uppercase">ROADMAP</h3>
