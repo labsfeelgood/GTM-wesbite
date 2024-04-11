@@ -1,6 +1,6 @@
 import buy1frame from "../../assets/landing/buy1.png";
 import buy2frame from "../../assets/landing/buy2.png";
-import { SwapWidget, darkTheme, Theme } from "@uniswap/widgets";
+import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import "@uniswap/widgets/fonts.css";
 const BuyGTM = () => {
   return (

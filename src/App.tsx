@@ -1,4 +1,4 @@
-import {createBrowserRouter, RouterProvider , BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Landing from "./pages/Landing";
 import Utility from "./pages/Utility";
 import Staking from "./pages/Staking";
