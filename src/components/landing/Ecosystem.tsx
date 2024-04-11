@@ -45,7 +45,7 @@ const Ecosystem = () => {
         className=" absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${ecosytemImage})` }}
       >
-        <div className=" absolute left-[180px] top-[110px] flex flex-col gap-8">
+        <div className=" absolute left-[220px] top-[110px] flex flex-col gap-8">
           <h2 className=" uppercase font-d-din-bold text-white text-[60px] ">
             ECOSYSTEM
           </h2>

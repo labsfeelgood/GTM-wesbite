@@ -3,6 +3,7 @@ import Colonize from '../components/landing/Colonize'
 import Ecosystem from '../components/landing/Ecosystem'
 import Gateway from '../components/landing/Gateway'
 import HowItWorks from '../components/landing/HowItWorks'
+import Overview from '../components/landing/Overview'
 import Partners from '../components/landing/Partners'
 import { TaxAndTreasury } from '../components/landing/TaxAndTreasury'
 import WhatIsIt from '../components/landing/WhatIsIt'
@@ -18,6 +19,7 @@ const Landing = () => {
     <Ecosystem/>
     <BuyGTM/>
     <TaxAndTreasury/>
+    <Overview/>
     <HowItWorks/>
     </>
   )

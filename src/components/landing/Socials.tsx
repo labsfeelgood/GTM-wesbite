@@ -45,7 +45,7 @@ const Socials = () => {
     },
   ];
   return (
-    <div className=" flex  flex-col items-center gap-[15px] mt-7">
+    <div className=" flex  flex-col items-center gap-[15px] mr-[-40px] mt-7">
       <div className="relative border h-[180px] w-[1px] bg-white  mb-[12px]"></div>
       {icons.map((icon) => (
         <a href={icon.url} target="_blank">

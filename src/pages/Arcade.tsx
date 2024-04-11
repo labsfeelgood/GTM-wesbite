@@ -1,10 +1,9 @@
 
 const Arcade = () => {
   return (
-    <div className="flex justify-center items-center h-screen bg-black">
-      <div className="relative">
-        <div className="w-96 h-1 bg-white relative before:absolute before:bg-white before:h-1 before:w-3 before:-rotate-45 before:right-0 before:top-1/2 before:translate-y-1/2 before:translate-x-1/2"></div>
-      </div>
+    <div className="relative w-[500px] h-6">
+      <div className="absolute border-t border-black w-full h-0 top-1/2 transform -translate-y-1/2"></div>
+      {/* <div className="absolute right-0 w-6 h-6 border-b border-r border-black transform rotate-45 translate-x-1/2 -translate-y-1/2"></div> */}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import underlineComponent from "../../assets/landing/underline.png";
 const ColonizeMarsMainText = () => {
   return (
-    <div className=" absolute inset-0 text-white ml-[224px] mt-[160px] flex flex-col gap-3">
+    <div className=" absolute inset-0 text-white ml-[224px] mt-[160px] flex flex-col gap-3 ">
       <h2 className=" uppercase text-white font-d-din-bold text-[75px] ml-8">
         COLONIZE MARS
       </h2>
@@ -15,7 +15,7 @@ const ColonizeMarsMainText = () => {
         className=" w-[480px] h-[55px] mt-[-40px]"
       />
      </div>
-      <h3 className=" text-[40px] text-[#C2DAF2] font-d-din-italic ml-8 ">
+      <h3 className=" text-[40px] text-[#C2DAF2] font-d-din-italic ml-8 mt-2 ">
         Powered by          {""}
         <span className=" text-[40px] text-[#C2DAF2] font-d-din-bold">
           $GTM

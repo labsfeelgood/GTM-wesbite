@@ -7,8 +7,8 @@ import hiw5 from "../../assets/landing/pp 1.png";
 const HowItWorks = () => {
   return (
     <div className=" h-[1500px] bg-[#000000] relative">
-      <div className=" absolute left-[100px] flex flex-col gap-9">
-        <h3 className="uppercase font-d-din-bold text-white text-[30px]">
+      <div className=" absolute left-48 flex flex-col gap-9 mt-10">
+        <h3 className="uppercase font-d-din-bold text-white text-[35px]">
           HOW IT WORKS
         </h3>
         <HowItWorksComponent />
@@ -59,28 +59,40 @@ const HowItWorksComponent = () => {
   ];
 
   return (
-    <div className=" flex flex-col gap-9">
-      {hiwData.map((content) => (
-        <div className=" relative">
-          <img src={border} className=" h-[200px] w-[1500px]" />
-          <div className=" flex items-center gap-8 absolute inset-0 left-7">
-            {(content.image === hiw2 || content.image === hiw3)  ? (
-              <img src={content.image} className=" h-[200px] w-[200px]" />
-            ) : (
-              <img src={content.image} className=" h-[150px] w-[150px]" />
-            )}
-            <div>
-              <h4 className=" font-d-din-bold text-[#C2DAF2] text-[25px] uppercase">
-                {content.title}
-              </h4>
-              <p className=" font-d-din-regular text-white text-[25px] w-[1000px]">
-                {content.content}
-              </p>
+    <div className="flex flex-col gap-9">
+      {hiwData.map((content) =>
+        content.image === hiw2 || content.image === hiw3 ? (
+          <div className="relative">
+            <img src={border} className="h-[200px] w-[1500px]" />
+            <div className="flex items-center gap-8 absolute inset-0 left-7">
+              <img src={content.image} className="h-[250px] w-[250px] absolute left-[-50px]" />
+              <div className=" absolute left-[180px]">
+                <h4 className="font-d-din-bold text-[#C2DAF2] text-[25px] uppercase">
+                  {content.title}
+                </h4>
+                <p className="font-d-din-regular text-white text-[25px] w-[1000px]">
+                  {content.content}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ) : (
+          <div className="relative">
+            <img src={border} className="h-[200px] w-[1500px]" />
+            <div className="flex items-center gap-8 absolute inset-0 left-7">
+              <img src={content.image} className="h-[150px] w-[150px]" />
+              <div>
+                <h4 className="font-d-din-bold text-[#C2DAF2] text-[25px] uppercase">
+                  {content.title}
+                </h4>
+                <p className="font-d-din-regular text-white text-[25px] w-[1000px]">
+                  {content.content}
+                </p>
+              </div>
+            </div>
+          </div>
+        )
+      )}
     </div>
-    
   );
 };
