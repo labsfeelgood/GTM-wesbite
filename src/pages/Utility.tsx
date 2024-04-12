@@ -8,8 +8,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo4 from "../assets/vision/gateway to MARS.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import main2 from "../assets/utility/2.png";
-import frame2 from "../assets/utility/frame2.png";
 const Utility = () => {
   return (
     <div className=" bg-[#000000] min-h-screen max-w-full">
@@ -32,11 +30,11 @@ const Utility = () => {
               pool. This is what we refer to as "Dynamic MARS Staking"
             </p>
             <div className=" flex gap-2 flex-col">
-              <div className=" flex w-[180px] md:w-[250px] mx-auto  text-center gap-4 md:mx-0">
-                <h4 className=" uppercase text-white font-d-din-regular text-[20px] md:text-[25px] text-center pl-2">
+              <div className=" flex w-[180px] mx-auto  text-center gap-4 md:mx-0">
+                <h4 className=" uppercase text-white font-d-din-regular text-[20px] text-center ">
                   Know more
                 </h4>
-                <ArrowRightAltIcon className=" text-white " fontSize="large" />
+                <ArrowRightAltIcon className=" text-white " />
               </div>
               <div className=" h-[2px] w-[180px] bg-[#C2DAF2] mx-auto md:mx-0 " />
             </div>
@@ -45,10 +43,7 @@ const Utility = () => {
       </div>
 
       {/* -------------------------- */}
-
-      <div className=" h-screen md:h-screen">
-
-      </div>
+ZZ
     </div>
   );
 };
