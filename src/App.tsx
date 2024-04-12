@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Landing from "./pages/Landing";
-import Utility from "./pages/Utility";
-import Staking from "./pages/Staking";
 import Arcade from "./pages/Arcade";
+import Vision from "./pages/Vision";
+import Utility from "./pages/Utility";
 
 function App() {
 
@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
      <Routes>
       <Route path="/" element={<Landing/>}/>
+      <Route path="/vision" element={<Vision/>}/>
       <Route path="/utility" element={<Utility/>}/>
-      <Route path="/staking" element={<Staking/>}/>
       <Route path="/arcade" element={<Arcade/>}/>
      </Routes>
     </BrowserRouter>
