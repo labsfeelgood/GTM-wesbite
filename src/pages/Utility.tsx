@@ -8,28 +8,65 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo4 from "../assets/vision/gateway to MARS.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import main2 from "../assets/utility/2.png";
+import frame2 from "../assets/utility/frame2.png";
+import main3 from "../assets/utility/3(1).png"
 const Utility = () => {
   return (
-    <div className=" bg-[#000000] min-h-screen max-w-full">
+    <div className=" bg-[#000000] min-h-screen max-w-full ">
       <Navbar />
       {/* ------------------------------- */}
-      <div className=" relative h-screen md:h-[800px] md:mt-[100px]">
+      <div className=" relative  md:h-[800px] md:mt-[100px]">
         <div className=" flex flex-col md:flex-row-reverse md:mt-10 md:mx-0 md:gap-[150px] ">
           <div className=" relative ">
             <img src={main1} className=" md:h-[560px] w-[850px]" />
             <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black md:bg-gradient-to-r md:to-transparent "></div>
           </div>
           <div className=" flex flex-col md:gap-5 md:mt-16">
-            <h3 className=" uppercase text-white font-d-din-bold text-[24px] md:text-[35px] lg-text-[50px] text-center md:text-left ">
+            <h3 className=" uppercase text-white font-d-din-bold text-[24px] md:text-[35px] lg-text-[50px] text-center md:text-left w-full ">
               Staking
             </h3>
-            <p className=" font-d-din-regular text-white text-[18px] text-center w-[400px] mx-auto sm:w-[600px] p-4 md:text-[25px] lg:text-[30px] md:text-left md:p-0">
+            <p className=" font-d-din-regular text-white text-[18px] text-center w-full mx-auto  p-6 md:w-[600px] md:text-[25px] lg:text-[30px] md:text-left md:p-0">
               Each $GTM holder will be allowed to claim & stake their $GTM
               tokens with the official $GTM staking pool. The APY earned from
               staking $GTM will fluctuate based on the amount of stakers in the
               pool. This is what we refer to as "Dynamic MARS Staking"
             </p>
             <div className=" flex gap-2 flex-col">
+              <div className=" flex w-[180px] mx-auto  text-center gap-4 md:mx-0">
+                <Link to='/utility/staking'><h4 className=" uppercase text-white font-d-din-regular text-[20px] text-center ">
+                  Know more
+                </h4></Link>
+                <ArrowRightAltIcon className=" text-white " />
+              </div>
+              <div className=" h-[2px] w-[180px] bg-[#C2DAF2] mx-auto md:mx-0 " />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* -------------------------- */}
+      <div className=" md:h-[800px] md:mt-24 mt-10">
+        <div className=" md:flex md:gap-16 ">
+          <div className=" relative md:w-[950px]">
+            <img src={main2} className=" md:h-[370px] md:w-[700px] w-full" />
+            <img
+              src={frame2}
+              className=" hidden md:block absolute inset-0 opacity-30 h-[450px] w-[1200px] left-[-160px] top-[-38px]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black md:bg-gradient-to-r md:to-transparent "></div>
+          </div>
+          <div className=" flex flex-col md:gap-5 ">
+            <h3 className=" uppercase text-white font-d-din-bold text-[24px] md:text-[35px] lg-text-[50px] text-center md:text-right w-full ">
+              ARCADE betting
+            </h3>
+            <p className=" font-d-din-regular text-white text-[18px] text-center md:text-right w-full mx-auto  p-6 md:w-[600px] md:text-[25px] lg:text-[30px] md:p-0">
+              Our games are designed for everyone to enjoy, focusing on simple
+              and pure fun rather than complex skill-based mechanics. Join a
+              lobby of your choice and face off against other players. The
+              winner takes home a whopping 90% of the stakes
+            </p>
+            <div className=" flex gap-2 flex-col items-end">
               <div className=" flex w-[180px] mx-auto  text-center gap-4 md:mx-0">
                 <h4 className=" uppercase text-white font-d-din-regular text-[20px] text-center ">
                   Know more
@@ -41,16 +78,23 @@ const Utility = () => {
           </div>
         </div>
       </div>
+      {/* ----------------------------------------------------------------------- */}
+      <div>
+        <div>
+          <div className="  relative">
+            <img src={main3} className=" w-full"/>
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black md:bg-gradient-to-r md:to-transparent "></div>
 
-      {/* -------------------------- */}
-ZZ
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 };
 
 export default Utility;
-
-const Navbar = () => {
+ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isActive = (path: string) => {
@@ -59,7 +103,7 @@ const Navbar = () => {
   return (
     <div>
       {isOpen ? (
-        <div className=" p-5 pr-5 flex flex-col gap-5 md:hidden">
+        <div className=" p-5 pr-5 flex flex-col gap-5 lg:hidden">
           <div className=" flex items-center justify-between ">
             <img src={logo3} className=" p-3" />
             <button className="" onClick={() => setIsOpen(false)}>
@@ -190,10 +234,10 @@ const Navbar = () => {
           </div>
         </div>
       ) : (
-        <div className=" flex items-center justify-between p-5 pt-8 md:hidden">
+        <div className=" flex items-center justify-between p-5 pt-8 lg:hidden">
           <div className=" flex items-center gap-3 ">
-            <img src={logo1} className=" h-[25px] w-[20px]" />
-            <img src={logo2} className=" h-[15px] w-[200px]" />
+            <img src={logo1} className=" h-[25px] w-[20px] md:h-[40px] md:w-[35px]" />
+            <img src={logo2} className=" h-[15px] w-[200px] md:h-[25px] w-[250px]" />
           </div>
           <button onClick={() => setIsOpen(true)}>
             <div className=" flex flex-col gap-[7px]">
@@ -203,7 +247,7 @@ const Navbar = () => {
           </button>
         </div>
       )}
-      <div className=" hidden md:block">
+      <div className=" hidden lg:block">
         <div className=" flex items-center pt-16">
           <div className=" mx-auto flex items-center gap-[100px] pr-8 pl-8 lg:gap-[100px] md:gap-[100px]">
             <div>
@@ -245,3 +289,4 @@ const Navbar = () => {
     </div>
   );
 };
+export {Navbar}
