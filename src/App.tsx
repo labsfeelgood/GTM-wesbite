@@ -13,7 +13,7 @@ function App() {
       <Route path="/" element={<Landing/>}/>
       <Route path="/vision" element={<Vision/>}/>
       <Route path="/utility" element={<Utility/>}/>
-      <Route path="/arcade" element={<Arcade/>}/>
+      <Route path="/utility/arcade" element={<Arcade/>}/>
       <Route path="/utility/staking" element={<Staking/>}/>
      </Routes>
     </BrowserRouter>
