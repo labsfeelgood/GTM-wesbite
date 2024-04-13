@@ -38,7 +38,7 @@ const AlphaGroup = () => {
         </div>
         {/* ----------------------------------------------------------------- */}
         <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
-          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
+          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px] ">
             Overview
           </h3>
           <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
@@ -51,7 +51,7 @@ const AlphaGroup = () => {
         <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
         {/* ------------------------------------------------------------------------------ */}
         <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
-          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
+          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px] ">
             Discover Featured Cryptocurrencies
           </h3>
           <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
@@ -62,7 +62,7 @@ const AlphaGroup = () => {
         <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
         {/* ------------------------------------------------------------------------------------- */}
         <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
-          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
+          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px] ">
             Elevate Your Trading Strategy
           </h3>
           <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
@@ -75,7 +75,7 @@ const AlphaGroup = () => {
         <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
         {/* ------------------------------------------------------------------------------------------- */}
         <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
-          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
+          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px] ">
             Gain Access Today
           </h3>
           <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
@@ -85,11 +85,11 @@ const AlphaGroup = () => {
             access to our premium signals channel
           </p>
           <div className=" mt-10 flex flex-col gap-3">
-          <h3 className="text-[#3CFF4F] uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px]">
+          <h3 className="text-[#3CFF4F] uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px]">
             Why wait, ANON?
           </h3>
           <div className=" flex gap-3 items-center">
-            <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
+            <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[40px]">
             START WINNING
             </h3>
             <ArrowRightAltIcon className=" text-white" />
