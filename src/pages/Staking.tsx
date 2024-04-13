@@ -1,7 +1,6 @@
 import { Navbar } from "./Utility";
 import main1 from "../assets/utility/stake 2.png";
-import UnderlineButton from "../components/UnderlineButton";
-import main2 from "../assets/utility/stake4.png";
+import main2 from "../assets/utility/stake3.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const Staking = () => {
@@ -12,7 +11,10 @@ const Staking = () => {
       <div className=" flex flex-col gap-4">
         <div>
           <div className=" relative">
-            <img src={main1} className=" w-full " />
+            <img
+              src={main1}
+              className="w-full lg:h-[700px] lg:object-cover lg:object-center"
+            />
             <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r md:to-black " />
             <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-b md:to-black " />
           </div>
@@ -24,7 +26,16 @@ const Staking = () => {
               Staking represents a fundamental component of the ColonizeMars
               ecosystem.
             </p>
-            <UnderlineButton />
+            {/* <UnderlineButton /> */}
+            <div className=" flex flex-col gap-2">
+              <div className=" flex gap-3 items-center justify-center ">
+                <h3 className=" text-white font-d-din-regular uppercase text-[16px] md:text-[25px] lg-text-[30px]">
+                  Start Staking
+                </h3>
+                <ArrowRightAltIcon className=" text-white" />
+              </div>
+              <div className=" bg-[#C2DAF2] w-[150px] lg:w-[200px] h-[2px] mx-auto" />
+            </div>
           </div>
         </div>
         {/* ----------------------------------------------------------------- */}
@@ -91,50 +102,50 @@ const Staking = () => {
         {/* ----------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" relative">
           <div className=" relative">
-            <img src={main2} className=" w-full" />
-            {/* <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black lg:bg-gradient-to-r md:to-black " /> */}
-          </div >
-          <div className=" absolute inset-0 flex flex-col gap-8 p-10">
-            <h3 className=" text-white uppercase font-d-din-bold text-[24px]">
+            <img src={main2} className=" w-full h-[470px] lg:h-[700px] object-cover object-center opacity-30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black lg:bg-gradient-to-r md:to-black " />
+          </div>
+          <div className=" absolute inset-0 flex flex-col gap-8 p-10 lg:p-20">
+            <h3 className=" text-white uppercase font-d-din-bold text-[24px] lg:text-[30px]">
               staking highlights
             </h3>
             <div className=" flex flex-col gap-5">
-              <div className=" flex justify-between">
-                <p className=" font-d-din-regular text-white text-[16px]">
+              <div className=" flex justify-between lg:justify-normal lg:gap-[515px]">
+                <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]">
                   TOKEN
                 </p>
-                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px]">
+                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px] lg:text-[20px]">
                   $GTM
                 </p>
               </div>
-              <div className=" bg-[#7A8A99] h-[1px] w-full" />
-              <div className=" flex justify-between">
-                <p className=" font-d-din-regular text-white text-[16px]">
+              <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
+              <div className=" flex justify-between lg:justify-normal lg:gap-[425px]">
+                <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]">
                   LOCKING PERIOD
                 </p>
-                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px]">
+                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px] lg:text-[20px]">
                   10 DAYS
                 </p>
               </div>
-              <div className=" bg-[#7A8A99] h-[1px] w-full" />{" "}
-              <div className=" flex justify-between">
-                <p className=" font-d-din-regular text-white text-[16px]">
+              <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />{" "}
+              <div className=" flex justify-between lg:justify-normal lg:gap-[375px]">
+                <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]">
                   AUTOMATIC RESTAKING
                 </p>
-                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px]">
+                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px] lg:text-[20px]">
                   YES
                 </p>
               </div>
-              <div className=" bg-[#7A8A99] h-[1px] w-full" />{" "}
-              <div className=" flex justify-between">
-                <p className=" font-d-din-regular text-white text-[16px]">
+              <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />{" "}
+              <div className=" flex justify-between  lg:justify-normal lg:gap-[350px]">
+                <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]">
                   COMPOUNDING REWARDS
                 </p>
-                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px]">
+                <p className=" font-d-din-bold text-[#C2DAF2] text-[16px] lg:text-[20px]">
                   YES
                 </p>
               </div>
-              <div className=" bg-[#7A8A99] h-[1px] w-full" />
+              <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
               <div>
                 <div className=" flex gap-3 items-center mt-5">
                   <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
