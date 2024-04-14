@@ -2,71 +2,50 @@ import testimonial1 from "../../assets/landing/testimonial1.png";
 import testimonial2 from "../../assets/landing/testimonial2.png";
 import testimonial3 from "../../assets/landing/testimonial3.png";
 
-// import TestimonialCard from "./TestimonialCard";
 const WhyGTM = () => {
-  // const testimonialCardInfo = [
-  //   {
-  //     key: 1,
-  //     image: testimonial1,
-  //     heading: "MEMETICS",
-  //     content:
-  //       "Seamlessly integrates into gaming, AI betting, shopping, and staking, creating a comprehensive $GTM ecosystem",
-  //   },
-  //   {
-  //     key: 2,
-  //     image: testimonial2,
-  //     heading: "DOXXED DEV",
-  //     content:
-  //       "Led by a fully disclosed developer and backed by reputable blockchain agencies, $GTM prioritizes transparency and community engagement",
-  //   },
-  //   {
-  //     key: 3,
-  //     image: testimonial3,
-  //     heading: "LORE",
-  //     content:
-  //       "Embodies ELONS quest to explore Mars for survival and advancement, Elon's grand vision",
-  //   },
-  // ];
   return (
-    <div className=" relative h-[800px] bg-[#000000] ">
-      <div className=" absolute left-48 flex flex-col gap-7">
-        <h2 className=" uppercase text-white font-d-din-bold text-[60px]">
-          WHY $GTM
-        </h2>
-        <div className=" flex gap-32  justify-center mt-10">
-          <div className="flex flex-col gap-4  items-center w-[400px] ">
-            <div className="w-[200px] h-[200px] border-[#7A8A99] rounded-full border-[2px] shadow-lg shadow-[#7A8A99] mb-3 ">
-              <img src={testimonial1} />
-            </div>
-            <h3 className="uppercase font-d-din-bold text-white text-[24px]">
+    <div>
+      <div className="flex flex-col items-center gap-8 lg:items-start xl:gap-16 2xl:gap-20">
+        <h3 className=" font-d-din-bold text-white text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[50px] lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] ">
+          WHY $gtm?
+        </h3>
+        <div className=" flex flex-col gap-6 lg:flex-row lg:justify-around w-full ">
+          <div className=" flex flex-col items-center gap-2">
+            <img
+              src={testimonial1}
+              className="w-[100px] h-[100px] sm:w-[130px] sm:h-[130px] lg:w-[150px] lg:h-[150px] xl:w-[180px] xl:h-[180px] 2xl:w-[200px] 2xl:h-[200px] border border-[#7A8A99] rounded-full shadow-sm shadow-white"
+            />
+            <h3 className=" uppercase text-white text-[16px]  font-d-din-bold sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] ">
               MEMETICS
             </h3>
-            <p className="text-white text-[24px] font-d-din-regular mx-auto text-center w-[400px] ">
+            <p className=" text-white text-[12px] font-d-din-regular text-center pr-4 pl-4 lg:pr-0 lg:pl-0 sm:text-[18px] md:text-[22px] lg:w-[300px] xl:w-[400px] ">
               Seamlessly integrates into gaming, AI betting, shopping, and
               staking, creating a comprehensive $GTM ecosystem
             </p>
           </div>
-          <div className="flex flex-col gap-4  items-center justify-center  w-[400px]">
-            <div className="w-[200px] h-[200px] border-[#7A8A99] rounded-full border-[2px] shadow-lg shadow-[#7A8A99] mb-3 ">
-              <img src={testimonial2} />
-            </div>
-            <h3 className="uppercase font-d-din-bold text-white text-[24px]">
+          <div className=" flex flex-col items-center gap-2">
+            <img
+              src={testimonial2}
+              className="w-[100px] h-[100px] sm:w-[130px] sm:h-[130px] lg:w-[150px] lg:h-[150px] xl:w-[180px] xl:h-[180px] 2xl:w-[200px] 2xl:h-[200px] border border-[#7A8A99] rounded-full shadow-sm shadow-white"
+            />
+            <h3 className=" uppercase text-white text-[16px]  font-d-din-bold sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] ">
               DOXXED DEV
             </h3>
-            <p className="text-white text-[24px] font-d-din-regular mx-auto text-center w-[400px] ">
+            <p className=" text-white text-[12px] font-d-din-regular text-center pr-4 pl-4 lg:pr-0 lg:pl-0 sm:text-[18px] md:text-[22px] lg:w-[300px] xl:w-[400px]">
               Led by a fully disclosed developer and backed by reputable
               blockchain agencies, $GTM prioritizes transparency and community
               engagement
             </p>
           </div>
-          <div className="flex flex-col gap-4  items-center justify-center  w-[400px]">
-            <div className="w-[200px] h-[200px] border-[#7A8A99] rounded-full border-[2px] shadow-lg shadow-[#7A8A99] mb-3 ">
-              <img src={testimonial3} />
-            </div>
-            <h3 className="uppercase font-d-din-bold text-white text-[24px]">
+          <div className=" flex flex-col items-center gap-2">
+            <img
+              src={testimonial3}
+              className="w-[100px] h-[100px] sm:w-[130px] sm:h-[130px] lg:w-[150px] lg:h-[150px] xl:w-[180px] xl:h-[180px] 2xl:w-[200px] 2xl:h-[200px] border border-[#7A8A99] rounded-full shadow-sm shadow-white"
+            />
+            <h3 className=" uppercase text-white text-[16px]  font-d-din-bold sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] ">
               LORE
             </h3>
-            <p className="text-white text-[24px] font-d-din-regular mx-auto text-center w-[400px] ">
+            <p className=" text-white text-[12px] font-d-din-regular text-center pr-4 pl-4 lg:pr-0 lg:pl-0 sm:text-[18px] md:text-[22px] lg:w-[300px] xl:w-[400px]">
               Embodies ELONS quest to explore Mars for survival and advancement,
               Elon's grand vision
             </p>

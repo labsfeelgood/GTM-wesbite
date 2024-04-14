@@ -41,6 +41,12 @@ import dextoolsIcon from "../assets/landing/Icons/dextools 1.png";
 
 import { useState } from "react";
 import Colonize from "../components/landing/Colonize";
+import WhatIsIt from "../components/landing/WhatIsIt";
+import WhyGTM from "../components/landing/WhyGTM";
+import Partners from "../components/landing/Partners";
+import Ecosystem from "../components/landing/Ecosystem";
+import BuyGTM from "../components/landing/BuyGTM";
+import Overview from "../components/landing/Overview";
 const Landing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -110,8 +116,16 @@ const Landing = () => {
         {/* --------------------------------------------------------------------------- */}
         <Button />
         {/* ---------------------------------------------------------------------------------------------- */}
-        <Colonize/>
       </div>
+       <div className=" flex flex-col ">
+       <Colonize/>
+        <WhatIsIt/>
+        <WhyGTM/>
+        <Partners/>
+        <Ecosystem/>
+        <BuyGTM/>
+        <Overview/>
+       </div>
     </div>
   );
 };

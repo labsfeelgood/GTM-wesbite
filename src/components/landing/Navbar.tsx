@@ -18,7 +18,7 @@ const Navbar: React.FC<Navbar> = ({ toggleMenu, isMenuOpen }) => {
   return (
     <div>
       {isMenuOpen ? (
-        <div className=" absolute inset-0 bg-black">
+        <div className=" absolute inset-0 bg-black h-[400px] z-10" >
           <div className=" p-5 pr-5 flex flex-col gap-5 xl:hidden">
             <div className=" flex items-center justify-between ">
               <img src={logo3} className=" p-3" />
