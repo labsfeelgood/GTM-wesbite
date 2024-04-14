@@ -1,17 +1,18 @@
-import colonizeMars from "../../assets/landing/2.png" 
-import ColonizeMarsMainText, { ColonizeMarsSubText } from "./ColonizeMarsText"
+import main1 from "../../assets/landing/2.png"
 const Colonize = () => {
   return (
-    <div className=" relative h-screen bg-[#000000] ">
-      <div
-        className="absolute  bg-cover bg-center w-[899px] h-full right-0"
-        style={{ backgroundImage: `url(${colonizeMars})` }}
-      ></div>
-      <ColonizeMarsMainText/>
-      <ColonizeMarsSubText/>
-
+    <div>
+      <div>
+        <h2>colonize mars</h2>
+        <p>The ultimate, community-driven, meme coin!</p>
+        <p>Powered by <span>$GTM</span></p>
+      </div>
+      <div>
+        <img src={main1}/>
+      </div>
 
     </div>
+  
   )
 }
 

@@ -9,9 +9,9 @@ import { Link, useLocation } from "react-router-dom";
 import logo4 from "../assets/vision/gateway to MARS.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import currentNavIcon from "../assets/utility/current_nav.png";
-import main2 from "../assets/utility/2.png";
-import frame2 from "../assets/utility/frame2.png";
-import main3 from "../assets/utility/3(1).png";
+// import main2 from "../assets/utility/2.png";
+// import frame2 from "../assets/utility/frame2.png";
+// import main3 from "../assets/utility/3(1).png";
 const Utility = () => {
   return (
     <div className=" bg-[#000000] min-h-screen max-w-full flex flex-col gap-20 ">
