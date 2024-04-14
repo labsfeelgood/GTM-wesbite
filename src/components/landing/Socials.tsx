@@ -45,16 +45,22 @@ const Socials = () => {
     },
   ];
   return (
-    <div className=" flex  flex-col items-center gap-[15px] mr-[-40px] mt-7">
-      <div className="relative border h-[180px] w-[1px] bg-white  mb-[12px]"></div>
-      {icons.map((icon) => (
-        <a href={icon.url} target="_blank">
-          <div className=" border rounded-full h-[35px] w-[35px] flex items-center justify-center text-[2px]">
-            <img src={icon.logo} className=" w-[23px] h-[23px] m-auto" key={icon.key}/>
-          </div>
-        </a>
-      ))}
-      <div className="relative border h-[180px] w-[1px] bg-white mt-[14px]"></div>
+    <div>
+      <div className=" flex  flex-col items-center gap-[15px] mr-[-40px] mt-7">
+        <div className="relative border h-[180px] w-[1px] bg-white  mb-[12px]"></div>
+        {icons.map((icon) => (
+          <a href={icon.url} target="_blank">
+            <div className=" border rounded-full h-[35px] w-[35px] flex items-center justify-center text-[2px]">
+              <img
+                src={icon.logo}
+                className=" w-[23px] h-[23px] m-auto"
+                key={icon.key}
+              />
+            </div>
+          </a>
+        ))}
+        <div className="relative border h-[180px] w-[1px] bg-white mt-[14px]"></div>
+      </div>
     </div>
   );
 };
