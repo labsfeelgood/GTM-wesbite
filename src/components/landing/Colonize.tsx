@@ -4,37 +4,37 @@ import main2 from "../../assets/landing/2(1).png"
 const Colonize = () => {
 
   return (
-    <div className="relative lg:h-screen">
+    <div className="relative lg:h-[800px]">
       <div className=" flex flex-col gap-0 h-[150px] items-center">
-        <h2 className=" font-d-din-bold text-white text-[27px] uppercase">
+        <h2 className=" font-d-din-bold text-white text-[27px] uppercase lg:text-[68px] z-10">
           colonize mars
         </h2>
         <div className=" relative">
-          <p className=" text-white font-d-din-regular text-[13px] ">
+          <p className=" text-white font-d-din-regular text-[13px] lg:text-[32px] ">
             The ultimate, community-driven, meme coin!
           </p>
-          <img src={underline} className=" w-[200px] absolute inset-0 top-2" />
+          <img src={underline} className=" w-[200px] lg:w-[450px] absolute inset-0 top-2 z-10" />
         </div>
 
-        <p className=" text-[13px] font-d-din-italic text-[#C2DAF2]">
+        <p className=" text-[13px] font-d-din-italic text-[#C2DAF2] lg:text-[32px] z-10">
           Powered by{" "}
-          <span className=" font-d-din-bold text-[13px] text-[#C2DAF2]">
+          <span className=" font-d-din-bold text-[13px] text-[#C2DAF2] lg:text-[32px] z-10">
             $GTM
           </span>
         </p>
       </div>
       {/* -------------------- */}
-      <div className=" relative xl:hidden">
+      <div className=" relative lg:hidden">
         <img src={main1} className=" w-full " />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-transparent" />
       </div>
       {/* ------------------ */}
-      <div className="hidden xl:block absolute inset-0 border ">
+      <div className="hidden lg:block absolute top-0  right-0  ">
         <img src={main2} className=" h-[800px] "/>
 
       </div>
       {/* ------------------------- */}
-      <div className=" flex flex-col items-center gap-4">
+      <div className=" flex flex-col items-center gap-4 lg:flex-row border lg:items-end">
         <div className=" flex flex-col items-center">
           <h3 className=" uppercase text-white font-d-din-bold text-[27px]">
             5,200

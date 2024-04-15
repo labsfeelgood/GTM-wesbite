@@ -47,6 +47,7 @@ import Partners from "../components/landing/Partners";
 import Ecosystem from "../components/landing/Ecosystem";
 import BuyGTM from "../components/landing/BuyGTM";
 import Overview from "../components/landing/Overview";
+import HowItWorks from "../components/landing/HowItWorks";
 const Landing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -125,6 +126,7 @@ const Landing = () => {
         <Ecosystem/>
         <BuyGTM/>
         <Overview/>
+        <HowItWorks/>
        </div>
     </div>
   );
