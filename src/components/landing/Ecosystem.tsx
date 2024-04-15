@@ -1,6 +1,6 @@
 import main1 from "../../assets/landing/4.png";
-import loader1 from "../../assets/landing/Icons/loader1.png";
-import loader2 from "../../assets/landing/Icons/loader2.png";
+import loader1 from "../../assets/landing/Icons/loader1.svg";
+import loader2 from "../../assets/landing/Icons/loader2.svg";
 const Ecosystem = () => {
   return (
     <div className=" relative">
@@ -22,7 +22,7 @@ const Ecosystem = () => {
             </p>
             <img
               src={loader1}
-              className=" w-[60px] h-[60px] "
+              className=" w-[30px] h-[30px] "
             />
           </div>
           <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
@@ -32,7 +32,7 @@ const Ecosystem = () => {
             </p>
             <img
               src={loader1}
-              className=" w-[60px] h-[60px]"
+              className=" w-[30px] h-[30px]"
             />
           </div>
           <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />{" "}
@@ -42,7 +42,7 @@ const Ecosystem = () => {
             </p>
             <img
               src={loader1}
-              className=" w-[60px] h-[60px] "
+              className=" w-[30px] h-[30px] "
             />
           </div>
           <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />{" "}

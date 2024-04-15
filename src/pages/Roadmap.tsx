@@ -1,7 +1,8 @@
 import { Navbar } from "./Utility";
 import main1 from "../assets/roadmap/1.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import main2 from "../assets/roadmap/2.png"
+// impor
+import main2 from "../assets/roadmap/2.png";
 const Roadmap = () => {
   return (
     <div className=" min-h-screen bg-black max-w-full">
@@ -42,15 +43,30 @@ const Roadmap = () => {
             Overview
           </h3>
           <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
-          Colonize Mars recognizes the vital role of marketing and community engagement in the project's success. By fostering an active and interconnected community, Colonize Mars aims to create a supportive ecosystem where users feel valued, engaged, and informed
+            Colonize Mars recognizes the vital role of marketing and community
+            engagement in the project's success. By fostering an active and
+            interconnected community, Colonize Mars aims to create a supportive
+            ecosystem where users feel valued, engaged, and informed
           </p>
         </div>
         <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
         {/* --------------------------------------------------------------------------------- */}
-        <div>
+        <div className=" relative">
+          {/* <div className=" relative">
+            <img
+              src={main2}
+              className=" w-full h-[1000px] object-cover object-right "
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black " />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black " />
+          </div> */}
+          <div>
             <div>
-                <img src={main2} className=" w-full h-[800px] object-cover "/>
+              <div>
+                {/* <img src={}/> */}
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>

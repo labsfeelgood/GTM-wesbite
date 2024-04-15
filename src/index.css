@@ -39,4 +39,7 @@
     src: url('./fonts/D-DINExp-Italic.otf') format('opentype');
   }
 
-  
+  .angled-line {
+    transform: rotate(-60deg); /* 120 degrees from the vertical line (180 degrees) */
+    transform-origin: bottom left;
+}
