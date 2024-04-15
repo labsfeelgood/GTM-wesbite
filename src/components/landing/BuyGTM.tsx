@@ -1,6 +1,6 @@
 import buy1frame from "../../assets/landing/buy1.png";
 import buy2frame from "../../assets/landing/buy2.png";
-// import { SwapWidget, darkTheme } from "@uniswap/widgets";
+import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import "@uniswap/widgets/fonts.css";
 const BuyGTM = () => {
   return (
@@ -42,14 +42,23 @@ const BuyGTM = () => {
         </div>
         <div className=" flex lg:gap-40 mt-8 lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] flex-col xl:flex-row items-center gap-20 ">
           <div className=" relative">
-            <img src={buy1frame} className=" lg:w-[850px] lg:h-[530px] w-[300px] h-[200px] sm:w-[600px] sm:h-[400px]" />
-            {/* <div className=" bg-[#131313] w-full h-auto absolute inset-0 " /> */}
-            {/* <div className=" Uniswap absolute inset-0 left-[110px] top-[65px] w-10"> */}
-              {/* <SwapWidget theme={darkTheme} className=" w-full h-auto" /> */}
-            {/* </div> */}
+            <img
+              src={buy1frame}
+              className=" xl:w-[850px] xl:h-[530px] w-[340px] h-[450px] sm:w-[600px] sm:h-[430px]"
+            />
+            <div className=" Uniswap absolute inset-0  top-3  left-5 w-[250px] sm:hidden">
+              <SwapWidget theme={darkTheme} width={300} />
+            </div>
+            <div className=" Uniswap absolute inset-0  top-3  left-10 w-[250px] hidden sm:block xl:top-16 xl:left-[160px] ">
+              <SwapWidget theme={darkTheme} width={520} />
+            </div>
+            
           </div>
-          <div className="">
-            <img src={buy2frame} className=" w-[200px] h-[300px] sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[400px]" />
+          <div className=" p-5">
+            <img
+              src={buy2frame}
+              className=" w-[200px] h-[300px] sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[400px]"
+            />
           </div>
         </div>
       </div>
