@@ -57,7 +57,7 @@ const Utility = () => {
           <div className="relative">
             <img
               src={main2}
-              className=" w-full xl:w-[950px] xl:h-auto lg:w-[600px] lg:h-[400px]"
+              className=" w-full xl:w-[850px] xl:h-auto lg:w-[600px] lg:h-auto"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-l lg:from-black lg:via-transparent lg:to-transparent lg:hidden" />
           </div>
