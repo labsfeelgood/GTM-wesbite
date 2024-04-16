@@ -57,9 +57,9 @@ const Utility = () => {
           <div className="relative">
             <img
               src={main2}
-              className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
+              className=" w-full xl:w-[950px] xl:h-auto lg:w-[600px] lg:h-[400px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-transparent lg:hidden" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-l lg:from-black lg:via-transparent lg:to-transparent lg:hidden" />
           </div>
           <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
             <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
@@ -86,12 +86,12 @@ const Utility = () => {
         </div>
         {/* ------------------------------------------------------------------------------- */}
         <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
-          <div className="relative">
+          <div className="relative xl:mr-20 lg:mr-10">
             <img
               src={main3}
-              className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
+              className=" w-full xl:w-[700px] xl:h-auto lg:w-[600px] lg:h-auto lg:rounded-full "
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-black" />
           </div>
           <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
             <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">

@@ -2,7 +2,6 @@ import { Navbar } from "./Utility";
 import main1 from "../assets/roadmap/1.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 // impor
-import main2 from "../assets/roadmap/2.png";
 const Roadmap = () => {
   return (
     <div className=" min-h-screen bg-black max-w-full">

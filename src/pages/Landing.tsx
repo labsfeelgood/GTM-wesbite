@@ -126,7 +126,7 @@ const Landing = () => {
         <Partners />
         <Ecosystem />
        <div className=" flex flex-col gap-10 xl:gap-40">
-       {/* <BuyGTM /> */}
+       <BuyGTM />
         <TaxAndTreasury />
         <Overview />
         <HowItWorks />
