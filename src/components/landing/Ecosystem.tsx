@@ -12,12 +12,12 @@ const Ecosystem = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent " />
       </div>
       <div className=" absolute inset-0 flex flex-col gap-8 p-10 lg:p-20">
-        <h3 className=" text-white uppercase font-d-din-bold text-[24px] lg:text-[30px]">
+        <h3 className=" text-white uppercase font-d-din-bold text-[24px] lg:text-[30px] xl:text-[40px]">
           ECOSYSTEM
         </h3>
         <div className=" flex flex-col gap-5">
           <div className=" flex justify-between lg:justify-normal lg:gap-[400px]">
-            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[200px]">
+            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:text-[25px]">
               STAKING
             </p>
             <img
@@ -25,9 +25,9 @@ const Ecosystem = () => {
               className=" w-[30px] h-[30px] "
             />
           </div>
-          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
+          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px] xl:w-[690px]" />
           <div className=" flex justify-between lg:justify-normal lg:gap-[400px]">
-            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[200px]">
+            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:text-[25px]">
               MERCH
             </p>
             <img
@@ -35,9 +35,9 @@ const Ecosystem = () => {
               className=" w-[30px] h-[30px]"
             />
           </div>
-          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />{" "}
+          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]  xl:w-[690px]" />{" "}
           <div className=" flex justify-between lg:justify-normal lg:gap-[400px]">
-            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[200px]">
+            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:text-[25px]">
               ARCADE BETTING
             </p>
             <img
@@ -45,9 +45,9 @@ const Ecosystem = () => {
               className=" w-[30px] h-[30px] "
             />
           </div>
-          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />{" "}
+          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px] xl:w-[690px]" />{" "}
           <div className=" flex justify-between  lg:justify-normal lg:gap-[400px]">
-            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[200px]">
+            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:text-[25px]">
               ALPHA GROUP
             </p>
             <img
@@ -55,9 +55,9 @@ const Ecosystem = () => {
               className=" w-[30px] h-[30px] "
             />
           </div>
-          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
+          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px] xl:w-[690px]" />
           <div className=" flex justify-between  lg:justify-normal lg:gap-[400px]">
-            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[200px]">
+            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:text-[25px]">
               MOON FUND
             </p>
             <img
@@ -65,9 +65,9 @@ const Ecosystem = () => {
               className=" w-[30px] h-[30px] "
             />
           </div>
-          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
+          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px] xl:w-[690px]" />
           <div className=" flex justify-between  lg:justify-normal lg:gap-[400px]">
-            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[200px]">
+            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:text-[25px]">
               CASINO
             </p>
             <img
@@ -75,9 +75,9 @@ const Ecosystem = () => {
               className=" w-[30px] h-[30px] "
             />
           </div>
-          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
+          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px] xl:w-[690px]" />
           <div className=" flex justify-between  lg:justify-normal lg:gap-[400px]">
-            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[200px]">
+            <p className=" font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:text-[25px]">
               COMMUNITY PORTAL
             </p>
             <img
@@ -85,7 +85,7 @@ const Ecosystem = () => {
               className=" w-[30px] h-[30px] "
             />
           </div>
-          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px]" />
+          <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[640px] xl:w-[690px]" />
         </div>
       </div>
     </div>

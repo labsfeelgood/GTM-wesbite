@@ -119,17 +119,21 @@ const Landing = () => {
         <Button />
         {/* ---------------------------------------------------------------------------------------------- */}
       </div>
-       <div className=" flex flex-col ">
-       <Colonize/>
-        <WhatIsIt/>
-        <WhyGTM/>
-        <Partners/>
-        <Ecosystem/>
-        <BuyGTM/>
-        <TaxAndTreasury/>
-        {/* <Overview/>
-        <HowItWorks/> */}
+      <div className=" flex flex-col ">
+        <Colonize />
+        <WhatIsIt />
+        <WhyGTM />
+        <Partners />
+        <Ecosystem />
+       <div className=" flex flex-col gap-10 xl:gap-40">
+       <BuyGTM />
+        <TaxAndTreasury />
+        <Overview />
+        <HowItWorks />
        </div>
+        
+        
+      </div>
     </div>
   );
 };

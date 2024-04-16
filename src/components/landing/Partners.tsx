@@ -8,7 +8,7 @@ import backdrop2 from "../../assets/landing/partners/backdrop2.png";
 import backdrop3 from "../../assets/landing/partners/backdrop3.png";
 const Partners = () => {
   return (
-    <div className=" lg:h-[800px] bg-[#ffffff] ">
+    <div className=" lg:h-[800px] bg-[#ffffff] mt-10 ">
       <div className=" flex flex-col gap-5">
         <div className=" flex justify-around mt-10">
           <h3 className=" font-d-din-bold text-[#8FA1B3] text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[50px] lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] ">

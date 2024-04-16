@@ -6,8 +6,8 @@ import etherScanLogo from "../../assets/landing/Icons/etherscan-logo-circle 1.pn
 import zerionIcon from "../../assets/landing/Icons/zerion-icon_circle.png";
 const Overview = () => {
   return (
-    <div className=" flex flex-col gap-10">
-      <div className=" flex flex-col gap-2 mt-40 p-7 lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px]">
+    <div className=" flex flex-col gap-10 xl:mt-10">
+      <div className=" flex flex-col gap-2 p-7 lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px]">
         <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px] ">
           Overview
         </h3>

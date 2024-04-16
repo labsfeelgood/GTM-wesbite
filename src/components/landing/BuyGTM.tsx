@@ -3,6 +3,21 @@ import buy2frame from "../../assets/landing/buy2.png";
 import { SwapWidget, darkTheme } from "@uniswap/widgets";
 import "@uniswap/widgets/fonts.css";
 const BuyGTM = () => {
+  const defaultOutputTokenAddress =
+    "0xe8b1e79d937c648ce1fe96e6739ddb2714058a18";
+  const defaultInputTokenAddress = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
+  const MY_TOKEN_LIST = [
+    {
+      name: "ColonizeMars",
+      address: "0xe8b1e79d937c648ce1fe96e6739ddb2714058a18",
+      symbol: "GTM",
+      decimals: 18,
+      chainId: 1,
+      logoURI:
+        "https://www.dextools.io/resources/tokens/logos/ether/0xe8b1e79d937c648ce1fe96e6739ddb2714058a18.jpg?1707932205649",
+    },
+  ];
+
   return (
     <div className=" bg-black">
       <div className=" mt-10">
@@ -50,9 +65,15 @@ const BuyGTM = () => {
               <SwapWidget theme={darkTheme} width={300} />
             </div>
             <div className=" Uniswap absolute inset-0  top-3  left-10 w-[250px] hidden sm:block xl:top-16 xl:left-[160px] ">
-              <SwapWidget theme={darkTheme} width={520} />
+              <SwapWidget
+                theme={darkTheme}
+                width={520}
+                defaultOutputTokenAddress={defaultOutputTokenAddress}
+                defaultInputTokenAddress={defaultInputTokenAddress}
+                defaultInputAmount={10}
+                tokenList={MY_TOKEN_LIST}
+              />
             </div>
-            
           </div>
           <div className=" p-5">
             <img

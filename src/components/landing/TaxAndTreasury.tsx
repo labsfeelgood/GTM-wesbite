@@ -78,9 +78,9 @@ export const TaxAndTreasury = () => {
         </div>
       </div>
       {/* --------------------------------- */}
-      <div className=" hidden xl:block h-screen">
+      <div className=" hidden xl:block xl:mt-10 ">
         <div className=" flex justify-between ">
-          <h3 className=" font-d-din-bold text-white text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[50px] lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] text-left lg:text-left ml-5 sm:ml-10 ">
+          <h3 className=" font-d-din-bold text-white text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[50px] lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] text-left lg:text-left ml-5 sm:ml-10  xl:pl-7">
             TAX & TREASURY
           </h3>
           <div>
@@ -130,7 +130,7 @@ export const TaxAndTreasury = () => {
                 </h3>
                 <div className=" relative  top-2">
                   <div className=" bg-[#ffffff] h-[2px] w-[380px] "></div>
-                  <div className=" relative   top-[-5px] bg-[#ffffff] h-[20px] w-[2px] rotate-[60deg] left-[-9px]"></div>
+                  <div className=" relative   top-[-6px] bg-[#ffffff] h-[20px] w-[2px] rotate-[60deg] left-[-8px]"></div>
                 </div>
               </div>
               <p className=" font-d-din-regular text-[20px] text-white w-[400px] text-right">
