@@ -125,14 +125,18 @@ const Landing = () => {
         <WhyGTM />
         <Partners />
         <Ecosystem />
-       <div className=" flex flex-col gap-10 xl:gap-40">
-       <BuyGTM />
-        <TaxAndTreasury />
-        <Overview />
-        <HowItWorks />
-       </div>
-        
-        
+        <div className=" flex flex-col gap-10 xl:gap-40">
+          <BuyGTM />
+          <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
+
+          <TaxAndTreasury />
+          <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
+
+          <Overview />
+          <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
+
+          <HowItWorks />
+        </div>
       </div>
     </div>
   );
