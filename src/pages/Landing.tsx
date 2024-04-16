@@ -95,12 +95,12 @@ const Landing = () => {
   ];
   return (
     <div className=" relative bg-[#000000] min-h-screen">
-      <div className=" relative ">
+      <div className=" relative lg:z-10">
         <img src={main1} className={`w-full lg:h-screen lg:object-cover`} />
         <Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
         {/* <img src={main2} className=" h-[48px] w-[40px] absolute bottom-0"/> */}
         {/* ------------------------------------------------------------------------------ */}
-        <div className="  lg:hidden ">
+        <div className="  xl:hidden ">
           <div className=" flex sm:gap-3 gap-2  absolute inset-0 justify-center items-end sm:mb-3 mb-1">
             {icons.map((icon) => (
               <a href={icon.url} target="_blank">
@@ -126,7 +126,7 @@ const Landing = () => {
         <Partners />
         <Ecosystem />
        <div className=" flex flex-col gap-10 xl:gap-40">
-       <BuyGTM />
+       {/* <BuyGTM /> */}
         <TaxAndTreasury />
         <Overview />
         <HowItWorks />
