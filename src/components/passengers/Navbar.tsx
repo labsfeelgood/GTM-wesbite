@@ -1,4 +1,3 @@
-import logo2 from "../../assets/vision/gateway to MARS.png";
 import logo1 from "../../assets/utility/Logo 2.png";
 import logo3 from "../../assets/utility/logo3.png";
 import closeIcon from "../../assets/utility/Shape.png";
