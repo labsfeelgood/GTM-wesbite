@@ -1,35 +1,8 @@
-// import BuyGTM from '../components/landing/BuyGTM'
-// import Colonize from '../components/landing/Colonize'
-// import Ecosystem from '../components/landing/Ecosystem'
-// import Gateway from '../components/landing/Gateway'
-// import HowItWorks from '../components/landing/HowItWorks'
-// import Overview from '../components/landing/Overview'
-// import Partners from '../components/landing/Partners'
-// import { TaxAndTreasury } from '../components/landing/TaxAndTreasury'
-// import WhatIsIt from '../components/landing/WhatIsIt'
-// import WhyGTM from '../components/landing/WhyGTM'
 
-// const Landing = () => {
-//   return (<>
-//     <Gateway/>
-//     <Colonize/>
-//     <WhatIsIt/>
-//     <WhyGTM/>
-//     <Partners/>
-//     <Ecosystem/>
-//     <BuyGTM/>
-//     <TaxAndTreasury/>
-//     <Overview/>
-//     <HowItWorks/>
-//     </>
-//   )
-// }
 
-// export default Landing
+
 import Button from "../components/landing/Button";
 import main1 from "../assets/landing/1.png";
-// import main2 from "../assets/landing/elon.png";
-// import logo1 from "../assets/landing/logo.png";
 import Navbar from "../components/landing/Navbar";
 import twitteIcon from "../assets/landing/Icons/akar-icons_twitter-fill.png";
 import telegramIcon from "../assets/landing/Icons/teenyicons_telegram-solid.png";
