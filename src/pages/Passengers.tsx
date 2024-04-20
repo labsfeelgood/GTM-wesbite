@@ -31,7 +31,7 @@ const Passengers = () => {
       <Navbar/>
       {/* ----------------------------------------------------------------------------- */}
       <div className=" ">
-        <div className=" flex justify-between items-center">
+        <div className=" flex justify-between items-center ">
           <img src={backdrop1}/>
           <img src={backdrop2}/>
         </div>
@@ -49,8 +49,15 @@ const Passengers = () => {
           </p>
         </div>
         {/* --------------------------------------------------------------------- */}
-        <div>
-          <Card heading={"heading"} content={"jds;nnajlksdbbbbbbbbbbbbbbbbbbbbbbbb;enq;iejioq3"}/>
+        <div className=" flex flex-col gap-3 xl:flex-row">
+          {
+            cardContent.map((content)=>(
+              <Card heading={content.heading} content = {content.content} key ={content.key}/>
+            ))
+          }
+        </div>
+        <div className=" flex items-center justify-center mt-10">
+          <img src={backdrop3}/>
         </div>
       </div>
     </div>
