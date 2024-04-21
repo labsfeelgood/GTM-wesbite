@@ -121,7 +121,7 @@ const Staking = () => {
           </div>
         </div>
         {/* ----------------------------------------------------------------------------------------------------------------------------- */}
-        <div className=" relative">
+        <div className=" relative xl:mt-20">
           <div className=" relative">
             <img
               src={main2}
