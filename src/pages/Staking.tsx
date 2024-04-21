@@ -61,20 +61,26 @@ const Staking = () => {
             earn passive Annual Percentage Yield (APY)
           </p>
         </div>
-        <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
+        {/* <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" /> */}
         {/* ------------------------------------------------------------------------------------- */}
         <div>
           <div className=" relative ">
             <div className=" w-full hidden xl:block">
-              <img src={backdrop} className=" w-auto h-[450px]   object-cover object-center" />
+              <img
+                src={backdrop}
+                className=" w-auto h-[450px]   object-cover object-center"
+              />
             </div>
             <div className=" xl:absolute xl:inset-0 xl:top-[100px]">
+              {/* -------------------------------------------- */}
+              <div className=" bg-[#C2DAF2] w-full h-[3px] xl:hidden" />
+              {/* -------------------------------- */}
               <div className=" flex flex-col xl:flex-row xl:justify-center xl:gap-[50px] 2xl:gap-[100px] 2xl:justify-around">
-                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24 xl:p-0">
+                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24 xl:p-0 items-center xl:items-start">
                   <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[25px] 2xl:text-[25px] ">
                     Interest Algorithms
                   </h3>
-                  <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[20px] 2xl:text-[22px] text-left  xl:w-[300px] 2xl:w-[420px]">
+                  <p className=" text-white font-d-din-regular text-[12px] md:text-[16px] sm:text-[14px] lg:text-[18px] 2xl:text-[22px] xl:text-left  xl:w-[300px] 2xl:w-[420px] w-[250px] text-center ">
                     The implementation of staking algorithms allows for the
                     compounding of interest on $GTM tokens held over a duration,
                     creating an incentive structure for sustained ecosystem
@@ -83,11 +89,11 @@ const Staking = () => {
                 </div>
                 <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
                 {/* ------------------------------------------------------------------------------------------- */}
-                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24 xl:p-0">
+                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24 xl:p-0 items-center xl:items-start">
                   <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[25px] 2xl:text-[25px] ">
                     Market Stabilization Function
                   </h3>
-                  <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[20px] 2xl:text-[22px] text-left  xl:w-[350px] 2xl:w-[420px]">
+                  <p className=" text-white font-d-din-regular text-[12px] md:text-[16px] sm:text-[14px] lg:text-[18px] 2xl:text-[22px] xl:text-left  xl:w-[350px] 2xl:w-[420px] w-[250px] text-center ">
                     The act of staking $GTM inherently contributes to the
                     reduction of circulating supply, thereby mitigating market
                     volatility and enhancing the overall economic stability of
@@ -96,17 +102,20 @@ const Staking = () => {
                 </div>
                 <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
                 {/* ------------------------------------------------------------------------------------------------------------------------ */}
-                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24 xl:p-0">
-                  <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[25px] 2xl:text-[25px] ">
+               <div>
+               <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24 xl:p-0 items-center xl:items-start">
+                  <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[25px] 2xl:text-[25px] text-center ">
                     Incentivization of User Involvement
                   </h3>
-                  <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[20px] 2xl:text-[22px] text-left  xl:w-[400px] 2xl:w-[420px]">
+
+                  <p className=" text-white font-d-din-regular text-[12px] md:text-[16px] sm:text-[14px] lg:text-[18px] 2xl:text-[22px] xl:text-left  xl:w-[400px] 2xl:w-[420px] w-[250px] text-center ">
                     Through APY earnings, users are financially motivated to
                     maintain a continuous, vested interest in the platform,
                     thereby amplifying community engagement and retention,
                     particularly crucial during non-active periods on MARS
                   </p>
                 </div>
+               </div>
               </div>
             </div>
           </div>
