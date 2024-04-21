@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo4 from "../../assets/landing/logo.svg";
 import currentNavIcon from "../../assets/utility/current_nav.png";
-
+import underline from "../../assets/landing/nav-underline.svg"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -227,8 +227,8 @@ const Navbar = () => {
               </Link>
               {isActive("/passengers") && (
                 <img
-                  src={currentNavIcon}
-                  className=" absolute top-3 w-[180px] z-10 right-5"
+                  src={underline}
+                  className=" absolute top-5 w-[180px] z-10 right-5"
                 />
               )}
             </div>

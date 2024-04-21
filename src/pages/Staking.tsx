@@ -2,7 +2,7 @@ import { Navbar } from "./Utility";
 import main1 from "../assets/utility/stake 2.png";
 import main2 from "../assets/utility/stake3.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-
+import backdrop from "../assets/utility/staking-backdrop.svg";
 const Staking = () => {
   return (
     <div className=" min-h-screen bg-black max-w-full">
@@ -61,48 +61,63 @@ const Staking = () => {
             earn passive Annual Percentage Yield (APY)
           </p>
         </div>
-        <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
+        <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
         {/* ------------------------------------------------------------------------------------- */}
-        <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
-          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
-            Interest Algorithms
-          </h3>
-          <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
-            The implementation of staking algorithms allows for the compounding
-            of interest on $GTM tokens held over a duration, creating an
-            incentive structure for sustained ecosystem investment
-          </p>
-        </div>
-        <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
-        {/* ------------------------------------------------------------------------------------------- */}
-        <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
-          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
-            Market Stabilization Function
-          </h3>
-          <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
-            The act of staking $GTM inherently contributes to the reduction of
-            circulating supply, thereby mitigating market volatility and
-            enhancing the overall economic stability of the Meme Kombat
-            ecosystem
-          </p>
-        </div>
-        <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
-        {/* ------------------------------------------------------------------------------------------------------------------------ */}
-        <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
-          <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
-            Incentivization of User Involvement
-          </h3>
-          <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
-            Through APY earnings, users are financially motivated to maintain a
-            continuous, vested interest in the platform, thereby amplifying
-            community engagement and retention, particularly crucial during
-            non-active periods on MARS
-          </p>
+        <div>
+          <div className=" relative ">
+            <div className=" w-full hidden xl:block">
+              <img src={backdrop} className=" w-full h-auto" />
+            </div>
+            <div className=" xl:absolute xl:inset-0">
+              <div className=" flex flex-col xl:flex-row">
+                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
+                  <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
+                    Interest Algorithms
+                  </h3>
+                  <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left  xl:w-[550px]">
+                    The implementation of staking algorithms allows for the
+                    compounding of interest on $GTM tokens held over a duration,
+                    creating an incentive structure for sustained ecosystem
+                    investment
+                  </p>
+                </div>
+                <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
+                {/* ------------------------------------------------------------------------------------------- */}
+                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
+                  <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
+                    Market Stabilization Function
+                  </h3>
+                  <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left  xl:w-[550px]">
+                    The act of staking $GTM inherently contributes to the
+                    reduction of circulating supply, thereby mitigating market
+                    volatility and enhancing the overall economic stability of
+                    the Meme Kombat ecosystem
+                  </p>
+                </div>
+                <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
+                {/* ------------------------------------------------------------------------------------------------------------------------ */}
+                <div className=" flex flex-col gap-2 p-4 md:p-8 lg:p-24">
+                  <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[30px] ">
+                    Incentivization of User Involvement
+                  </h3>
+                  <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left  xl:w-[550px]">
+                    Through APY earnings, users are financially motivated to
+                    maintain a continuous, vested interest in the platform,
+                    thereby amplifying community engagement and retention,
+                    particularly crucial during non-active periods on MARS
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         {/* ----------------------------------------------------------------------------------------------------------------------------- */}
         <div className=" relative">
           <div className=" relative">
-            <img src={main2} className=" w-full h-[470px] lg:h-[700px] object-cover object-center opacity-30" />
+            <img
+              src={main2}
+              className=" w-full h-[470px] lg:h-[700px] object-cover object-center opacity-30"
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black lg:bg-gradient-to-r md:to-black " />
           </div>
           <div className=" absolute inset-0 flex flex-col gap-8 p-10 lg:p-20">

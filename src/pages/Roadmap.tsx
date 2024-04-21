@@ -1,6 +1,7 @@
 import { Navbar } from "./Utility";
 import main1 from "../assets/roadmap/1.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import loader1 from "../assets/landing/Icons/loader1.svg";
 // impor
 const Roadmap = () => {
   return (
@@ -50,20 +51,78 @@ const Roadmap = () => {
         </div>
         <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
         {/* --------------------------------------------------------------------------------- */}
-        <div className=" relative">
-          {/* <div className=" relative">
-            <img
-              src={main2}
-              className=" w-full h-[1000px] object-cover object-right "
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black " />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black " />
-          </div> */}
-          <div>
+        <div>
+          <div className=" flex ">
             <div>
-              <div>
-                {/* <img src={}/> */}
-              </div>
+              <img src={loader1} className=" w-[30px] h-auto" />
+            </div>
+            <div>
+              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
+                Phase 1
+              </h3>
+              <p className=" font-d-din-bold text-white text-[20px]">
+                Merch store I Betting I Partnerships I Marketing
+              </p>
+            </div>
+          </div>
+
+          <div className=" flex ">
+            <div>
+              <img src={loader1} className=" w-[30px] h-auto" />
+            </div>
+            <div>
+              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
+                Phase 2
+              </h3>
+              <p className=" font-d-din-bold text-white text-[20px]">
+                Rev share I Staking 2.0 I Partnerships I Marketing 2.0 I New
+                Elon video I Tournaments/competitions I CEX listing
+              </p>
+            </div>
+          </div>
+
+          <div className=" flex ">
+            <div className=" w-[30px] h-[30px] ">
+              <img src={loader1} className=" w-[30px] h-auto" />
+            </div>
+            <div>
+              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
+                Phase 3
+              </h3>
+              <p className=" font-d-din-bold text-white text-[20px]">
+                AI #Alpha Signals I Buybacks & Burns I Partnerships I Viral
+                Marketing I CEX listing I Colonize Mars Memewar
+              </p>
+            </div>
+          </div>
+
+          <div className=" flex ">
+            <div>
+              <img src={loader1} className=" w-[30px] h-auto " />
+            </div>
+            <div>
+              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
+                Phase 4
+              </h3>
+              <p className=" font-d-din-bold text-white text-[20px]">
+                Buybacks & Burns I NFT Release I Real World Marketing I Burn
+                Liquidity I Elon vs. Alien, Game Release I T1 Cex listing
+              </p>
+            </div>
+          </div>
+
+          <div className=" flex ">
+            <div>
+              <img src={loader1} className=" w-[30px] h-auto" />
+            </div>
+            <div>
+              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
+                Phase 5
+              </h3>
+              <p className=" font-d-din-bold text-white text-[20px]">
+                Buybacks & Burns I HUGE giveaway I Partnerships I Guerilla
+                marketing
+              </p>
             </div>
           </div>
         </div>

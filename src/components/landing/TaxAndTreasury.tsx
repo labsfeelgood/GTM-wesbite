@@ -3,7 +3,7 @@ export const TaxAndTreasury = () => {
   return (
     <>
       <div className=" xl:hidden">
-        <h3 className=" font-d-din-bold text-white text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[50px] lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] text-left lg:text-left ml-5 sm:ml-10 ">
+        <h3 className=" font-d-din-bold text-white text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[50px] lg:ml-[50px] xl:ml-[100px]  2xl:ml-[150px] text-left lg:text-left ml-5 sm:ml-10 ">
           TAX & TREASURY
         </h3>
         <div className=" ml-5 sm:ml-11">
@@ -79,14 +79,14 @@ export const TaxAndTreasury = () => {
       </div>
       {/* --------------------------------- */}
       <div className=" hidden xl:block xl:mt-10 ">
-        <div className=" flex justify-between ">
-          <h3 className=" font-d-din-bold text-white text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[50px] lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] text-left lg:text-left ml-5 sm:ml-10  xl:pl-7">
+        <div className=" flex w-[1250px] 2xl:w-[1500px] justify-between mx-auto ">
+          <h3 className=" font-d-din-bold text-white text-[28px] uppercase xl:text-[50px] ">
             TAX & TREASURY
           </h3>
           <div>
             <div className=" relative mx-auto">
-              <div className=" bg-[#C2DAF2] h-[2px] w-[180px] "></div>
-              <div className=" relative top-[-15px] bg-[#C2DAF2] h-[15px] w-[2px] rotate-[deg] right-[4px]"></div>
+              <div className=" bg-[#C2DAF2] h-[2px] w-[295px] "></div>
+              <div className=" relative top-[-5px] bg-[#C2DAF2] h-[15px] w-[2px] rotate-[-60deg] right-[-300px]"></div>
             </div>
             <p className=" font-d-din-italic text-[28px] text-white">
               Embrace the Power of 5%

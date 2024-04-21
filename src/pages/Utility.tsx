@@ -197,7 +197,7 @@ const Navbar = () => {
   return (
     <div>
       {isOpen ? (
-        <div className=" p-5 pr-5 flex flex-col gap-5 lg:hidden">
+        <div className=" p-5 pr-5 flex flex-col gap-5 xl:hidden">
           <div className=" flex items-center justify-between ">
             <img src={logo3} className=" p-3" />
             <button className="" onClick={() => setIsOpen(false)}>
