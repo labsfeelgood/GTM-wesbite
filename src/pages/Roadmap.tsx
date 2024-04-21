@@ -51,81 +51,8 @@ const Roadmap = () => {
         </div>
         <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
         {/* --------------------------------------------------------------------------------- */}
-        <div>
-          <div className=" flex ">
-            <div>
-              <img src={loader1} className=" w-[30px] h-auto" />
-            </div>
-            <div>
-              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
-                Phase 1
-              </h3>
-              <p className=" font-d-din-bold text-white text-[20px]">
-                Merch store I Betting I Partnerships I Marketing
-              </p>
-            </div>
-          </div>
 
-          <div className=" flex ">
-            <div>
-              <img src={loader1} className=" w-[30px] h-auto" />
-            </div>
-            <div>
-              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
-                Phase 2
-              </h3>
-              <p className=" font-d-din-bold text-white text-[20px]">
-                Rev share I Staking 2.0 I Partnerships I Marketing 2.0 I New
-                Elon video I Tournaments/competitions I CEX listing
-              </p>
-            </div>
-          </div>
-
-          <div className=" flex ">
-            <div className=" w-[30px] h-[30px] ">
-              <img src={loader1} className=" w-[30px] h-auto" />
-            </div>
-            <div>
-              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
-                Phase 3
-              </h3>
-              <p className=" font-d-din-bold text-white text-[20px]">
-                AI #Alpha Signals I Buybacks & Burns I Partnerships I Viral
-                Marketing I CEX listing I Colonize Mars Memewar
-              </p>
-            </div>
-          </div>
-
-          <div className=" flex ">
-            <div>
-              <img src={loader1} className=" w-[30px] h-auto " />
-            </div>
-            <div>
-              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
-                Phase 4
-              </h3>
-              <p className=" font-d-din-bold text-white text-[20px]">
-                Buybacks & Burns I NFT Release I Real World Marketing I Burn
-                Liquidity I Elon vs. Alien, Game Release I T1 Cex listing
-              </p>
-            </div>
-          </div>
-
-          <div className=" flex ">
-            <div>
-              <img src={loader1} className=" w-[30px] h-auto" />
-            </div>
-            <div>
-              <h3 className=" font-d-din-bold text-[#C2DAF2] text-[20px] uppercase">
-                Phase 5
-              </h3>
-              <p className=" font-d-din-bold text-white text-[20px]">
-                Buybacks & Burns I HUGE giveaway I Partnerships I Guerilla
-                marketing
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
