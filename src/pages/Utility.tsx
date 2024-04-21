@@ -105,11 +105,11 @@ const Utility = () => {
             </p>
             <div className=" flex flex-col gap-2">
               <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-                <Link to="/utility/staking">
+                {/* <Link to="/utility/staking"> */}
                   <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
                     KNOW MORE
                   </h3>
-                </Link>
+                {/* </Link> */}
                 <ArrowRightAltIcon className=" text-white" />
               </div>
               <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
@@ -170,11 +170,11 @@ const Utility = () => {
             </p>
             <div className=" flex flex-col gap-2">
               <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-                <Link to="/utility/staking">
+                {/* <Link to="/utility/staking"> */}
                   <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
                     KNOW MORE
                   </h3>
-                </Link>
+                {/* </Link> */}
                 <ArrowRightAltIcon className=" text-white" />
               </div>
               <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />

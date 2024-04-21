@@ -1,11 +1,14 @@
 import main1 from "../../assets/landing/2.png";
 import underline from "../../assets/landing/underline.png";
 import main2 from "../../assets/landing/2(1).png";
-import ellipse from '../../assets/landing/ellipse.svg'
+import ellipse from "../../assets/landing/ellipse.svg";
 const Colonize = () => {
   return (
     <div className="relative lg:h-[800px]">
-      <img src={ellipse} className=" absolute inset-0 hidden lg:block w-[700px] left-[-200px] top-[-150px] h-auto "/>
+      <img
+        src={ellipse}
+        className=" absolute inset-0 hidden lg:block w-[700px] left-[-200px] top-[-150px] h-auto "
+      />
       <div className=" flex flex-col gap-0 p-5 items-center lg:hidden">
         <h2 className=" font-d-din-bold text-white text-[27px] uppercase lg:text-[68px] ">
           colonize mars
@@ -43,10 +46,15 @@ const Colonize = () => {
           <h2 className=" uppercase text-white font-d-din-bold text-[68px] ">
             colonize mars
           </h2>
+
           <div>
             <p className=" font-d-din-regular text-white text-[25px]">
               The ultimate, community-driven, meme coin!
             </p>
+            <img
+              src={underline}
+              className=" w-[200px] lg:w-[450px] relative top-[-15px] left-[-20px] "
+            />
           </div>
           <p className=" text-[#C2DAF2] font-d-din-italic text-[25px] ">
             Powered by{" "}
