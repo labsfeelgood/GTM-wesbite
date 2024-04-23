@@ -5,7 +5,7 @@ import hiw4 from "../../assets/landing/money 1.png";
 import hiw5 from "../../assets/landing/pp 1.png";
 const HowItWorks = () => {
   return (
-    <div className=" xl:ml-[100px] 2xl:ml-[150px]  flex flex-col gap-5 xl:gap-7">
+    <div className=" xl:ml-[100px] 2xl:ml-[150px]  flex flex-col gap-5 xl:gap-7 mb-10">
       <h3 className=" text-white uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px] xl:text-[50px] 2xl:text-[55px] text-center xl:text-left ">
         How it Works
       </h3>

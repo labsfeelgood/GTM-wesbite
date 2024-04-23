@@ -36,6 +36,35 @@ const Passengers = () => {
         "Embracing and channeling creativity is a driving force, encouraging innovative thinking beyond the status quo",
     },
   ];
+
+  const passengers = [
+    {
+      key:1,
+      name:"Esh",
+      picturePath :""
+    },
+    {
+      key:2,
+      name:"Esh",
+      picturePath :""
+    },{
+      key:3,
+      name:"Esh",
+      picturePath :""
+    },{
+      key:4,
+      name:"Esh",
+      picturePath :""
+    },{
+      key:5,
+      name:"Esh",
+      picturePath :""
+    },{
+      key:6,
+      name:"Esh",
+      picturePath :""
+    },
+  ]
   return (
     <div className=" min-h-screen bg-[#C6C0B4]">
       <Navbar />

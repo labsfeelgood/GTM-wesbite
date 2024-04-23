@@ -1,6 +1,3 @@
-
-
-
 import Button from "../components/landing/Button";
 import main1 from "../assets/landing/1.png";
 import Navbar from "../components/landing/Navbar";
@@ -22,6 +19,8 @@ import BuyGTM from "../components/landing/BuyGTM";
 import Overview from "../components/landing/Overview";
 import HowItWorks from "../components/landing/HowItWorks";
 import { TaxAndTreasury } from "../components/landing/TaxAndTreasury";
+import Footer from "../components/Footer";
+import ElonSays from "../components/landing/ElonSays";
 const Landing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -67,50 +66,54 @@ const Landing = () => {
     },
   ];
   return (
-    <div className=" relative bg-[#000000] min-h-screen">
-      <div className=" relative lg:z-10">
-        <img src={main1} className={`w-full lg:h-screen lg:object-cover`} />
-        <Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
-        {/* <img src={main2} className=" h-[48px] w-[40px] absolute bottom-0"/> */}
-        {/* ------------------------------------------------------------------------------ */}
-        <div className="  xl:hidden ">
-          <div className=" flex sm:gap-3 gap-2  absolute inset-0 justify-center items-end sm:mb-3 mb-1">
-            {icons.map((icon) => (
-              <a href={icon.url} target="_blank">
-                <div className=" border rounded-full h-[22px] w-[22px] sm:h-[35px] sm:w-[35px] flex items-center justify-center ">
-                  <img
-                    src={icon.logo}
-                    className=" sm:w-[23px] sm:h-[23px] w-[12px] h-[12px] m-auto"
-                    key={icon.key}
-                  />
-                </div>
-              </a>
-            ))}
+    <div className=" bg-black">
+      <div className=" relative bg-[#000000] min-h-screen">
+        <div className=" relative lg:z-10">
+          <img src={main1} className={`w-full lg:h-screen lg:object-cover`} />
+          <Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+          {/* <img src={main2} className=" h-[48px] w-[40px] absolute bottom-0"/> */}
+          {/* ------------------------------------------------------------------------------ */}
+          <div className="  xl:hidden ">
+            <div className=" flex sm:gap-3 gap-2  absolute inset-0 justify-center items-end sm:mb-3 mb-1">
+              {icons.map((icon) => (
+                <a href={icon.url} target="_blank">
+                  <div className=" border rounded-full h-[22px] w-[22px] sm:h-[35px] sm:w-[35px] flex items-center justify-center ">
+                    <img
+                      src={icon.logo}
+                      className=" sm:w-[23px] sm:h-[23px] w-[12px] h-[12px] m-auto"
+                      key={icon.key}
+                    />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+          {/* --------------------------------------------------------------------------- */}
+          <Button />
+          {/* ---------------------------------------------------------------------------------------------- */}
+        </div>
+        <div className=" flex flex-col ">
+          <Colonize />
+          <WhatIsIt />
+          <WhyGTM />
+          <Partners />
+          <Ecosystem />
+          <div className=" flex flex-col gap-10 xl:gap-40">
+            <BuyGTM />
+            <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
+
+            <TaxAndTreasury />
+            <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
+
+            <Overview />
+            <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
+
+            <HowItWorks />
+            <ElonSays/>
           </div>
         </div>
-        {/* --------------------------------------------------------------------------- */}
-        <Button />
-        {/* ---------------------------------------------------------------------------------------------- */}
       </div>
-      <div className=" flex flex-col ">
-        <Colonize />
-        <WhatIsIt />
-        <WhyGTM />
-        <Partners />
-        <Ecosystem />
-        <div className=" flex flex-col gap-10 xl:gap-40">
-          <BuyGTM />
-          <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
-
-          <TaxAndTreasury />
-          <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
-
-          <Overview />
-          <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
-
-          <HowItWorks />
-        </div>
-      </div>
+      <Footer/>
     </div>
   );
 };
