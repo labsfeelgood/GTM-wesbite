@@ -15,7 +15,7 @@ const ElonSays = () => {
           WELL, WHAT IS ELON SAYING?
         </h3>
       </div>
-      <div className=" flex flex-col lg:flex-row sm:items-center">
+      <div className=" flex flex-col lg:flex-row items-center">
         <div>
           <img src={tweet1} />
           <img src={tweet2} />
