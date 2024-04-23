@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-card': 'linear-gradient(to right, #3D3D3D, #8F8270 , #3D3D3D, #8F8270 ,#3D3D3D)',
+      },
       fontFamily: {
         'starcruiser': ['starcruiser', 'sans-serif'],
         'd-din-bold': ['d-din-bold', 'sans-serif'],

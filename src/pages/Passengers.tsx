@@ -5,6 +5,7 @@ import backdrop4 from "../assets/landing/space-craft-backdrop.svg";
 import main1 from "../assets/landing/Group 844.svg";
 import Navbar from "../components/passengers/Navbar";
 import Card from "../components/passengers/Card";
+import PassengerCard from "../components/passengers/PassengerCard";
 const Passengers = () => {
   const cardContent = [
     {
@@ -72,8 +73,12 @@ const Passengers = () => {
       <div className=" ">
         <div className=" flex justify-between items-start ">
           <img src={backdrop1} className=" w-1/6 xl:w-auto h-auto" />
-          <div className=" flex flex-col items-center">
+          <div className=" flex flex-col items-center relative">
             <img src={main1} className="  xl:w-[800px] xl:h-auto xl:mb-10" />
+            <div>
+              <PassengerCard/>
+            </div>
+
           </div>
           <img src={backdrop2} className=" w-1/6 xl:w-auto h-auto" />
         </div>
