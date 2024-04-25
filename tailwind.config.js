@@ -9,6 +9,7 @@ export default {
   ],
   theme: {
     extend: {
+      display:['group-hover'],
       backgroundImage: {
         'gradient-card': 'linear-gradient(to right, #3D3D3D, #8F8270 , #3D3D3D, #8F8270 ,#3D3D3D)',
       },
