@@ -16,15 +16,15 @@ const PassengerCardSm: React.FC<PassengerCardProps> = ({
 }) => {
   return (
     <div className="">
-      <div className=" bg-gradient-card h-[70px] w-[120px] p-[2px] ">
+      <div className=" bg-gradient-card h-[70px] w-[120px] sm:h-[90px] sm:w-[150px] p-[2px] ">
         <div className=" bg-[#8F8270]  w-full h-full p-1 pl-2  flex flex-col items-start">
-          <h3 className=" font-d-din-bold uppercase text-[15px] text-black overflow-hidden">
+          <h3 className=" font-d-din-bold uppercase text-[15px] sm:text-[17px] text-black overflow-hidden">
             {name }
           </h3>
-          <p className=" uppercase font-d-din-regular text-black text-[10px]">
+          <p className=" uppercase font-d-din-regular text-black text-[10px] sm:text-[13px]">
             {position}
           </p>
-          <div className=" flex gap-1">
+          <div className=" flex gap-1 mt-1">
             <a href={twitterUrl}>
               <div className=" border rounded-full border-black flex items-center justify-center p-1 w-[20px] h-[20px]">
                 <img src={twitterIcon} />
