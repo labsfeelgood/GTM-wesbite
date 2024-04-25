@@ -7,7 +7,6 @@ import Staking from "./pages/Staking";
 import AlphaGroup from "./pages/AlphaGroup";
 import Roadmap from "./pages/Roadmap";
 import Passengers from "./pages/Passengers";
-import PassengerCardSm from "./components/passengers/PassengersCardSm";
 
 function App() {
 
@@ -15,7 +14,6 @@ function App() {
     <BrowserRouter>
      <Routes>
       <Route path="/" element={<Landing/>}/>
-      <Route path="/test" element={<PassengerCardSm/>}/>
       <Route path="/vision" element={<Vision/>}/>
       <Route path="/roadmap" element={<Roadmap/>}/>
       <Route path="/passengers" element={<Passengers/>}/>
