@@ -117,12 +117,12 @@ const Passengers = () => {
 
       <div className=" ">
         <div className=" relative ">
-          <div className=" flex justify-between items-start relative  w-[1200px] mx-auto">
+          <div className=" flex justify-between items-start relative  xl:w-[1200px] xl:mx-auto">
             <img src={backdrop1} className=" w-1/6 xl:w-auto h-auto" />
             {/* ------------------------------------------------------------------------------------------------------------------------- */}
             {/* 1st passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[110px] left-[543px]   ${
+              className={` hidden xl:block  z-10 absolute inset-0 top-[110px] left-[543px]   ${
                 isVisible1 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -147,7 +147,7 @@ const Passengers = () => {
             </div>
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 2nd passenger */}
-            <div className=" absolute inset-0  top-[213px] left-[500px] z-10 ">
+            <div className=" hidden xl:block   absolute inset-0  top-[213px] left-[500px] z-10 ">
               <div
                 className={`bg-opacity-0 h-[62px] w-[47px]  ${
                   isVisible2 ? "border shadow shadow-white rounded-md" : "border-none"
@@ -158,7 +158,7 @@ const Passengers = () => {
             </div>
 
             <div
-              className={` absolute inset-0 z-10 top-[70px] left-[170px] h-[200px] w-[300px]  ${
+              className={` hidden xl:block   absolute inset-0 z-10 top-[70px] left-[170px] h-[200px] w-[300px]  ${
                 isVisible2 ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -181,7 +181,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 3rd Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[213px] left-[561px] ${
+              className={` hidden xl:block  z-10 absolute inset-0 top-[213px] left-[561px] ${
                 isVisible3 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -208,7 +208,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 4th passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[213px] left-[617px] ${
+              className={` hidden xl:block  z-10 absolute inset-0 top-[213px] left-[617px] ${
                 isVisible4 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -234,7 +234,7 @@ const Passengers = () => {
 
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 5th Passenger */}
-            <div className=" absolute inset-0  top-[289px] left-[528px] z-10 ">
+            <div className=" hidden xl:block absolute inset-0  top-[289px] left-[528px] z-10 ">
               <div
                 className={`bg-opacity-0 h-[62px] w-[45px] shadow ${
                   isVisible5 ? "border shadow shadow-white rounded-md" : "border-none"
@@ -245,7 +245,7 @@ const Passengers = () => {
             </div>
 
             <div
-              className={` absolute inset-0 z-10 top-[150px] left-[190px] h-[200px] w-[300px]  ${
+              className={` hidden xl:block absolute inset-0 z-10 top-[150px] left-[190px] h-[200px] w-[300px]  ${
                 isVisible5 ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -267,7 +267,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 6th passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[288px] left-[591px] ${
+              className={` hidden xl:blockz-10 absolute inset-0 top-[288px] left-[591px] ${
                 isVisible6 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -293,7 +293,7 @@ const Passengers = () => {
 
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 7th Passenger */}
-            <div className=" absolute inset-0  top-[364px] left-[532px] z-10">
+            <div className=" hidden xl:block absolute inset-0  top-[364px] left-[532px] z-10">
               <div
                 className={`bg-opacity-0 h-[64px] w-[45px]  ${
                   isVisible7 ? "border shadow shadow-white rounded-md" : "border-none"
@@ -304,7 +304,7 @@ const Passengers = () => {
             </div>
 
             <div
-              className={` absolute inset-0 z-10 top-[220px] left-[200px] h-[200px] w-[300px]  ${
+              className={` hidden xl:block absolute inset-0 z-10 top-[220px] left-[200px] h-[200px] w-[300px]  ${
                 isVisible7 ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -327,7 +327,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 8th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[364px] left-[586px] ${
+              className={` hidden xl:blockz-10 absolute inset-0 top-[364px] left-[586px] ${
                 isVisible8 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -353,7 +353,7 @@ const Passengers = () => {
 
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 9th Passenger */}
-            <div className=" absolute inset-0  top-[497px] left-[393px] z-10">
+            <div className=" hidden xl:block absolute inset-0  top-[497px] left-[393px] z-10">
               <div
                 className={`bg-opacity-0 h-[77px] w-[55px]  ${
                   isVisible9 ? "border shadow shadow-white rounded-md" : "border-none"
@@ -364,7 +364,7 @@ const Passengers = () => {
             </div>
 
             <div
-              className={` absolute inset-0 z-10 top-[370px] left-[60px] h-[200px] w-[300px]  ${
+              className={` hidden xl:block absolute inset-0 z-10 top-[370px] left-[60px] h-[200px] w-[300px]  ${
                 isVisible9 ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -386,7 +386,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 10th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[498px] left-[710px] ${
+              className={` hidden xl:blockz-10 absolute inset-0 top-[498px] left-[710px] ${
                 isVisible10 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -411,7 +411,7 @@ const Passengers = () => {
             </div>
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 11th Passenger */}
-            <div className=" absolute inset-0  top-[600px] left-[393px] z-10">
+            <div className=" hidden xl:block absolute inset-0  top-[600px] left-[393px] z-10">
               <div
                 className={`bg-opacity-0 h-[77px] w-[55px]  ${
                   isVisible11 ? "border shadow shadow-white rounded-md" : "border-none"
@@ -422,7 +422,7 @@ const Passengers = () => {
             </div>
 
             <div
-              className={` absolute inset-0 z-10 top-[470px] left-[60px] h-[200px] w-[300px]  ${
+              className={` hidden xl:block absolute inset-0 z-10 top-[470px] left-[60px] h-[200px] w-[300px]  ${
                 isVisible11 ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -444,7 +444,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 12th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[600px] left-[710px] ${
+              className={` hidden xl:blockz-10 absolute inset-0 top-[600px] left-[710px] ${
                 isVisible12 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -469,7 +469,7 @@ const Passengers = () => {
             </div>
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 13th Passenger */}
-            <div className=" absolute inset-0  top-[700px] left-[391px] z-10">
+            <div className=" hidden xl:block absolute inset-0  top-[700px] left-[391px] z-10">
               <div
                 className={`bg-opacity-0 h-[77px] w-[57px]  ${
                   isVisible13 ? "border shadow shadow-white rounded-md" : "border-none"
@@ -480,7 +480,7 @@ const Passengers = () => {
             </div>
 
             <div
-              className={` absolute inset-0 z-10 top-[570px] left-[60px] h-[200px] w-[300px]  ${
+              className={` hidden xl:block absolute inset-0 z-10 top-[570px] left-[60px] h-[200px] w-[300px]  ${
                 isVisible13 ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -529,7 +529,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 15th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[684px] left-[608px] ${
+              className={`hidden xl:block z-10 absolute inset-0 top-[684px] left-[608px] ${
                 isVisible15 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -555,7 +555,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 16th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[701px] left-[710px] ${
+              className={`hidden xl:block z-10 absolute inset-0 top-[701px] left-[710px] ${
                 isVisible16 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -580,7 +580,7 @@ const Passengers = () => {
             </div>
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 17th passenger */}
-            <div className=" absolute inset-0  top-[804px] left-[388px] z-10">
+            <div className=" hidden xl:block absolute inset-0  top-[804px] left-[388px] z-10">
               <div
                 className={`bg-opacity-0 h-[77px] w-[55px]  ${
                   isVisible17 ? "border shadow shadow-white rounded-md" : "border-none"
@@ -591,7 +591,7 @@ const Passengers = () => {
             </div>
 
             <div
-              className={` absolute inset-0 z-10 top-[670px] left-[60px] h-[200px] w-[300px]  ${
+              className={`hidden xl:block  absolute inset-0 z-10 top-[670px] left-[60px] h-[200px] w-[300px]  ${
                 isVisible17 ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -613,7 +613,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 19th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[780px] left-[608px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[780px] left-[608px] ${
                 isVisible19 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -639,7 +639,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 20th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[801px] left-[710px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[801px] left-[710px] ${
                 isVisible20 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -670,7 +670,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 25th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[990px] left-[608px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[990px] left-[608px] ${
                 isVisible25 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -695,7 +695,7 @@ const Passengers = () => {
             </div>
             {/* 26th Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[990px] left-[710px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[990px] left-[710px] ${
                 isVisible26 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -721,7 +721,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 22nd Passenger */}
             <div
-              className={`z-10 absolute inset-0 top-[880px] left-[608px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[880px] left-[608px] ${
                 isVisible22 ? "opacity-100" : "opacity-0"
               } `}
             >
