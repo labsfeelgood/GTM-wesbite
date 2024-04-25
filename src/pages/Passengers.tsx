@@ -267,7 +267,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 6th passenger */}
             <div
-              className={` hidden xl:blockz-10 absolute inset-0 top-[288px] left-[591px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[288px] left-[591px] ${
                 isVisible6 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -280,7 +280,7 @@ const Passengers = () => {
                 <img src={pointer} className=" scale-x-[-1] " />
               </div>
               <div>
-                <div className=" absolute inset-0  left-[240px] top-[-110px] ">
+                <div className=" hidden xl:block absolute inset-0  left-[240px] top-[-110px] ">
                   <PassengerCard
                     name="ESH "
                     position="Community Manager"
@@ -327,7 +327,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 8th Passenger */}
             <div
-              className={` hidden xl:blockz-10 absolute inset-0 top-[364px] left-[586px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[364px] left-[586px] ${
                 isVisible8 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -340,7 +340,7 @@ const Passengers = () => {
                 <img src={pointer} className=" scale-x-[-1] " />
               </div>
               <div>
-                <div className=" absolute inset-0  left-[240px] top-[-110px] ">
+                <div className=" hidden xl:block absolute inset-0  left-[240px] top-[-110px] ">
                   <PassengerCard
                     name="ESH "
                     position="Community Manager"
@@ -386,7 +386,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 10th Passenger */}
             <div
-              className={` hidden xl:blockz-10 absolute inset-0 top-[498px] left-[710px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[498px] left-[710px] ${
                 isVisible10 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -399,7 +399,7 @@ const Passengers = () => {
                 <img src={pointer} className=" scale-x-[-1] " />
               </div>
               <div>
-                <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                <div className="hidden xl:block absolute inset-0  left-[240px] top-[-120px] ">
                   <PassengerCard
                     name="ESH "
                     position="Community Manager"
@@ -444,7 +444,7 @@ const Passengers = () => {
             {/* ------------------------------------------------------------------------------------------------------------------- */}
             {/* 12th Passenger */}
             <div
-              className={` hidden xl:blockz-10 absolute inset-0 top-[600px] left-[710px] ${
+              className={` hidden xl:block z-10 absolute inset-0 top-[600px] left-[710px] ${
                 isVisible12 ? "opacity-100" : "opacity-0"
               } `}
             >
@@ -457,7 +457,7 @@ const Passengers = () => {
                 <img src={pointer} className=" scale-x-[-1] " />
               </div>
               <div>
-                <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                <div className=" hidden xl:block absolute inset-0  left-[240px] top-[-120px] ">
                   <PassengerCard
                     name="ESH "
                     position="Community Manager"
