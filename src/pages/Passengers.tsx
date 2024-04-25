@@ -276,7 +276,7 @@ const Passengers = () => {
   return (
     <div
       className={`${
-        isScreenOpacity ? "opacity-50" : "opacity-100"
+        "opacity-50" 
       } xl:opacity-100`}
     >
       <div className=" min-h-screen bg-[#C6C0B4] ">
