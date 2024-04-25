@@ -149,9 +149,9 @@ const Passengers = () => {
             {/* 2nd passenger */}
             <div className=" absolute inset-0  top-[213px] left-[500px] z-10 ">
               <div
-                className={`bg-opacity-0 h-[62px] w-[47px] shadow ${
-                  isVisible2 ? "border" : "border-none"
-                } shadow-white rounded-md`}
+                className={`bg-opacity-0 h-[62px] w-[47px]  ${
+                  isVisible2 ? "border shadow shadow-white rounded-md" : "border-none"
+                } `}
                 onMouseEnter={() => setIsVisible2(true)}
                 onMouseLeave={() => setIsVisible2(false)}
               ></div>
@@ -237,8 +237,8 @@ const Passengers = () => {
             <div className=" absolute inset-0  top-[289px] left-[528px] z-10 ">
               <div
                 className={`bg-opacity-0 h-[62px] w-[45px] shadow ${
-                  isVisible5 ? "border" : "border-none"
-                } shadow-white rounded-md`}
+                  isVisible5 ? "border shadow shadow-white rounded-md" : "border-none"
+                } `}
                 onMouseEnter={() => setIsVisible5(true)}
                 onMouseLeave={() => setIsVisible5(false)}
               ></div>
