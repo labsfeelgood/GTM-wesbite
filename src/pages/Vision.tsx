@@ -1,9 +1,11 @@
 import { Navbar } from "./Utility";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import main1 from "../assets/vision/1.png";
+import Footer from "../components/Footer";
 const Vision = () => {
   return (
-    <div className=" min-h-screen bg-black max-w-full">
+   <div>
+     <div className=" min-h-screen bg-black max-w-full">
       <Navbar />
       {/* ---------------------- */}
       <div className=" flex flex-col gap-4">
@@ -82,6 +84,8 @@ const Vision = () => {
         </div>
       </div>
     </div>
+    <Footer/>
+   </div>
   );
 };
 

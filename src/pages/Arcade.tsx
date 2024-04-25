@@ -2,10 +2,12 @@ import { Navbar } from "./Utility";
 import main1 from "../assets/utility/2-arcade.png";
 import main2 from "../assets/utility/3-arcade.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import Footer from "../components/Footer";
 
 const Arcade = () => {
   return (
-    <div className=" min-h-screen bg-black max-w-full">
+    <div>
+      <div className=" min-h-screen bg-black max-w-full">
       <Navbar />
       {/* ---------------------- */}
       <div className=" flex flex-col gap-4">
@@ -124,6 +126,8 @@ const Arcade = () => {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

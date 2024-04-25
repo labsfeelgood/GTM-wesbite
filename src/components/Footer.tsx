@@ -6,7 +6,7 @@ import dextoolsLogo from "../assets/Footer/dextools.svg";
 import instaLogo from "../assets/Footer/instagram.svg";
 import etherscanLogo from "../assets/Footer/etherscan.svg";
 import tiktokLogo from "../assets/Footer/tiktok.svg"
-const Footer = () => {
+const Footer = (props:any) => {
     const footerIcons = [
         {
             key:1,
@@ -40,9 +40,9 @@ const Footer = () => {
 
     ]
   return (
-    <div className="  mt:[30px] xl:mt-[100px]">
-      <div className=" h-[50px] xl:h-[80px]  bg-white  mx auto flex justify-between">
-        <div className=" w-[1200px] mx-auto flex items-center justify-between">
+    <div className="  mt:[30px] ">
+      <div className={`h-[50px] xl:h-[80px] ${props.passengers == true ? "bg:[#D9D9D9]" :" bg-white"} bg-white  mx auto flex justify-between`}>
+        <div className=" w-full p-5 lg:mr-10 lg:ml-10 xl:ml-20 xl:mr-20 mx-auto flex items-center justify-between">
           <div className=" flex items-center gap-2">
             <div>
               <p className=" text-[15px] xl:text-[20px]  text-black font-d-din-bold">
@@ -54,7 +54,7 @@ const Footer = () => {
               <img src={footerArrow} className=" w-1/2 xl:w-full h-auto"/>
             </div>
           </div>
-          <div className=" flex gap-2  xl:gap-4 items-center border">
+          <div className=" flex gap-2  xl:gap-4 items-center ">
             {
                 footerIcons.map((icon)=>(
                     <div key={icon.key} className="">

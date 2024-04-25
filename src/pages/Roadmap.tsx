@@ -4,10 +4,12 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import loader1 from "../assets/landing/Icons/loader1.svg";
 import rocket2 from "../assets/roadmap/3.png";
 import rocket1 from "../assets/roadmap/2.png";
+import Footer from "../components/Footer";
 // impor
 const Roadmap = () => {
   return (
-    <div className=" min-h-screen bg-black max-w-full">
+    <div>
+      <div className=" min-h-screen bg-black max-w-full">
       <Navbar />
       {/* ---------------------- */}
       <div className=" flex flex-col gap-4">
@@ -185,6 +187,8 @@ const Roadmap = () => {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

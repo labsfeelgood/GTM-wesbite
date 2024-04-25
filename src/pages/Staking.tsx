@@ -3,9 +3,11 @@ import main1 from "../assets/utility/stake 2.png";
 import main2 from "../assets/utility/stake3.png";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import backdrop from "../assets/utility/staking-backdrop.svg";
+import Footer from "../components/Footer";
 const Staking = () => {
   return (
-    <div className=" min-h-screen bg-black max-w-full">
+    <div>
+      <div className=" min-h-screen bg-black max-w-full">
       <Navbar />
       {/* ---------------------- */}
       <div className=" flex flex-col gap-4">
@@ -183,6 +185,8 @@ const Staking = () => {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

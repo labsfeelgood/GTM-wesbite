@@ -13,12 +13,14 @@ import main2 from "../assets/utility/2.png";
 import main3 from "../assets/utility/3(1).png";
 import main4 from "../assets/utility/alphagroup.png";
 import main5 from "../assets/utility/moonfund.png";
+import Footer from "../components/Footer";
 // import frame2 from "../assets/utility/frame2.png";
 
 // import main3 from "../assets/utility/3(1).png";
 const Utility = () => {
   return (
-    <div className=" bg-[#000000] min-h-screen max-w-full flex flex-col gap-20 ">
+    <div>
+      <div className=" bg-[#000000] min-h-screen max-w-full flex flex-col gap-20 ">
       <Navbar />
       <div className=" flex flex-col gap-12 sm:gap-20 lg:gap-40">
         <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
@@ -182,6 +184,8 @@ const Utility = () => {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
