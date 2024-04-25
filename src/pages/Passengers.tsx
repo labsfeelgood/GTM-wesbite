@@ -239,23 +239,23 @@ const Passengers = () => {
   const [isVisible26, setIsVisible26] = useState(false);
   // const [isVisible27, setIsVisible27] = useState(false);
 
-  const popupRef = useRef(null);
+  const popupRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      // Correctly casting the event.target to an HTMLElement
-      const target = event.target as HTMLElement;
+        // Correctly casting the event.target to an HTMLElement
+        const target = event.target as HTMLElement;
 
-      if (popupRef.current && !popupRef.current.contains(target)) {
-        setIsVisible2(false);
-      }
+        if (popupRef.current && !popupRef.current.contains(target)) {
+            setIsVisible2(false);
+        }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+        document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+}, []);
   return (
     <div className={`${"opacity-100"} xl:opacity-100`}>
       <div className=" min-h-screen bg-[#C6C0B4] ">
