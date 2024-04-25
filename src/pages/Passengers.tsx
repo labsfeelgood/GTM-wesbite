@@ -7,11 +7,10 @@ import Navbar from "../components/passengers/Navbar";
 import Card from "../components/passengers/Card";
 import PassengerCard from "../components/passengers/PassengerCard";
 import pointer from "../assets/landing/nav-underline.svg";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Footer from "../components/Footer";
 import PopupCardSm from "../components/passengers/PassengersCardSm";
 const Passengers = () => {
-
   const cardContent = [
     {
       key: 1,
@@ -240,14 +239,23 @@ const Passengers = () => {
   const [isVisible26, setIsVisible26] = useState(false);
   // const [isVisible27, setIsVisible27] = useState(false);
 
-  // const popupRef = useRef<HTMLDivElement | null>(null);
+  const popupRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      // Correctly casting the event.target to an HTMLElement
+      const target = event.target as HTMLElement;
 
-  // Function to close the popup if clicked outside of it
-  // const handleClickOutside = (event: MouseEvent) => {
-  //   if (popupRef.current && !popupRef.current.contains(event.target as Node)) {
-      
-  //   }
-  // };
+      if (popupRef.current && !popupRef.current.contains(target)) {
+        setIsVisible2(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   return (
     <div className={`${"opacity-100"} xl:opacity-100`}>
       <div className=" min-h-screen bg-[#C6C0B4] ">
@@ -286,10 +294,6 @@ const Passengers = () => {
               </div>
 
               {/* 1st Passenger small*/}
-
-              
-
-              
 
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 2nd passenger */}
@@ -905,37 +909,40 @@ const Passengers = () => {
                 </div>
               </div>
               {/* ------------------------------------------------------------------------------------------------------------------- */}
-              <div className=" flex flex-col items-center relative border mt-[70px] xl:mt-[0px]">
+              <div className=" flex flex-col items-center relative border mt-[70px] xl:mt-[0px] ">
                 <img
                   src={main1}
                   className="   xl:w-[800px] xl:h-auto xl:mb-10 w-[250px] sm:w-[425px] h-auto"
                 />
 
                 {/* 1st Passenger */}
-               <div>
-                <div className={`${isVisible2  ? 'opacity-100' : 'opacity-0'} absolute inset-0 top-[-50px] left-[75px]`}>
-                  <PopupCardSm
-                  name={passengers[1].name}
-                  position={passengers[1].position}
-                  twitterUrl={passengers[1].twitterUrl}
-                  telegramUrl={passengers[1].telegramUrl}
-                  />
+                <div>
+                  <div
+                    ref={popupRef}
+                    className={`${
+                      isVisible2 ? "opacity-100" : "opacity-0"
+                    } absolute inset-0 top-[-50px] left-[75px]`}
+                  >
+                    <PopupCardSm
+                      name={passengers[1].name}
+                      position={passengers[1].position}
+                      twitterUrl={passengers[1].twitterUrl}
+                      telegramUrl={passengers[1].telegramUrl}
+                    />
+                  </div>
+                  <div className="xl:hidden absolute inset-0 top-[34px] left-[112px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[30px] w-[25px] ${
+                        isVisible2
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => setIsVisible2(true)}
+                    ></div>
+                  </div>
                 </div>
-               <div className="  xl:hidden  absolute inset-0  top-[34px] left-[112px] z-10 ">
-                <div
-                  className={`bg-opacity-0 h-[30px] w-[25px]  ${
-                    isVisible2
-                      ? "border shadow shadow-white rounded-sm"
-                      : "border-none"
-                  } `}
-                  onClick={() => setIsVisible2(true)}
-                ></div>
-              </div>
-               </div>
 
-
-
-              {/* ----------------------------- */}
+                {/* ----------------------------- */}
               </div>
               <img src={backdrop2} className=" w-1/6 xl:w-auto h-auto" />
             </div>
