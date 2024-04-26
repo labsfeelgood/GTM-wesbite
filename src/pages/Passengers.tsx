@@ -212,7 +212,7 @@ const Passengers = () => {
       telegramUrl: "",
     },
   ];
-  // const [isScreenOpacity, setIsScreenOpacity] = useState(false);
+  const [isClicked , setIsClicked] = useState(false)
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
@@ -239,12 +239,12 @@ const Passengers = () => {
   const [isVisible25, setIsVisible25] = useState(false);
   const [isVisible26, setIsVisible26] = useState(false);
   // const [isVisible27, setIsVisible27] = useState(false);
-
   const popupRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
       if (popupRef.current && !popupRef.current.contains(target)) {
+        setIsClicked(false)
         setIsVisible1(false);
         setIsVisible2(false);
         setIsVisible3(false);
@@ -275,11 +275,9 @@ const Passengers = () => {
   }, []);
   return (
     <div
-      className={`${
-        "opacity-50" 
-      } xl:opacity-100`}
+      className={` xl:opacity-100`}
     >
-      <div className=" min-h-screen bg-[#C6C0B4] ">
+      <div className={` min-h-screen bg-[#C6C0B4]  ${isClicked ? 'bg-opacity-50': 'bg-opacity-100'}  `}>
         <Navbar />
         {/* ----------------------------------------------------------------------------- */}
 
@@ -930,19 +928,19 @@ const Passengers = () => {
                 </div>
               </div>
               {/* ------------------------------------------------------------------------------------------------------------------- */}
-              <div className=" flex flex-col items-center relative border mt-[70px] xl:mt-[0px] ">
+              <div className=" flex flex-col items-center relative  mt-[70px] xl:mt-[0px] ">
                 <img
                   src={main1}
-                  className="   xl:w-[800px] xl:h-auto xl:mb-10 w-[250px] sm:w-[425px] h-auto"
+                    className={` xl:w-[800px] xl:h-auto xl:mb-10 w-[250px] sm:w-[425px] h-auto ${isClicked ? 'opacity-50':'opacity-100'} `}
                 />
                 {/* ------------------------------------------------------------------------------------------------ */}
                 {/* 1st Passenger */}
-                <div>
+                <div className={``}>
                   <div
                     ref={popupRef}
                     className={`${
                       isVisible1 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[-50px] left-[75px] sm:left-[140px] sm:top-[-40px] xl:hidden`}
+                    } absolute inset-0 top-[-50px] left-[75px] sm:left-[140px] sm:top-[-40px] xl:hidden `}
                   >
                     <PopupCardSm
                       name={passengers[0].name}
@@ -960,7 +958,7 @@ const Passengers = () => {
                       }`}
                       onClick={() => {
                         setIsVisible1(true);
-                        // setIsScreenOpacity(true);
+                        setIsClicked(true);
                       }}
                     ></div>
                   </div>
@@ -988,7 +986,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible2(true)}
+                      onClick={() => {
+                        setIsVisible2(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1015,7 +1016,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible3(true)}
+                      onClick={() => {
+                        setIsVisible3(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1042,7 +1046,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible4(true)}
+                      onClick={() => {
+                        setIsVisible4(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1069,7 +1076,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible5(true)}
+                      onClick={() => {
+                        setIsVisible5(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1096,7 +1106,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible6(true)}
+                      onClick={() => {
+                        setIsVisible6(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1122,7 +1135,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible7(true)}
+                      onClick={() => {
+                        setIsVisible7(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1149,7 +1165,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible8(true)}
+                      onClick={() => {
+                        setIsVisible8(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1176,11 +1195,15 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible9(true)}
+                      onClick={() => {
+                        setIsVisible9(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
                                 {/* ------------------------------------ */}
+                                {/* 120 164 */}
                 {/* 10th Passenger */}
                 <div>
                   <div
@@ -1203,7 +1226,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible10(true)}
+                      onClick={() => {
+                        setIsVisible10(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1230,7 +1256,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible11(true)}
+                      onClick={() => {
+                        setIsVisible11(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1257,7 +1286,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible10(true)}
+                      onClick={() => {
+                        setIsVisible12(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1283,7 +1315,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible13(true)}
+                      onClick={() => {
+                        setIsVisible13(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
@@ -1336,7 +1371,10 @@ const Passengers = () => {
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible13(true)}
+                      onClick={() => {
+                        setIsVisible15(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
                 </div>
