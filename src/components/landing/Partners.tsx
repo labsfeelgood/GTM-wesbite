@@ -32,7 +32,7 @@ const Partners: React.FC = () => {
           <img src={backdrop1} className=" w-1/4  max-w-[354px] h-auto" />
         </div>
         {/* ------------------------------- */}
-        {/* <div className="container mx-auto">
+        <div className="container mx-auto">
       <Slider {...settings}>
         <div >
           <img src={gluLogo}  className="mx-auto w-1/3 h-auto sm:w-1/3" />
@@ -50,7 +50,7 @@ const Partners: React.FC = () => {
         </div>
        
       </Slider>
-    </div> */}
+    </div>
         {/* ------------------ */}
         <div className=" flex justify-between items-center">
           <img src={backdrop2} className=" w-1/4 max-w-[354px] h-auto" />
