@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.15",
     "@types/react-slick": "^0.23.13",
     "@uniswap/widgets": "^2.59.0",
+    "framer-motion": "^11.1.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.3",

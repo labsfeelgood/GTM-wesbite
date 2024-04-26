@@ -5,6 +5,7 @@ import copyIcon from "../../assets/landing/Icons/copy_icon.png";
 import etherScanLogo from "../../assets/landing/Icons/etherscan-logo-circle 1.png";
 import zerionIcon from "../../assets/landing/Icons/zerion-icon_circle.png";
 const Overview = () => {
+  const address = "0xe8b1e79d937c648ce1fe96e6739ddb2714058a18";
   return (
     <div className=" flex flex-col gap-10 xl:mt-10">
       <div className=" flex flex-col gap-2 p-7 lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px]">
@@ -28,13 +29,15 @@ const Overview = () => {
             src={frame1}
             className=" xl:w-[850px] xl:h-[530px] w-[340px] h-[340px] sm:w-[600px] sm:h-[430px]"
           />
-          <h3 className=" text-[25px] font-d-din-regular absolute inset-0 top-4 left-12 uppercase text-[#C2DAF2]">
-            TREASURY
-          </h3>
-          {/* <img
-            src={graph}
-            className=" absolute inset-0 w-[792px] left-7 top-16"
-          /> */}
+
+          {/* <iframe
+            className=" absolute inset-0"
+            id="dextools-widget"
+            title="DEXTools Trading Chart"
+            width="500"
+            height="400"
+            src="https://www.dextools.io/widget-chart/en/ether/pe-light/0x2f679f848622da6f39f9ad807c7786618d283c79?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"
+          ></iframe> */}
         </div>
         {/* ------------------------------------------------------------------ */}
         <div className=" relative ">
@@ -58,9 +61,9 @@ const Overview = () => {
               </h4>
               <div className=" flex gap-2 items-center">
                 <h2 className=" font-d-din-bold text-white lg:text-[35px] text-[20px] uppercase ">
-                  0x73b1…65cf
+                  {address.slice(0,5)+"..."+ address.slice(address.length-4 , address.length)}
                 </h2>
-                <button>
+                <button onClick={()=>navigator.clipboard.writeText(address)}>
                   <img src={copyIcon} className="w-[15px] h-auto" />
                 </button>
               </div>

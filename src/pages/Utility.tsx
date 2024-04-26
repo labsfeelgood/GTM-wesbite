@@ -107,11 +107,12 @@ const Utility = () => {
             </p>
             <div className=" flex flex-col gap-2">
               <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-                {/* <Link to="/utility/staking"> */}
+               
+                  <a href="http://client-local.kiscms.co.uk:10017/product-category/colonize-mars/ " target="blank">
                   <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
                     KNOW MORE
                   </h3>
-                {/* </Link> */}
+                  </a>
                 <ArrowRightAltIcon className=" text-white" />
               </div>
               <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />

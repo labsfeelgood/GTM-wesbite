@@ -212,7 +212,7 @@ const Passengers = () => {
       telegramUrl: "",
     },
   ];
-  const [isClicked , setIsClicked] = useState(false)
+  const [isClicked, setIsClicked] = useState(false);
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
@@ -226,16 +226,17 @@ const Passengers = () => {
   const [isVisible11, setIsVisible11] = useState(false);
   const [isVisible12, setIsVisible12] = useState(false);
   const [isVisible13, setIsVisible13] = useState(false);
-  // const [isVisible14, setIsVisible14] = useState(false);
+  const [isVisible14, setIsVisible14] = useState(false);
   const [isVisible15, setIsVisible15] = useState(false);
   const [isVisible16, setIsVisible16] = useState(false);
   const [isVisible17, setIsVisible17] = useState(false);
-  // const [isVisible18, setIsVisible18] = useState(false);
+  const [isVisible18, setIsVisible18] = useState(false);
   const [isVisible19, setIsVisible19] = useState(false);
   const [isVisible20, setIsVisible20] = useState(false);
-  // const [isVisible21, setIsVisible21] = useState(false);
+  const [isVisible21, setIsVisible21] = useState(false);
   const [isVisible22, setIsVisible22] = useState(false);
   // const [isVisible23, setIsVisible23] = useState(false);
+  // const [isVisible24, setIsVisible24] = useState(false);
   const [isVisible25, setIsVisible25] = useState(false);
   const [isVisible26, setIsVisible26] = useState(false);
   // const [isVisible27, setIsVisible27] = useState(false);
@@ -244,7 +245,7 @@ const Passengers = () => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
       if (popupRef.current && !popupRef.current.contains(target)) {
-        setIsClicked(false)
+        setIsClicked(false);
         setIsVisible1(false);
         setIsVisible2(false);
         setIsVisible3(false);
@@ -258,12 +259,18 @@ const Passengers = () => {
         setIsVisible11(false);
         setIsVisible12(false);
         setIsVisible13(false);
-        // setIsVisible14(false);
+        setIsVisible14(false);
         setIsVisible15(false);
         setIsVisible16(false);
         setIsVisible17(false);
-        // setIsVisible18(false);
+        setIsVisible18(false);
         setIsVisible19(false);
+        setIsVisible20(false);
+        setIsVisible21(false);
+        setIsVisible22(false);
+        // setIsVisible23(false);
+        // setIsVisible24(false);
+        setIsVisible25(false);
       }
     };
 
@@ -274,10 +281,12 @@ const Passengers = () => {
     };
   }, []);
   return (
-    <div
-      className={` xl:opacity-100`}
-    >
-      <div className={` min-h-screen bg-[#C6C0B4]  ${isClicked ? 'bg-opacity-50': 'bg-opacity-100'}  `}>
+    <div className={` xl:opacity-100`}>
+      <div
+        className={` min-h-screen bg-[#C6C0B4]  ${
+          isClicked ? "bg-opacity-50" : "bg-opacity-100"
+        }  `}
+      >
         <Navbar />
         {/* ----------------------------------------------------------------------------- */}
 
@@ -316,7 +325,7 @@ const Passengers = () => {
 
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 2nd passenger */}
-              <div className=" hidden xl:block   absolute inset-0  top-[213px] left-[500px] z-10 ">
+              <div className="  hidden xl:block   absolute inset-0  top-[213px] left-[500px] z-10 ">
                 <div
                   className={`bg-opacity-0 h-[62px] w-[47px]  ${
                     isVisible2
@@ -682,30 +691,30 @@ const Passengers = () => {
               </div>
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 14th Passenger */}
-              {/* <div
-              className={`z-20 absolute inset-0 top-[684px] right-[638px] ${
-                isVisible14 ? "opacity-100" : "opacity-0"
-              } `}
-            >
-              <div className=" flex flex-row-reverse items-center gap-4 ">
-                <div
-                  className=" border  h-[77px] w-[55px]  shadow-md shadow-white rounded-md z-20  "
-                  onMouseEnter={() => setIsVisible14(true)}
-                  onMouseLeave={() => setIsVisible14(false)}
-                />
-                <img src={pointer} className=" " />
-              </div>
-              <div>
-                <div className=" absolute inset-0  left-[50px] top-[-125px] ">
-                  <PassengerCard
-                    name={passengers[13].name}
-                    position={passengers[13].position}
-                    twitterUrl={passengers[13].twitterUrl}
-                    telegramUrl={passengers[13].telegramUrl}
+              <div
+                className={`hidden xl:block z-10 absolute inset-0 top-[684px] left-[508px] ${
+                  isVisible14 ? "opacity-100" : "opacity-0"
+                } `}
+              >
+                <div className=" flex  items-center gap-4 ">
+                  <div
+                    className=" border  h-[77px] w-[55px] shadow shadow-white rounded-md   "
+                    onMouseEnter={() => setIsVisible14(true)}
+                    onMouseLeave={() => setIsVisible14(false)}
                   />
+                  <img src={pointer} className=" scale-x-[-1] " />
+                </div>
+                <div>
+                  <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                    <PassengerCard
+                      name={passengers[13].name}
+                      position={passengers[13].position}
+                      twitterUrl={passengers[13].twitterUrl}
+                      telegramUrl={passengers[13].telegramUrl}
+                    />
+                  </div>
                 </div>
               </div>
-            </div> */}
 
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 15th Passenger */}
@@ -793,6 +802,34 @@ const Passengers = () => {
                   />
                 </div>
               </div>
+
+              {/* ------------------------------------------------------------------------------------------------------------------- */}
+              {/* 18th Passenger */}
+
+              <div
+                className={`hidden xl:block z-10 absolute inset-0 top-[781px] left-[507px] ${
+                  isVisible18 ? "opacity-100" : "opacity-0"
+                } `}
+              >
+                <div className=" flex  items-center gap-4 ">
+                  <div
+                    className=" border  h-[77px] w-[55px] shadow shadow-white rounded-md   "
+                    onMouseEnter={() => setIsVisible18(true)}
+                    onMouseLeave={() => setIsVisible18(false)}
+                  />
+                  <img src={pointer} className=" scale-x-[-1] " />
+                </div>
+                <div>
+                  <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                    <PassengerCard
+                      name={passengers[17].name}
+                      position={passengers[17].position}
+                      twitterUrl={passengers[17].twitterUrl}
+                      telegramUrl={passengers[17].telegramUrl}
+                    />
+                  </div>
+                </div>
+              </div>
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 19th Passenger */}
               <div
@@ -847,6 +884,30 @@ const Passengers = () => {
               </div>
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 21st Passenger */}
+              <div
+                className={`hidden xl:block z-10 absolute inset-0 top-[879px] left-[507px] ${
+                  isVisible21 ? "opacity-100" : "opacity-0"
+                } `}
+              >
+                <div className=" flex  items-center gap-4 ">
+                  <div
+                    className=" border  h-[77px] w-[55px] shadow shadow-white rounded-md   "
+                    onMouseEnter={() => setIsVisible21(true)}
+                    onMouseLeave={() => setIsVisible21(false)}
+                  />
+                  <img src={pointer} className=" scale-x-[-1] " />
+                </div>
+                <div>
+                  <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                    <PassengerCard
+                      name={passengers[20].name}
+                      position={passengers[20].position}
+                      twitterUrl={passengers[20].twitterUrl}
+                      telegramUrl={passengers[20].telegramUrl}
+                    />
+                  </div>
+                </div>
+              </div>
 
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 22nd Passenger */}
@@ -931,24 +992,28 @@ const Passengers = () => {
               <div className=" flex flex-col items-center relative  mt-[70px] xl:mt-[0px] ">
                 <img
                   src={main1}
-                    className={` xl:w-[800px] xl:h-auto xl:mb-10 w-[250px] sm:w-[425px] h-auto ${isClicked ? 'opacity-50':'opacity-100'} `}
+                  className={` xl:w-[800px] xl:h-auto xl:mb-10 w-[250px] sm:w-[425px] h-auto ${
+                    isClicked ? "opacity-50" : "opacity-100"
+                  } `}
                 />
                 {/* ------------------------------------------------------------------------------------------------ */}
                 {/* 1st Passenger */}
                 <div className={``}>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible1 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[-50px] left-[75px] sm:left-[140px] sm:top-[-40px] xl:hidden `}
-                  >
-                    <PopupCardSm
-                      name={passengers[0].name}
-                      position={passengers[0].position}
-                      twitterUrl={passengers[0].twitterUrl}
-                      telegramUrl={passengers[0].telegramUrl}
-                    />
-                  </div>
+                  {isVisible1 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible1 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[-50px] left-[75px] sm:left-[140px] sm:top-[-40px] xl:hidden `}
+                    >
+                      <PopupCardSm
+                        name={passengers[0].name}
+                        position={passengers[0].position}
+                        twitterUrl={passengers[0].twitterUrl}
+                        telegramUrl={passengers[0].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[34px] left-[112px] sm:top-[59px] sm:left-[190px]  z-10">
                     <div
                       className={`bg-opacity-0 h-[30px] w-[25px] sm:h-[48px] sm:w-[42px] ${
@@ -966,19 +1031,21 @@ const Passengers = () => {
                 {/* --------------------------------------------------------------------------------------------------------- */}
                 {/* 2nd Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible2 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[-10px] left-[60px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[1].name}
-                      position={passengers[1].position}
-                      twitterUrl={passengers[1].twitterUrl}
-                      telegramUrl={passengers[1].telegramUrl}
-                    />
-                  </div>
+                  {isVisible2 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible2 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[-10px] left-[60px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[1].name}
+                        position={passengers[1].position}
+                        twitterUrl={passengers[1].twitterUrl}
+                        telegramUrl={passengers[1].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[65px] left-[99px] z-10">
                     <div
                       className={`bg-opacity-0 h-[22px] w-[16px] ${
@@ -996,19 +1063,21 @@ const Passengers = () => {
                 {/* ------------------------------------------------------------------------------------------------- */}
                 {/* 3rd Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible3 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[-10px] left-[70px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[2].name}
-                      position={passengers[2].position}
-                      twitterUrl={passengers[2].twitterUrl}
-                      telegramUrl={passengers[2].telegramUrl}
-                    />
-                  </div>
+                  {isVisible3 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible3 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[-10px] left-[70px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[2].name}
+                        position={passengers[2].position}
+                        twitterUrl={passengers[2].twitterUrl}
+                        telegramUrl={passengers[2].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[66px] left-[117px] z-10">
                     <div
                       className={`bg-opacity-0 h-[21px] w-[16px] ${
@@ -1026,19 +1095,21 @@ const Passengers = () => {
                 {/* ------------------------------------------------------------------------------------------------------- */}
                 {/* 4th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible4 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[-10px] left-[90px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[3].name}
-                      position={passengers[3].position}
-                      twitterUrl={passengers[3].twitterUrl}
-                      telegramUrl={passengers[3].telegramUrl}
-                    />
-                  </div>
+                  {isVisible4 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible4 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[-10px] left-[90px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[3].name}
+                        position={passengers[3].position}
+                        twitterUrl={passengers[3].twitterUrl}
+                        telegramUrl={passengers[3].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[66px] left-[135px] z-10">
                     <div
                       className={`bg-opacity-0 h-[21px] w-[16px] ${
@@ -1056,19 +1127,21 @@ const Passengers = () => {
                 {/* -------------------------------------------------------------------------------------------------- */}
                 {/* 5th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible5 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[10px] left-[70px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[4].name}
-                      position={passengers[4].position}
-                      twitterUrl={passengers[4].twitterUrl}
-                      telegramUrl={passengers[4].telegramUrl}
-                    />
-                  </div>
+                  {isVisible5 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible5 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[10px] left-[70px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[4].name}
+                        position={passengers[4].position}
+                        twitterUrl={passengers[4].twitterUrl}
+                        telegramUrl={passengers[4].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[90px] left-[108px] z-10">
                     <div
                       className={`bg-opacity-0 h-[20px] w-[15px] ${
@@ -1086,19 +1159,21 @@ const Passengers = () => {
                 {/* -------------------------------------------------------------------------------------------------- */}
                 {/* 6th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible6 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[10px] left-[70px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[5].name}
-                      position={passengers[5].position}
-                      twitterUrl={passengers[5].twitterUrl}
-                      telegramUrl={passengers[5].telegramUrl}
-                    />
-                  </div>
+                  {isVisible6 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible6 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[10px] left-[70px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[5].name}
+                        position={passengers[5].position}
+                        twitterUrl={passengers[5].twitterUrl}
+                        telegramUrl={passengers[5].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[90px] left-[127px] z-10">
                     <div
                       className={`bg-opacity-0 h-[20px] w-[15px] ${
@@ -1115,19 +1190,21 @@ const Passengers = () => {
                 </div>
                 {/* 7th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible7 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[35px] left-[40px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[6].name}
-                      position={passengers[6].position}
-                      twitterUrl={passengers[6].twitterUrl}
-                      telegramUrl={passengers[6].telegramUrl}
-                    />
-                  </div>
+                  {isVisible7 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible7 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[35px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[6].name}
+                        position={passengers[6].position}
+                        twitterUrl={passengers[6].twitterUrl}
+                        telegramUrl={passengers[6].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[113px] left-[109px] z-10">
                     <div
                       className={`bg-opacity-0 h-[20px] w-[15px] ${
@@ -1145,19 +1222,21 @@ const Passengers = () => {
                 {/* -------------------------------------------------------------------------------------------------- */}
                 {/* 8th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible8 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[35px] left-[101px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[7].name}
-                      position={passengers[7].position}
-                      twitterUrl={passengers[7].twitterUrl}
-                      telegramUrl={passengers[7].telegramUrl}
-                    />
-                  </div>
+                  {isVisible8 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible8 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[35px] left-[101px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[7].name}
+                        position={passengers[7].position}
+                        twitterUrl={passengers[7].twitterUrl}
+                        telegramUrl={passengers[7].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[113px] left-[126px] z-10">
                     <div
                       className={`bg-opacity-0 h-[20px] w-[15px] ${
@@ -1175,19 +1254,21 @@ const Passengers = () => {
                 {/* ------------------------------------ */}
                 {/* 9th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible9 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[70px] left-[40px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[8].name}
-                      position={passengers[8].position}
-                      twitterUrl={passengers[8].twitterUrl}
-                      telegramUrl={passengers[8].telegramUrl}
-                    />
-                  </div>
+                  {isVisible9 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible9 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[70px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[8].name}
+                        position={passengers[8].position}
+                        twitterUrl={passengers[8].twitterUrl}
+                        telegramUrl={passengers[8].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[155px] left-[66px] z-10">
                     <div
                       className={`bg-opacity-0 h-[25px] w-[18px] ${
@@ -1202,23 +1283,24 @@ const Passengers = () => {
                     ></div>
                   </div>
                 </div>
-                                {/* ------------------------------------ */}
-                                {/* 120 164 */}
+                {/* ------------------------------------ */}
                 {/* 10th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible10 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[70px] left-[120px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[9].name}
-                      position={passengers[9].position}
-                      twitterUrl={passengers[9].twitterUrl}
-                      telegramUrl={passengers[9].telegramUrl}
-                    />
-                  </div>
+                  {isVisible10 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible10 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[80px] left-[120px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[9].name}
+                        position={passengers[9].position}
+                        twitterUrl={passengers[9].twitterUrl}
+                        telegramUrl={passengers[9].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[155px] left-[164px] z-10">
                     <div
                       className={`bg-opacity-0 h-[25px] w-[18px] ${
@@ -1236,19 +1318,21 @@ const Passengers = () => {
                 {/* ------------------------------------ */}
                 {/* 11th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible11 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[110px] left-[40px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[10].name}
-                      position={passengers[10].position}
-                      twitterUrl={passengers[10].twitterUrl}
-                      telegramUrl={passengers[10].telegramUrl}
-                    />
-                  </div>
+                  {isVisible11 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible11 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[110px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[10].name}
+                        position={passengers[10].position}
+                        twitterUrl={passengers[10].twitterUrl}
+                        telegramUrl={passengers[10].telegramUrl}
+                      />
+                    </div>
+                  )}
                   <div className="xl:hidden absolute inset-0 top-[187px] left-[65px] z-10">
                     <div
                       className={`bg-opacity-0 h-[25px] w-[18px] ${
@@ -1263,26 +1347,29 @@ const Passengers = () => {
                     ></div>
                   </div>
                 </div>
-                                {/* ------------------------------------ */}
+                {/* ------------------------------------ */}
+                 {/* ------------------------------------ */}
                 {/* 12th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible10 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[70px] left-[120px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[11].name}
-                      position={passengers[11].position}
-                      twitterUrl={passengers[11].twitterUrl}
-                      telegramUrl={passengers[11].telegramUrl}
-                    />
-                  </div>
-                  <div className="xl:hidden absolute inset-0 top-[155px] left-[164px] z-10">
+                  {isVisible12 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible12 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[110px] left-[120px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[11].name}
+                        position={passengers[11].position}
+                        twitterUrl={passengers[11].twitterUrl}
+                        telegramUrl={passengers[11].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[187px] left-[164px] z-10">
                     <div
                       className={`bg-opacity-0 h-[25px] w-[18px] ${
-                        isVisible10
+                        isVisible12
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
@@ -1293,22 +1380,25 @@ const Passengers = () => {
                     ></div>
                   </div>
                 </div>
+                {/* ----------------------------------------------------- */}
                 {/* 13th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible13 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[110px] left-[120px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[12].name}
-                      position={passengers[12].position}
-                      twitterUrl={passengers[12].twitterUrl}
-                      telegramUrl={passengers[12].telegramUrl}
-                    />
-                  </div>
-                  <div className="xl:hidden absolute inset-0 top-[187px] left-[165px] z-10">
+                  {isVisible13 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible13 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[130px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[12].name}
+                        position={passengers[12].position}
+                        twitterUrl={passengers[12].twitterUrl}
+                        telegramUrl={passengers[12].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[217px] left-[65px] z-10">
                     <div
                       className={`bg-opacity-0 h-[25px] w-[18px] ${
                         isVisible13
@@ -1324,55 +1414,287 @@ const Passengers = () => {
                 </div>
 
                 {/* 14th Passenger */}
-                {/* <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      1 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[70px] left-[120px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[13].name}
-                      position={passengers[13].position}
-                      twitterUrl={passengers[13].twitterUrl}
-                      telegramUrl={passengers[13].telegramUrl}
-                    />
-                  </div>
-                  <div className="xl:hidden absolute inset-0 top-[155px] left-[164px] z-10">
+                <div>
+                  {isVisible14 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible14 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[130px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[13].name}
+                        position={passengers[13].position}
+                        twitterUrl={passengers[13].twitterUrl}
+                        telegramUrl={passengers[13].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[213px] left-[101px] z-10">
                     <div
                       className={`bg-opacity-0 h-[25px] w-[18px] ${
-                        1
+                        isVisible14
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
-                      onClick={() => setIsVisible14(true)}
+                      onClick={() => {
+                        setIsVisible14(true);
+                        setIsClicked(true);
+                      }}
                     ></div>
                   </div>
-                </div> */}
+                </div>
+                {/* ---------------------------------------------------------------------------------------------------------- */}
                 {/* 15th Passenger */}
                 <div>
-                  <div
-                    ref={popupRef}
-                    className={`${
-                      isVisible13 ? "opacity-100" : "opacity-0"
-                    } absolute inset-0 top-[110px] left-[120px] xl:hidden`}
-                  >
-                    <PopupCardSm
-                      name={passengers[12].name}
-                      position={passengers[12].position}
-                      twitterUrl={passengers[12].twitterUrl}
-                      telegramUrl={passengers[12].telegramUrl}
-                    />
-                  </div>
-                  <div className="xl:hidden absolute inset-0 top-[187px] left-[165px] z-10">
+                  {isVisible15 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible15 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[130px] left-[80px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[14].name}
+                        position={passengers[14].position}
+                        twitterUrl={passengers[14].twitterUrl}
+                        telegramUrl={passengers[14].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[213px] left-[133px] z-10">
                     <div
                       className={`bg-opacity-0 h-[25px] w-[18px] ${
-                        isVisible13
+                        isVisible15
                           ? "border shadow shadow-white rounded-sm"
                           : "border-none"
                       }`}
                       onClick={() => {
                         setIsVisible15(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                {/* ---------------------------------------------------------------------------------------------------------- */}
+                {/* 16th Passenger */}
+                <div>
+                  {isVisible16 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible16 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[130px] left-[110px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[15].name}
+                        position={passengers[15].position}
+                        twitterUrl={passengers[15].twitterUrl}
+                        telegramUrl={passengers[15].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[217px] left-[164px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible16
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible16(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                {/* ----------------------------------------------------- */}
+                {/* 17th Passenger */}
+                <div>
+                  {isVisible17 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible17 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[170px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[16].name}
+                        position={passengers[16].position}
+                        twitterUrl={passengers[16].twitterUrl}
+                        telegramUrl={passengers[16].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[251px] left-[65px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible17
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible17(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                {/* ----------------------------------------------------- */}
+                {/* 18th Passenger */}
+                <div>
+                  {isVisible18 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible18 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[170px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[17].name}
+                        position={passengers[17].position}
+                        twitterUrl={passengers[17].twitterUrl}
+                        telegramUrl={passengers[17].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[243px] left-[101px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible18
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible18(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                {/* ----------------------------------------------------- */}
+                {/* 19th Passenger */}
+                <div>
+                  {isVisible19 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible19 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[170px] left-[80px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[18].name}
+                        position={passengers[18].position}
+                        twitterUrl={passengers[18].twitterUrl}
+                        telegramUrl={passengers[18].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[243px] left-[133px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible19
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible19(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                {/* ---------------------------------------------------------------------------------------------------------- */}
+                {/* 20th Passenger */}
+                <div>
+                  {isVisible20 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible20 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[170px] left-[110px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[19].name}
+                        position={passengers[19].position}
+                        twitterUrl={passengers[19].twitterUrl}
+                        telegramUrl={passengers[19].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[250px] left-[164px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible20
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible20(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                {/* ----------------------------------------- */}
+                {/* 21th Passenger */}
+                <div>
+                  {isVisible21 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible21 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[200px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[20].name}
+                        position={passengers[20].position}
+                        twitterUrl={passengers[20].twitterUrl}
+                        telegramUrl={passengers[20].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[273px] left-[101px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible21
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible21(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                {/* ----------------------------------------------------- */}
+                {/* 22th Passenger */}
+                <div>
+                  {isVisible22 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible22 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[200px] left-[80px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[21].name}
+                        position={passengers[21].position}
+                        twitterUrl={passengers[21].twitterUrl}
+                        telegramUrl={passengers[21].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[274px] left-[133px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible22
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible22(true);
                         setIsClicked(true);
                       }}
                     ></div>

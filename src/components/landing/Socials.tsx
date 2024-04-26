@@ -11,17 +11,17 @@ const Socials = () => {
     {
       key: 1,
       logo: twitteIcon,
-      url: "https://google.com",
+      url: "https://twitter.com/ColonizeMars_",
     },
     {
       key: 2,
       logo: telegramIcon,
-      url: "",
+      url: "https://t.me/GatewayToMars_Portal",
     },
     {
       key: 3,
       logo: youtubeIcon,
-      url: "",
+      url: "https://www.youtube.com/@ACTIVESH1",
     },
     {
       key: 4,
@@ -36,12 +36,12 @@ const Socials = () => {
     {
       key: 6,
       logo: dextoolsIcon,
-      url: "",
+      url: "https://www.dextools.io/app/en/ether/pair-explorer/0x2f679f848622da6f39f9ad807c7786618d283c79?t=1714129755162",
     },
     {
       key: 7,
       logo: etherscanIcon,
-      url: "",
+      url: "https://etherscan.io/address/0xe8b1e79d937c648ce1fe96e6739ddb2714058a18",
     },
   ];
   return (

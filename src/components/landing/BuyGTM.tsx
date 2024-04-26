@@ -2,9 +2,9 @@ import buy1frame from "../../assets/landing/buy1.png";
 import buy2frame from "../../assets/landing/buy2.png";
 import "@uniswap/widgets/fonts.css";
 const BuyGTM = () => {
-    "0xe8b1e79d937c648ce1fe96e6739ddb2714058a18";
- 
+  "0xe8b1e79d937c648ce1fe96e6739ddb2714058a18";
 
+  const address = "0xe8b1e79d937c648ce1fe96e6739ddb2714058a18";
   return (
     <div className=" bg-black">
       <div className=" mt-10">
@@ -17,7 +17,9 @@ const BuyGTM = () => {
               Contract address:
             </p>
             <p className=" text-white text-[18px] font-d-din-bold text-center pr-4 pl-4 lg:pr-0 lg:pl-0 sm:text-[24px] md:text-[26px]  ">
-              0xe8b...8a18
+              {address.slice(0, 5) +
+                "...." +
+                address.slice(address.length - 4, address.length)}
             </p>
           </div>
           <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
@@ -96,11 +98,20 @@ const BuyGTM = () => {
               ></iframe>
             </div>
           </div>
-          <div className=" p-5">
+          <div className=" p-5 relative">
             <img
               src={buy2frame}
               className=" w-[200px] h-[300px] sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[400px]"
             />
+            <div className=" absolute inset-0  2xl:top-[45px] 2xl:left-[45px] xl:top-[40px] xl:left-[40px]">
+              <iframe
+                className="   2xl:h-[450px] 2xl:w-[350px] xl:h-[420px] xl:w-[290px]"
+                src="https://www.youtube.com/embed/VFO5dR4KL6w"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Embedded youtube"
+              />
+            </div>
           </div>
         </div>
       </div>
