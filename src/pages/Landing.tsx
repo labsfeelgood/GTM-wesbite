@@ -8,7 +8,6 @@ import instagramIcon from "../assets/landing/Icons/mdi_instagram.png";
 import tiktokIcon from "../assets/landing/Icons/ic_baseline-tiktok.png";
 import etherscanIcon from "../assets/landing/Icons/etherscan-logo-circle 1.png";
 import dextoolsIcon from "../assets/landing/Icons/dextools 1.png";
-
 import { useState } from "react";
 import Colonize from "../components/landing/Colonize";
 import WhatIsIt from "../components/landing/WhatIsIt";
@@ -21,10 +20,10 @@ import HowItWorks from "../components/landing/HowItWorks";
 import { TaxAndTreasury } from "../components/landing/TaxAndTreasury";
 import Footer from "../components/Footer";
 import ElonSays from "../components/landing/ElonSays";
+// import ElonAlien from "../assets/landing/ElonAlien.svg";
 const Landing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to toggle menu open state
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -32,37 +31,37 @@ const Landing = () => {
     {
       key: 1,
       logo: twitteIcon,
-      url: "https://google.com",
+      url: "https://twitter.com/ColonizeMars_",
     },
     {
       key: 2,
       logo: telegramIcon,
-      url: "",
+      url: "https://t.me/GatewayToMars_Portal",
     },
     {
       key: 3,
       logo: youtubeIcon,
-      url: "",
+      url: "https://www.youtube.com/@ACTIVESH1",
     },
     {
       key: 4,
       logo: tiktokIcon,
-      url: "",
+      url: "https://www.tiktok.com/@gtm_colonizemars",
     },
     {
       key: 5,
       logo: instagramIcon,
-      url: "",
+      url: "https://www.instagram.com/colonizemars_gtm/",
     },
     {
       key: 6,
       logo: dextoolsIcon,
-      url: "",
+      url: "https://www.dextools.io/app/en/ether/pair-explorer/0x2f679f848622da6f39f9ad807c7786618d283c79?t=1714129755162",
     },
     {
       key: 7,
       logo: etherscanIcon,
-      url: "",
+      url: "https://etherscan.io/address/0xe8b1e79d937c648ce1fe96e6739ddb2714058a18",
     },
   ];
   return (
@@ -71,16 +70,18 @@ const Landing = () => {
         <div className=" relative lg:z-10">
           <img src={main1} className={`w-full lg:h-screen lg:object-cover`} />
           <Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
-          {/* <img src={main2} className=" h-[48px] w-[40px] absolute bottom-0"/> */}
+          {/* <div className=" absolute inset-0  flex flex-col  justify-end mb-1 left-10 sm:mb-[60px] md:mb-[80px] ">
+            <img src={ElonAlien} className=" opacity-20 w-[30px] h-auto " />
+          </div> */}
           {/* ------------------------------------------------------------------------------ */}
-          <div className="  xl:hidden ">
-            <div className=" flex sm:gap-3 gap-2  absolute inset-0 justify-center items-end sm:mb-3 mb-1">
+          <div className="  xl:hidden  ">
+            <div className=" flex sm:gap-3 gap-2  absolute inset-0 justify-center items-end sm:mb-3 mb-1  z-10">
               {icons.map((icon) => (
                 <a href={icon.url} target="_blank">
-                  <div className=" border rounded-full h-[22px] w-[22px] sm:h-[35px] sm:w-[35px] flex items-center justify-center ">
+                  <div className=" border rounded-full h-[24px] w-[24px] sm:h-[35px] sm:w-[35px] flex items-center justify-center ">
                     <img
                       src={icon.logo}
-                      className=" sm:w-[23px] sm:h-[23px] w-[12px] h-[12px] m-auto"
+                      className=" sm:w-[23px] sm:h-[23px] w-[13px] h-[13px] m-auto"
                       key={icon.key}
                     />
                   </div>
@@ -109,11 +110,11 @@ const Landing = () => {
             <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] lg:hidden" />
 
             <HowItWorks />
-            <ElonSays/>
+            <ElonSays />
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

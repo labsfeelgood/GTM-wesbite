@@ -1,7 +1,7 @@
 import logo1 from "../../assets/utility/Logo 2.png";
 import logo3 from "../../assets/utility/logo3.png";
-import closeIcon from "../../assets/utility/Shape.png";
-import navArrow from "../../assets/utility/navArrow.png";
+import closeIcon from "../../assets/landing/Icons/Shape.svg";
+import navArrow from "../../assets/landing/Icons/Vector.svg";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo4 from "../../assets/landing/logo.svg";
@@ -29,7 +29,7 @@ const Navbar = () => {
                 {isActive("/") ? (
                   <img
                     src={navArrow}
-                    className=" w-[70px] h-[10px] relative top-3"
+                    className=" w-[100px] h-auto relative top-3"
                   />
                 ) : (
                   <></>
@@ -46,7 +46,7 @@ const Navbar = () => {
                   </h3>
                 </Link>
               </div>
-              <div className=" bg-[#7A8A99] w-full mx-auto h-[1px]" />
+              <div className=" bg-[#3D3D3D] w-full mx-auto h-[1px]" />
             </div>
             <div className=" flex flex-col gap-2">
               <div className=" flex flex-col">
@@ -70,7 +70,7 @@ const Navbar = () => {
                   </h3>
                 </Link>
               </div>
-              <div className=" bg-[#7A8A99] w-full mx-auto h-[1px]" />
+              <div className=" bg-[#3D3D3D] w-full mx-auto h-[1px]" />
             </div>
             <div className=" flex flex-col gap-2">
               <div className=" flex flex-col">
@@ -94,7 +94,7 @@ const Navbar = () => {
                   </h3>
                 </Link>
               </div>
-              <div className=" bg-[#7A8A99] w-full mx-auto h-[1px]" />
+              <div className=" bg-[#3D3D3D] w-full mx-auto h-[1px]" />
             </div>
             <div className=" flex flex-col gap-2">
               <div className=" flex flex-col">
@@ -118,7 +118,7 @@ const Navbar = () => {
                   </h3>
                 </Link>
               </div>
-              <div className=" bg-[#7A8A99] w-full mx-auto h-[1px]" />
+              <div className=" bg-[#3D3D3D] w-full mx-auto h-[1px]" />
             </div>
             <div className=" flex flex-col gap-2">
               <div className=" flex flex-col">
@@ -142,7 +142,7 @@ const Navbar = () => {
                   </h3>
                 </Link>
               </div>
-              <div className=" bg-[#7A8A99] w-full mx-auto h-[1px]" />
+              <div className=" bg-[#3D3D3D] w-full mx-auto h-[1px]" />
             </div>
           </div>
         </div>
