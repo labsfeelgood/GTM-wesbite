@@ -26,12 +26,12 @@ const Socials = () => {
     {
       key: 4,
       logo: tiktokIcon,
-      url: "",
+      url: "https://www.tiktok.com/@gtm_colonizemars",
     },
     {
       key: 5,
       logo: instagramIcon,
-      url: "",
+      url: "https://www.instagram.com/colonizemars_gtm/",
     },
     {
       key: 6,
@@ -47,7 +47,7 @@ const Socials = () => {
   return (
     <div>
       <div className=" flex  flex-col items-center gap-[15px] mr-[-40px] mt-7">
-        <div className="relative border h-[180px] w-[1px] bg-white  mb-[12px]"></div>
+        <div className="relative border 2xl:h-[160px] xl:h-[120px]  w-[1px] bg-white  mb-[12px]"></div>
         {icons.map((icon) => (
           <a href={icon.url} target="_blank">
             <div className=" border rounded-full h-[35px] w-[35px] flex items-center justify-center text-[2px]">
@@ -59,7 +59,7 @@ const Socials = () => {
             </div>
           </a>
         ))}
-        <div className="relative border h-[180px] w-[1px] bg-white mt-[14px]"></div>
+        <div className="relative border 2xl:h-[160px] xl:h-[120px] w-[1px] bg-white mt-[14px] "></div>
       </div>
     </div>
   );

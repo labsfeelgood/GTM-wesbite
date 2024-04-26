@@ -11,37 +11,37 @@ const Footer = (props: any) => {
     {
       key: 1,
       icon: etherscanLogo,
-      link: "",
+      link: "https://etherscan.io/address/0xe8b1e79d937c648ce1fe96e6739ddb2714058a18",
     },
     {
       key: 2,
       icon: dextoolsLogo,
-      link: "",
+      link: "https://www.dextools.io/app/en/ether/pair-explorer/0x2f679f848622da6f39f9ad807c7786618d283c79?t=1714129755162",
     },
     {
       key: 3,
       icon: twitterLogo,
-      link: "",
+      link: "https://twitter.com/ColonizeMars_",
     },
     {
       key: 4,
       icon: youtubeLogo,
-      link: "",
+      link: "https://www.youtube.com/@ACTIVESH1",
     },
     {
       key: 5,
       icon: tiktokLogo,
-      link: "",
+      link: "https://www.tiktok.com/@gtm_colonizemars",
     },
     {
       key: 6,
       icon: telegramLogo,
-      link: "",
+      link: "https://t.me/GatewayToMars_Portal",
     },
     {
       key: 7,
       icon: instaLogo,
-      link: "",
+      link: "https://www.instagram.com/colonizemars_gtm/",
     },
   ];
   return (
@@ -66,7 +66,7 @@ const Footer = (props: any) => {
           <div className=" flex gap-2  xl:gap-4 items-center ">
             {footerIcons.map((icon) => (
               <div key={icon.key} className="">
-                <a href={icon.link}>
+                <a href={icon.link} target="_blank">
                   <img src={icon.icon} className=" w-[20px] h-auto xl:w-full" />
                 </a>
               </div>

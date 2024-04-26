@@ -13,18 +13,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route
-          path="/test"
-          element={
-            <iframe
-              id="dextools-widget"
-              title="DEXTools Trading Chart"
-              width="500"
-              height="400"
-              src="https://www.dextools.io/widget-chart/en/ether/pe-light/0x2f679f848622da6f39f9ad807c7786618d283c79?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false"
-            ></iframe>
-          }
-        />
         <Route path="/vision" element={<Vision />} />
         <Route path="/roadmap" element={<Roadmap />} />
         <Route path="/passengers" element={<Passengers />} />

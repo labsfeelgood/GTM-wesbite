@@ -44,11 +44,11 @@ const BuyGTM = () => {
             </p>
           </div>
         </div>
-        <div className=" flex lg:gap-40 mt-8 lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] flex-col xl:flex-row items-center gap-20 ">
+        <div className=" flex lg:gap-40 xl:gap-10 2xl:gap-36 mt-8 lg:ml-[50px] xl:ml-[100px] 2xl:ml-[150px] flex-col xl:flex-row items-center gap-20 ">
           <div className=" relative">
             <img
               src={buy1frame}
-              className=" xl:w-[850px] xl:h-[530px] w-[340px] h-[450px] sm:w-[600px] sm:h-[430px]"
+              className=" xl:w-[750px] xl:h-[530px] 2xl:w-[800px] w-[340px] h-[450px] sm:w-[600px] sm:h-[430px]"
             />
             <div className=" Uniswap absolute inset-0  top-3  left-[25px] w-[250px] sm:hidden">
               {/* <SwapWidget theme={darkTheme} width={300} /> */}
@@ -101,11 +101,11 @@ const BuyGTM = () => {
           <div className=" p-5 relative">
             <img
               src={buy2frame}
-              className=" w-[200px] h-[300px] sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[400px]"
+              className=" w-[200px] h-[300px] sm:w-[300px] sm:h-[400px] lg:h-[500px] lg:w-[400px] xl:h-[500px] xl:w-[320px] 2xl:w-[400px]"
             />
-            <div className=" absolute inset-0  2xl:top-[45px] 2xl:left-[45px] xl:top-[40px] xl:left-[40px]">
+            <div className=" absolute inset-0  2xl:top-[45px] 2xl:left-[45px] xl:top-[40px] xl:left-[38px] top-[50px] left-[35px] sm:top-[35px] sm:left-[45px]">
               <iframe
-                className="   2xl:h-[450px] 2xl:w-[350px] xl:h-[420px] xl:w-[290px]"
+                className="   2xl:h-[450px] 2xl:w-[350px] xl:h-[420px] xl:w-[285px] h-[260px] w-[170px] sm:h-[360px] sm:w-[250px] lg:h-[450px] lg:w-[350px]"
                 src="https://www.youtube.com/embed/VFO5dR4KL6w"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

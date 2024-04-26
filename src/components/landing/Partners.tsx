@@ -1,29 +1,17 @@
-import gluLogo from "../../assets/landing/partners/glu.png";
-import solanaLogo from "../../assets/landing/partners/solana.png";
-import ethereumLogo from "../../assets/landing/partners/ethereum.png";
-import baseLogo from "../../assets/landing/partners/base.png";
-import printfulLogo from "../../assets/landing/partners/printful.png";
 import backdrop1 from "../../assets/landing/partners/backdrop1.png";
 import backdrop2 from "../../assets/landing/partners/backdrop2.png";
 import backdrop3 from "../../assets/landing/partners/backdrop3.png";
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Marquee from "react-fast-marquee";
+import partner1 from "../../assets/landing/partners/1.jpg";
+import partner2 from "../../assets/landing/partners/2.jpg";
+import partner3 from "../../assets/landing/partners/3.jpg";
+import partner4 from "../../assets/landing/partners/4.jpg";
+import partner5 from "../../assets/landing/partners/5.jpg";
 
 const Partners: React.FC = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    
-  };
   return (
-    <div className=" lg:h-[800px] bg-[#ffffff] mt-10 ">
+    <div className="  bg-[#ffffff] mt-10 ">
       <div className=" flex flex-col gap-5 ">
         <div className=" flex justify-around mt-10">
           <h3 className=" font-d-din-bold text-[#8FA1B3] text-[28px] uppercase sm:text-[32px] md:text-[36px] lg:text-[50px] xl:text-[60px] 2xl:text-[65px] lg:ml-[50px]  ">
@@ -32,27 +20,27 @@ const Partners: React.FC = () => {
           <img src={backdrop1} className=" w-1/4  max-w-[354px] h-auto" />
         </div>
         {/* ------------------------------- */}
-        <div className="container mx-auto">
-      <Slider {...settings}>
-        <div >
-          <img src={gluLogo}  className="mx-auto w-1/3 h-auto sm:w-1/3" />
+        <div className=" xl:w-[1000px] xl:mx-auto 2xl:w-[1400px] 2xl:mx-auto">
+          <Marquee className="" speed={80} gradient delay={0} autoFill pauseOnHover gradientWidth={100}>
+            <div className=" w-[100px] h-[100px] flex p-3 md:w-[150px] md:h-[150px] lg:h-[200px] lg:w-[200px] xl:h-[250px] xl:w-[250px] 2xl:h-[300px] 2xl:w-[300px]">
+              <img src={partner1} className=" w-full h-auto" />
+            </div>
+            <div className=" w-[100px] h-[100px] flex p-3 md:w-[150px] md:h-[150px] lg:h-[200px] lg:w-[200px] xl:h-[250px] xl:w-[250px] 2xl:h-[300px] 2xl:w-[300px]">
+              <img src={partner2} className=" w-full h-auto" />
+            </div>
+            <div className=" w-[100px] h-[100px] flex p-3 md:w-[150px] md:h-[150px] lg:h-[200px] lg:w-[200px] xl:h-[250px] xl:w-[250px] 2xl:h-[300px] 2xl:w-[300px]">
+              <img src={partner3} className=" w-full h-auto" />
+            </div>
+            <div className=" w-[100px] h-[100px] flex p-3 md:w-[150px] md:h-[150px] lg:h-[200px] lg:w-[200px] xl:h-[250px] xl:w-[250px] 2xl:h-[300px] 2xl:w-[300px]">
+              <img src={partner4} className=" w-full h-auto" />
+            </div>
+            <div className=" w-[100px] h-[100px] flex p-3 md:w-[150px] md:h-[150px] lg:h-[200px] lg:w-[200px] xl:h-[250px] xl:w-[250px] 2xl:h-[300px] 2xl:w-[300px]">
+              <img src={partner5} className=" w-full h-auto" />
+            </div>
+          </Marquee>
         </div>
-        <div className=" flex items-center justify-center">
-          <img src={solanaLogo}  className="mx-auto w-1/3 mt-7 h-auto sm:w-1/3" />
-        </div>
-        <div>
-          <img src={ethereumLogo}  className="mx-auto w-1/3 h-auto sm:w-1/3" />
-        </div>
-        <div>
-          <img src={baseLogo}  className="mx-auto w-1/5 h-auto sm:w-1/3" />
-        </div> <div>
-          <img src={printfulLogo}  className="mx-auto w-1/3 mt-10 h-auto sm:w-1/3" />
-        </div>
-       
-      </Slider>
-    </div>
         {/* ------------------ */}
-        <div className=" flex justify-between items-center">
+        <div className=" flex justify-between items-center lg:mt-[100px] lg:mb-[50px]">
           <img src={backdrop2} className=" w-1/4 max-w-[354px] h-auto" />
           <img src={backdrop3} className=" w-1/5 max-w-[120px] h-auto " />
         </div>
