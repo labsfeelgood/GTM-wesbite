@@ -5,7 +5,6 @@ import loader1 from "../assets/landing/Icons/loader1.svg";
 import rocket2 from "../assets/roadmap/3.png";
 import rocket1 from "../assets/roadmap/2.png";
 import Footer from "../components/Footer";
-// impor
 const Roadmap = () => {
   return (
     <div>
@@ -30,12 +29,14 @@ const Roadmap = () => {
               the power of community
             </p>
             <div className=" flex flex-col gap-2">
+              <a href="https://app.uniswap.org/swap?outputCurrency=0xe8b1e79d937c648ce1fe96e6739ddb2714058a18" target="_blank">
               <div className=" flex gap-3 items-center mt-5 justify-center ">
                 <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
                   BUY $GTM
                 </h3>
                 <ArrowRightAltIcon className=" text-white" />
               </div>
+              </a>
               <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto" />
             </div>
           </div>

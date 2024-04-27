@@ -1,5 +1,6 @@
 import Button from "../components/landing/Button";
 import main1 from "../assets/landing/1.png";
+// import bgVideo from "../assets/landing/Mars intro.mp4"
 import Navbar from "../components/landing/Navbar";
 import twitteIcon from "../assets/landing/Icons/akar-icons_twitter-fill.png";
 import telegramIcon from "../assets/landing/Icons/teenyicons_telegram-solid.png";
@@ -20,6 +21,7 @@ import HowItWorks from "../components/landing/HowItWorks";
 import { TaxAndTreasury } from "../components/landing/TaxAndTreasury";
 import Footer from "../components/Footer";
 import ElonSays from "../components/landing/ElonSays";
+
 // import ElonAlien from "../assets/landing/ElonAlien.svg";
 const Landing = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,6 +71,11 @@ const Landing = () => {
       <div className=" relative bg-[#000000] min-h-screen">
         <div className=" relative lg:z-10">
           <img src={main1} className={`w-full lg:h-screen lg:object-cover`} />
+          {/* <video className=" w-full lg:h-screen lg:object-cover "   loop>
+              <source src={bgVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
+          {/* <video src={bgVideo} className=""/> */}
           <Navbar toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
           {/* <div className=" absolute inset-0  flex flex-col  justify-end mb-1 left-10 sm:mb-[60px] md:mb-[80px] ">
             <img src={ElonAlien} className=" opacity-20 w-[30px] h-auto " />

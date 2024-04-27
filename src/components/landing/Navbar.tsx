@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import logo1 from "../../assets/landing/logo.png";
-import logo3 from "../../assets/utility/logo3.png";
+import logo3 from "../../assets/utility/logo3.svg";
 import closeIcon from "../../assets/utility/Shape.png";
 import navArrow from "../../assets/utility/navArrow.png";
 import { Link } from "react-router-dom";
@@ -17,11 +17,11 @@ const Navbar: React.FC<Navbar> = ({ toggleMenu, isMenuOpen }) => {
   };
   return (
     <div>
-      {isMenuOpen ? (
-        <div className=" absolute inset-0 bg-black h-[400px] z-10" >
+    
+        <div className={` absolute inset-0 bg-black h-[400px] z-20 xl:z-0  ${isMenuOpen ? 'block':'hidden'} `} >
           <div className=" p-5 pr-5 flex flex-col gap-5 xl:hidden">
             <div className=" flex items-center justify-between ">
-              <img src={logo3} className=" p-3" />
+              <img src={logo3} className=" " />
               <button className=" z-10" onClick={() => toggleMenu()}>
                 <img src={closeIcon} className=" h-[20px] w-[20px]" />
               </button>
@@ -150,8 +150,8 @@ const Navbar: React.FC<Navbar> = ({ toggleMenu, isMenuOpen }) => {
             </div>
           </div>
         </div>
-      ) : (
-        <div className=" absolute inset-0 p-8 z-10">
+      
+        <div className={` absolute inset-0 p-8 z-20 xl:z-0 h-1/2 xl:h-full ${isMenuOpen ? 'hidden' :'block'}` }>
           <div className=" flex items-center justify-between pt-0 xl:hidden ">
             <div className=" flex items-center mx-auto inset-0">
               <img
@@ -167,11 +167,11 @@ const Navbar: React.FC<Navbar> = ({ toggleMenu, isMenuOpen }) => {
             </button>
           </div>
         </div>
-      )}
+      
 
       {/* ------------------- */}
       <div className=" hidden xl:block  ">
-        <div className=" absolute inset-0 flex justify-between mt-[75px] ml-[120px] mr-[120px] z-10">
+        <div className=" absolute inset-0 flex justify-between mt-[75px] ml-[120px] mr-[120px] z-20  h-1/2">
           <Link to="/vision">
             <h3 className=" text-[24px] text-white font-d-din-bold uppercase  2xl:text-[35px]">
               VISION

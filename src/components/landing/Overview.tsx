@@ -30,14 +30,14 @@ const Overview = () => {
             className=" xl:w-[750px] xl:h-[530px] 2xl:w-[800px] w-[340px] h-[340px] sm:w-[600px] sm:h-[430px]"
           />
 
-         <div className=" absolute inset-0 top-[20px] left-[20px] sm:top-[px] sm:left-[34px] xl:left-[50px]">
-         <iframe
-            className=" w-[300px] h-[300px] sm:w-[530px] sm:h-[400px] xl:h-[480px] xl:w-[650px] 2xl:w-[700px]"
-            id="dextools-widget"
-            title="DEXTools Trading Chart"
-            src="https://www.dextools.io/widget-chart/en/ether/pe-light/0x2f679f848622da6f39f9ad807c7786618d283c79?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false"
-          ></iframe>
-         </div>
+          <div className=" absolute inset-0 top-[20px] left-[20px] sm:top-[px] sm:left-[34px] xl:left-[50px]">
+            <iframe
+              className=" w-[300px] h-[300px] sm:w-[530px] sm:h-[400px] xl:h-[480px] xl:w-[650px] 2xl:w-[700px]"
+              id="dextools-widget"
+              title="DEXTools Trading Chart"
+              src="https://www.dextools.io/widget-chart/en/ether/pe-light/0x2f679f848622da6f39f9ad807c7786618d283c79?theme=dark&chartType=2&chartResolution=30&drawingToolbars=false"
+            ></iframe>
+          </div>
         </div>
         {/* ------------------------------------------------------------------ */}
         <div className=" relative ">
@@ -76,7 +76,10 @@ const Overview = () => {
                 LINKS
               </h4>
               <div className=" flex gap-5">
-                <a href="" target="_blank">
+                <a
+                  href="https://etherscan.io/address/0xe8b1e79d937c648ce1fe96e6739ddb2714058a18"
+                  target="_blank"
+                >
                   <div className=" border rounded-full h-[35px] w-[35px] flex items-center justify-center text-[2px]">
                     <img
                       src={etherScanLogo}
@@ -84,7 +87,10 @@ const Overview = () => {
                     />
                   </div>
                 </a>
-                <a href="" target="_blank">
+                <a
+                  href="https://app.zerion.io/0x73b1cc873b920d0e85e2581b13f910c2f2f765cf/overview"
+                  target="_blank"
+                >
                   <div className=" border rounded-full h-[35px] w-[35px] flex items-center justify-center text-[2px]">
                     <img
                       src={zerionIcon}

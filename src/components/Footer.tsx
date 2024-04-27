@@ -53,12 +53,17 @@ const Footer = (props: any) => {
       >
         <div className=" w-full p-5 lg:mr-10 lg:ml-10 xl:ml-20 xl:mr-20 mx-auto flex items-center justify-between">
           <div className=" flex items-center gap-2">
-            <div>
-              <p className=" text-[15px] xl:text-[20px]  text-black font-d-din-bold">
-                BUY $GTM
-              </p>
-              <div className=" h-[2px] w-full bg-black" />
-            </div>
+            <a
+              href=" https://app.uniswap.org/swap?outputCurrency=0xe8b1e79d937c648ce1fe96e6739ddb2714058a18"
+              target="_blank"
+            >
+              <div>
+                <p className=" text-[15px] xl:text-[20px]  text-black font-d-din-bold">
+                  BUY $GTM
+                </p>
+                <div className=" h-[2px] w-full bg-black" />
+              </div>
+            </a>
             <div>
               <img src={footerArrow} className=" w-1/2 xl:w-full h-auto" />
             </div>

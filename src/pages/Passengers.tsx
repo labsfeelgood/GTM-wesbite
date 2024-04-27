@@ -235,10 +235,10 @@ const Passengers = () => {
   const [isVisible20, setIsVisible20] = useState(false);
   const [isVisible21, setIsVisible21] = useState(false);
   const [isVisible22, setIsVisible22] = useState(false);
-  // const [isVisible23, setIsVisible23] = useState(false);
-  // const [isVisible24, setIsVisible24] = useState(false);
-  const [isVisible25, setIsVisible25] = useState(false);
-  const [isVisible26, setIsVisible26] = useState(false);
+  const [isVisible23, setIsVisible23] = useState(false);
+  const [isVisible24, setIsVisible24] = useState(false);
+  // const [isVisible25, setIsVisible25] = useState(false);
+  // const [isVisible26, setIsVisible26] = useState(false);
   // const [isVisible27, setIsVisible27] = useState(false);
   const popupRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -268,9 +268,9 @@ const Passengers = () => {
         setIsVisible20(false);
         setIsVisible21(false);
         setIsVisible22(false);
-        // setIsVisible23(false);
-        // setIsVisible24(false);
-        setIsVisible25(false);
+        setIsVisible23(false);
+        setIsVisible24(false);
+        // setIsVisible25(false);
       }
     };
 
@@ -910,24 +910,27 @@ const Passengers = () => {
               </div>
 
               {/* ------------------------------------------------------------------------------------------------------------------- */}
-              {/* 22nd Passenger */}
-              {/* ------------------------------------------------------------------------------------------------------------------- */}
-              {/* 25th Passenger */}
+              {/* 23nd Passenger */}
+
+              <div className=" hidden xl:block absolute inset-0  top-[990px] left-[405px] z-10">
+                <div
+                  className={`bg-opacity-0 h-[77px] w-[55px]  ${
+                    isVisible23
+                      ? "border shadow shadow-white rounded-md"
+                      : "border-none"
+                  } `}
+                  onMouseEnter={() => setIsVisible23(true)}
+                  onMouseLeave={() => setIsVisible23(false)}
+                ></div>
+              </div>
+
               <div
-                className={` hidden xl:block z-10 absolute inset-0 top-[990px] left-[608px] ${
-                  isVisible25 ? "opacity-100" : "opacity-0"
-                } `}
+                className={`hidden xl:block  absolute inset-0 z-10 top-[850px] left-[60px] h-[200px] w-[300px]  ${
+                  isVisible23 ? "opacity-100" : "opacity-0"
+                }`}
               >
-                <div className=" flex  items-center gap-4 ">
-                  <div
-                    className=" border  h-[77px] w-[55px] shadow shadow-white rounded-md   "
-                    onMouseEnter={() => setIsVisible25(true)}
-                    onMouseLeave={() => setIsVisible25(false)}
-                  />
-                  <img src={pointer} className=" scale-x-[-1] " />
-                </div>
-                <div>
-                  <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                <div className=" relative">
+                  <div className=" absolute inset-0  ">
                     <PassengerCard
                       name={passengers[22].name}
                       position={passengers[22].position}
@@ -935,19 +938,24 @@ const Passengers = () => {
                       telegramUrl={passengers[22].telegramUrl}
                     />
                   </div>
+                  <img
+                    src={pointer}
+                    className=" absolute inset-0 top-[150px] left-[100px]"
+                  />
                 </div>
               </div>
-              {/* 26th Passenger */}
+              {/* ------------------------------------------------------------------------------------------------------------------- */}
+              {/* 24th Passenger */}
               <div
-                className={` hidden xl:block z-10 absolute inset-0 top-[990px] left-[710px] ${
-                  isVisible26 ? "opacity-100" : "opacity-0"
+                className={`hidden xl:block z-10 absolute inset-0 top-[990px] left-[507px] ${
+                  isVisible24? "opacity-100" : "opacity-0"
                 } `}
               >
                 <div className=" flex  items-center gap-4 ">
                   <div
                     className=" border  h-[77px] w-[55px] shadow shadow-white rounded-md   "
-                    onMouseEnter={() => setIsVisible26(true)}
-                    onMouseLeave={() => setIsVisible26(false)}
+                    onMouseEnter={() => setIsVisible24(true)}
+                    onMouseLeave={() => setIsVisible24(false)}
                   />
                   <img src={pointer} className=" scale-x-[-1] " />
                 </div>
@@ -962,6 +970,59 @@ const Passengers = () => {
                   </div>
                 </div>
               </div>
+              {/* ------------------------------------------------------------------------------------------------------------------- */}
+              {/* 25th Passenger */}
+              {/* <div
+                className={` hidden xl:block z-10 absolute inset-0 top-[990px] left-[608px] ${
+                  1? "opacity-100" : "opacity-0"
+                } `}
+              >
+                <div className=" flex  items-center gap-4 ">
+                  <div
+                    className=" border  h-[77px] w-[55px] shadow shadow-white rounded-md   "
+                    onMouseEnter={() => setIsVisible25(true)}
+                    onMouseLeave={() => setIsVisible25(false)}
+                  />
+                  <img src={pointer} className=" scale-x-[-1] " />
+                </div>
+                <div>
+                  <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                    <PassengerCard
+                      name={passengers[18].name}
+                      position={passengers[18].position}
+                      twitterUrl={passengers[18].twitterUrl}
+                      telegramUrl={passengers[18].telegramUrl}
+                    />
+                  </div>
+                </div>
+              </div> */}
+              {/* ------------------------------------------------------------------------------------------------------------------- */}
+              {/* 26nd Passenger */}
+              {/* <div
+                className={` hidden xl:block z-10 absolute inset-0 top-[990px] left-[711px] ${
+                  isVisible26 ? "opacity-100" : "opacity-0"
+                } `}
+              >
+                <div className=" flex  items-center gap-4 ">
+                  <div
+                    className=" border  h-[77px] w-[55px] shadow shadow-white rounded-md   "
+                    onMouseEnter={() => setIsVisible26(true)}
+                    onMouseLeave={() => setIsVisible26(false)}
+                  />
+                  <img src={pointer} className=" scale-x-[-1] " />
+                </div>
+                <div>
+                  <div className=" absolute inset-0  left-[240px] top-[-120px] ">
+                    <PassengerCard
+                      name={passengers[21].name}
+                      position={passengers[21].position}
+                      twitterUrl={passengers[21].twitterUrl}
+                      telegramUrl={passengers[21].telegramUrl}
+                    />
+                  </div>
+                </div>
+              </div> */}
+
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 22nd Passenger */}
               <div
@@ -1348,7 +1409,7 @@ const Passengers = () => {
                   </div>
                 </div>
                 {/* ------------------------------------ */}
-                 {/* ------------------------------------ */}
+                {/* ------------------------------------ */}
                 {/* 12th Passenger */}
                 <div>
                   {isVisible12 && (
@@ -1695,6 +1756,70 @@ const Passengers = () => {
                       }`}
                       onClick={() => {
                         setIsVisible22(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+                 {/* ----------------------------------------------------- */}
+                {/* 23th Passenger */}
+                <div>
+                  {isVisible23 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible23 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[225px] left-[40px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[22].name}
+                        position={passengers[22].position}
+                        twitterUrl={passengers[22].twitterUrl}
+                        telegramUrl={passengers[22].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[309px] left-[69px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible23
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible23(true);
+                        setIsClicked(true);
+                      }}
+                    ></div>
+                  </div>
+                </div>
+
+                {/* 24th Passenger */}
+                <div>
+                  {isVisible24 && (
+                    <div
+                      ref={popupRef}
+                      className={`${
+                        isVisible24 ? "opacity-100" : "opacity-0"
+                      } absolute inset-0 top-[225px] left-[45px] xl:hidden`}
+                    >
+                      <PopupCardSm
+                        name={passengers[23].name}
+                        position={passengers[23].position}
+                        twitterUrl={passengers[23].twitterUrl}
+                        telegramUrl={passengers[23].telegramUrl}
+                      />
+                    </div>
+                  )}
+                  <div className="xl:hidden absolute inset-0 top-[309px] left-[100px] z-10">
+                    <div
+                      className={`bg-opacity-0 h-[25px] w-[18px] ${
+                        isVisible24
+                          ? "border shadow shadow-white rounded-sm"
+                          : "border-none"
+                      }`}
+                      onClick={() => {
+                        setIsVisible24(true);
                         setIsClicked(true);
                       }}
                     ></div>

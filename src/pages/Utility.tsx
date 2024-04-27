@@ -1,7 +1,7 @@
 import logo2 from "../assets/vision/gateway to MARS.png";
 import main1 from "../assets/utility/1.png";
 import logo1 from "../assets/utility/Logo 2.png";
-import logo3 from "../assets/utility/logo3.png";
+import logo3 from "../assets/utility/logo3.svg";
 import closeIcon from "../assets/utility/Shape.png";
 import navArrow from "../assets/utility/navArrow.png";
 import { useState } from "react";
@@ -21,172 +21,175 @@ const Utility = () => {
   return (
     <div>
       <div className=" bg-[#000000] min-h-screen max-w-full flex flex-col gap-20 ">
-      <Navbar />
-      <div className=" flex flex-col gap-12 sm:gap-20 lg:gap-40">
-        <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
-          <div className="relative">
-            <img
-              src={main1}
-              className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-transparent" />
-          </div>
-          <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
-            <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
-              staking
-            </h3>
-            <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
-              Each $GTM holder will be allowed to claim & stake their $GTM
-              tokens with the official $GTM staking pool. The APY earned from
-              staking $GTM will fluctuate based on the amount of stakers in the
-              pool. This is what we refer to as "Dynamic MARS Staking"
-            </p>
-            <div className=" flex flex-col gap-2">
-              <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-                <Link to="/utility/staking">
-                  <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
-                    KNOW MORE
-                  </h3>
-                </Link>
-                <ArrowRightAltIcon className=" text-white" />
+        <Navbar />
+        <div className=" flex flex-col gap-12 sm:gap-20 lg:gap-40">
+          <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
+            <div className="relative">
+              <img
+                src={main1}
+                className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-transparent" />
+            </div>
+            <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
+              <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
+                staking
+              </h3>
+              <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
+                Each $GTM holder will be allowed to claim & stake their $GTM
+                tokens with the official $GTM staking pool. The APY earned from
+                staking $GTM will fluctuate based on the amount of stakers in
+                the pool. This is what we refer to as "Dynamic MARS Staking"
+              </p>
+              <div className=" flex flex-col gap-2">
+                <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
+                  <Link to="/utility/staking">
+                    <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
+                      KNOW MORE
+                    </h3>
+                  </Link>
+                  <ArrowRightAltIcon className=" text-white" />
+                </div>
+                <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
               </div>
-              <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
             </div>
           </div>
-        </div>
-        {/* ------------------------------------------------------- */}
-        <div className=" flex flex-col lg:flex-row lg:items-center xl:gap-[100px] lg:gap-[50px]">
-          <div className="relative">
-            <img
-              src={main2}
-              className=" w-full xl:w-[850px] xl:h-auto lg:w-[600px] lg:h-auto"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-l lg:from-black lg:via-transparent lg:to-transparent lg:hidden" />
-          </div>
-          <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
-            <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
-              arcade betting
-            </h3>
-            <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
-              Our games are designed for everyone to enjoy, focusing on simple
-              and pure fun rather than complex skill-based mechanics. Join a
-              lobby of your choice and face off against other players. The
-              winner takes home a whopping 90% of the stakes
-            </p>
-            <div className=" flex flex-col gap-2">
-              <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-                <Link to="/utility/arcade">
-                  <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
-                    KNOW MORE
-                  </h3>
-                </Link>
-                <ArrowRightAltIcon className=" text-white" />
+          {/* ------------------------------------------------------- */}
+          <div className=" flex flex-col lg:flex-row lg:items-center xl:gap-[100px] lg:gap-[50px]">
+            <div className="relative">
+              <img
+                src={main2}
+                className=" w-full xl:w-[850px] xl:h-auto lg:w-[600px] lg:h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-l lg:from-black lg:via-transparent lg:to-transparent lg:hidden" />
+            </div>
+            <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
+              <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
+                arcade betting
+              </h3>
+              <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
+                Our games are designed for everyone to enjoy, focusing on simple
+                and pure fun rather than complex skill-based mechanics. Join a
+                lobby of your choice and face off against other players. The
+                winner takes home a whopping 90% of the stakes
+              </p>
+              <div className=" flex flex-col gap-2">
+                <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
+                  <Link to="/utility/arcade">
+                    <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
+                      KNOW MORE
+                    </h3>
+                  </Link>
+                  <ArrowRightAltIcon className=" text-white" />
+                </div>
+                <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
               </div>
-              <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
             </div>
           </div>
-        </div>
-        {/* ------------------------------------------------------------------------------- */}
-        <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
-          <div className="relative xl:mr-20 lg:mr-10">
-            <img
-              src={main3}
-              className=" w-full xl:w-[700px] xl:h-auto lg:w-[600px] lg:h-auto lg:rounded-full "
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-black" />
-          </div>
-          <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
-            <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
-              MERCH STORE
-            </h3>
-            <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
-              Merchandise stores are often mentioned but rarely delivered in the
-              crypto world. Colonize Mars not only shares profits from its own
-              Merch Store with holders but extends this to other partnered Merch
-              Stores
-            </p>
-            <div className=" flex flex-col gap-2">
-              <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-               
-                  <a href="http://client-local.kiscms.co.uk:10017/product-category/colonize-mars/ " target="blank">
-                  <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
-                    KNOW MORE
-                  </h3>
+          {/* ------------------------------------------------------------------------------- */}
+          <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
+            <div className="relative xl:mr-20 lg:mr-10">
+              <img
+                src={main3}
+                className=" w-full xl:w-[700px] xl:h-auto lg:w-[600px] lg:h-auto lg:rounded-full "
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-black" />
+            </div>
+            <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
+              <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
+                MERCH STORE
+              </h3>
+              <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
+                Merchandise stores are often mentioned but rarely delivered in
+                the crypto world. Colonize Mars not only shares profits from its
+                own Merch Store with holders but extends this to other partnered
+                Merch Stores
+              </p>
+              <div className=" flex flex-col gap-2">
+                <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
+                  <a
+                    href="http://client-local.kiscms.co.uk:10017/product-category/colonize-mars/ "
+                    target="blank"
+                  >
+                    <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
+                      KNOW MORE
+                    </h3>
                   </a>
-                <ArrowRightAltIcon className=" text-white" />
+                  <ArrowRightAltIcon className=" text-white" />
+                </div>
+                <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
               </div>
-              <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
             </div>
           </div>
-        </div>
-        {/* ----------------------------------------------------------------------------------------- */}
-        <div className=" flex flex-col lg:flex-row lg:items-center xl:gap-[100px] lg:gap-[50px]">
-          <div className="relative">
-            <img
-              src={main4}
-              className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-l lg:from-black lg:via-transparent lg:to-transparent" />
-          </div>
-          <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
-            <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
-              alpha group
-            </h3>
-            <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
-              GTM Signals isn't your average trading bot – it's a powerful tool
-              infused with the expertise of real gem hunters. Our platform
-              scours the markets for the best alpha signals, providing you with
-              the insights you need to make informed trading decisions.
-            </p>
-            <div className=" flex flex-col gap-2">
-              <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-                <Link to="/utility/alphagroup">
-                  <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
-                    KNOW MORE
-                  </h3>
-                </Link>
-                <ArrowRightAltIcon className=" text-white" />
+          {/* ----------------------------------------------------------------------------------------- */}
+          <div className=" flex flex-col lg:flex-row lg:items-center xl:gap-[100px] lg:gap-[50px]">
+            <div className="relative">
+              <img
+                src={main4}
+                className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-l lg:from-black lg:via-transparent lg:to-transparent" />
+            </div>
+            <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
+              <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
+                alpha group
+              </h3>
+              <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
+                GTM Signals isn't your average trading bot – it's a powerful
+                tool infused with the expertise of real gem hunters. Our
+                platform scours the markets for the best alpha signals,
+                providing you with the insights you need to make informed
+                trading decisions.
+              </p>
+              <div className=" flex flex-col gap-2">
+                <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
+                  <Link to="/utility/alphagroup">
+                    <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
+                      KNOW MORE
+                    </h3>
+                  </Link>
+                  <ArrowRightAltIcon className=" text-white" />
+                </div>
+                <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
               </div>
-              <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
             </div>
           </div>
-        </div>
-        {/* ---------------------------------------------------- */}
-        <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
-          <div className="relative">
-            <img
-              src={main5}
-              className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-transparent" />
-          </div>
-          <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
-            <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
-              moon fund
-            </h3>
-            <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
-              Within every buy and sell, 2% is allocated to MoonFund,
-              strategically dedicated to fostering partnerships and elevating
-              our cosmic presence through marketing endeavors. Every
-              contribution to MoonFund serves the interests of its holders,
-              enhancing the lunar experience.
-            </p>
-            <div className=" flex flex-col gap-2">
-              <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
-                {/* <Link to="/utility/staking"> */}
-                  <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
-                    KNOW MORE
-                  </h3>
-                {/* </Link> */}
-                <ArrowRightAltIcon className=" text-white" />
+          {/* ---------------------------------------------------- */}
+          <div className=" flex flex-col lg:flex-row-reverse lg:items-center xl:gap-[100px] lg:gap-[50px]">
+            <div className="relative">
+              <img
+                src={main5}
+                className=" w-full xl:w-[950px] xl:h-[600px] lg:w-[600px] lg:h-[400px]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black lg:bg-gradient-to-r lg:from-black lg:via-transparent lg:to-transparent" />
+            </div>
+            <div className=" xl:w-1/2 xl:pl-20 lg:p-8 lg:w-1/2 flex flex-col xl:gap-3 ">
+              <h3 className=" text-white font-d-din-bold text-[24px] md:text-[30px] lg:text-[40px] uppercase text-center lg:text-left">
+                moon fund
+              </h3>
+              <p className=" text-white font-d-din-regular text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2 lg:text-left lg:pr-0 lg:pl-0">
+                Within every buy and sell, 2% is allocated to MoonFund,
+                strategically dedicated to fostering partnerships and elevating
+                our cosmic presence through marketing endeavors. Every
+                contribution to MoonFund serves the interests of its holders,
+                enhancing the lunar experience.
+              </p>
+              <div className=" flex flex-col gap-2 mb-10 ">
+                <a href="" target="_blank">
+                  <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal ">
+                    <h3 className=" text-white font-d-din-regular uppercase text-[20px] md:text-[25px] lg-text-[30px]">
+                      KNOW MORE
+                    </h3>
+                    <ArrowRightAltIcon className=" text-white" />
+                  </div>
+                </a>
+                <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
               </div>
-              <div className=" bg-[#C2DAF2] w-[180px] h-[2px] mx-auto lg:mx-0" />
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </div>
   );
 };
