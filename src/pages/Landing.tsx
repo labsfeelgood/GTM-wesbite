@@ -1,5 +1,5 @@
 import Button from "../components/landing/Button";
-import main1 from "../assets/landing/1.png";
+// import main1 from "../assets/landing/1.png";
 import bgVideo from "../assets/landing/Mars intro.mp4"
 import Navbar from "../components/landing/Navbar";
 import twitteIcon from "../assets/landing/Icons/akar-icons_twitter-fill.png";
@@ -70,13 +70,13 @@ const Landing = () => {
     <div className=" bg-black">
       <div className=" relative bg-[#000000] min-h-screen">
         <div className=" relative lg:z-10">
-          {/* <img src={main1} className={`w-full lg:h-screen lg:object-cover`} /> */}
-          <video
+{/*           <img src={main1} className={`w-full lg:h-screen lg:object-cover`} /> */}
+           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover "
+            className="w-full h-full object-cover"
           >
             <source src={bgVideo} type="video/mp4" />
             {/* Add additional source tags for other video formats if needed */}
