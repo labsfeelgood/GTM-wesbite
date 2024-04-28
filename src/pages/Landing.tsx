@@ -1,6 +1,6 @@
 import Button from "../components/landing/Button";
 import main1 from "../assets/landing/1.png";
-// import bgVideo from "../assets/landing/Mars intro.mp4"
+import bgVideo from "../assets/landing/Mars intro.mp4"
 import Navbar from "../components/landing/Navbar";
 import twitteIcon from "../assets/landing/Icons/akar-icons_twitter-fill.png";
 import telegramIcon from "../assets/landing/Icons/teenyicons_telegram-solid.png";
@@ -70,7 +70,17 @@ const Landing = () => {
     <div className=" bg-black">
       <div className=" relative bg-[#000000] min-h-screen">
         <div className=" relative lg:z-10">
-          <img src={main1} className={`w-full lg:h-screen lg:object-cover`} />
+          {/* <img src={main1} className={`w-full lg:h-screen lg:object-cover`} /> */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src={bgVideo} type="video/mp4" />
+            {/* Add additional source tags for other video formats if needed */}
+          </video>
           {/* <video className=" w-full lg:h-screen lg:object-cover "   loop>
               <source src={bgVideo} type="video/mp4" />
               Your browser does not support the video tag.

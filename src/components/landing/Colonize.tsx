@@ -106,7 +106,7 @@ const Colonize = () => {
         <div className=" flex  gap-20 xl:gap-60 2xl:gap-80 2xl:ml-10">
           <div className=" flex flex-col items-center">
             <h3 className=" uppercase text-white font-d-din-bold text-[45px]">
-              {numberOfHolders}
+              {numberOfHolders ? numberOfHolders : "750"}
             </h3>
             <p className=" text-white uppercase font-d-din-regular text-[25px]">
               HOLDERS
@@ -134,7 +134,8 @@ const Colonize = () => {
       <div className=" flex flex-col items-center gap-4 lg:flex-row p-5 lg:items-end lg:hidden">
         <div className=" flex flex-col items-center">
           <h3 className=" uppercase text-white font-d-din-bold text-[27px]">
-            {numberOfHolders}
+          {numberOfHolders ? numberOfHolders : "750"}
+            
           </h3>
           <p className=" text-white uppercase font-d-din-regular text-[17px]">
             HOLDERS
