@@ -1,5 +1,5 @@
 import Button from "../components/landing/Button";
-import main1 from "../assets/landing/1.png";
+// import main1 from "../assets/landing/1.png";
 import bgVideo from "../assets/landing/Mars intro.mp4"
 import Navbar from "../components/landing/Navbar";
 import twitteIcon from "../assets/landing/Icons/akar-icons_twitter-fill.png";
