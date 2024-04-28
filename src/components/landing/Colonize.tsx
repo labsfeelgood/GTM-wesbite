@@ -2,7 +2,44 @@ import main1 from "../../assets/landing/2.png";
 import underline from "../../assets/landing/underline.png";
 import main2 from "../../assets/landing/2(1).png";
 import ellipse from "../../assets/landing/ellipse.svg";
+import axios from "axios";
+import { useEffect, useState } from "react";
 const Colonize = () => {
+  const [marketCap, setMarketCap] = useState(0);
+  const [numberOfHolders, setNumberOfHolders] = useState(0);
+
+  const fetchMarketCap = async () => {
+    try {
+      const response = await axios.get(
+        `https://data.messari.io/api/v1/assets/ColonizeMars/metrics?x-messari-api-key=${
+          import.meta.env.VITE_API_MESSARI
+        }`
+      );
+      const mcap = await response.data.data.marketcap.current_marketcap_usd;
+      const roundedNumber = (mcap / 1000000).toFixed(1);
+      setMarketCap(Number(roundedNumber));
+    } catch (error) {
+      console.error("Error fetching data: ", error);
+    }
+  };
+
+  const fetchTokenHoldersAmount = async () => {
+    try {
+      const response = await axios.get(
+        `https://api.unmarshal.com/v1/ethereum/token-address/0xe8b1e79d937c648ce1fe96e6739ddb2714058a18/holders-count?auth_key=${
+          import.meta.env.VITE_API_UNMARSHAL
+        }`
+      );
+      const holdersCount = await response.data.token_holders_count;
+      setNumberOfHolders(holdersCount);
+    } catch (error) {
+      console.error("Error fetching data: ", error);
+    }
+  };
+  useEffect(() => {
+    fetchMarketCap();
+    fetchTokenHoldersAmount();
+  }, []);
   return (
     <div className="relative lg:h-[800px]">
       <img
@@ -69,7 +106,7 @@ const Colonize = () => {
         <div className=" flex  gap-20 xl:gap-60 2xl:gap-80 2xl:ml-10">
           <div className=" flex flex-col items-center">
             <h3 className=" uppercase text-white font-d-din-bold text-[45px]">
-              5,200
+              {numberOfHolders}
             </h3>
             <p className=" text-white uppercase font-d-din-regular text-[25px]">
               HOLDERS
@@ -77,7 +114,7 @@ const Colonize = () => {
           </div>
           <div className=" flex flex-col items-center">
             <h3 className=" uppercase text-white font-d-din-bold text-[45px]">
-              $2.5M
+              ${marketCap}M
             </h3>
             <p className=" text-white uppercase font-d-din-regular text-[25px]">
               MCAP
@@ -97,7 +134,7 @@ const Colonize = () => {
       <div className=" flex flex-col items-center gap-4 lg:flex-row p-5 lg:items-end lg:hidden">
         <div className=" flex flex-col items-center">
           <h3 className=" uppercase text-white font-d-din-bold text-[27px]">
-            5,200
+            {numberOfHolders}
           </h3>
           <p className=" text-white uppercase font-d-din-regular text-[17px]">
             HOLDERS
@@ -105,7 +142,7 @@ const Colonize = () => {
         </div>
         <div className=" flex flex-col items-center">
           <h3 className=" uppercase text-white font-d-din-bold text-[27px]">
-            $2.5M
+            ${marketCap}M
           </h3>
           <p className=" text-white uppercase font-d-din-regular text-[17px]">
             MCAP

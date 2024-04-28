@@ -337,13 +337,14 @@ const Navbar = () => {
         </div>
       ) : (
         <div className=" flex items-center justify-between p-5 pt-8 xl:hidden">
+          <Link to="/">
           <div className=" flex items-center gap-3 ">
             <img
               src={logo1}
               className=" h-[25px] w-[20px] md:h-[40px] md:w-[35px]"
             />
             <img src={logo2} className=" h-[15px]  md:h-[25px] w-[250px]" />
-          </div>
+          </div></Link>
           <button onClick={() => setIsOpen(true)}>
             <div className=" flex flex-col gap-[7px]">
               <div className=" bg-[#C2DAF2] h-[3px] w-[30px] rounded-md" />

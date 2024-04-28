@@ -148,6 +148,7 @@ const Navbar = () => {
         </div>
       ) : (
         <div className=" flex items-center justify-between p-5 pt-8 xl:hidden">
+          <Link to="/">
           <div className=" flex items-center gap-3 ">
             <div className=" flex flex-col items-center justify-center">
               <div className=" bg-[#A6916E] rounded-full w-[30px] md:h-[50px] h-[30px] md:w-[50px] flex items-center justify-center">
@@ -158,7 +159,7 @@ const Navbar = () => {
               </div>
             </div>
             <img src={logo4} className=" h-[15px]  md:h-[25px] w-[250px]" />
-          </div>
+          </div></Link>
           <button onClick={() => setIsOpen(true)}>
             <div className=" flex flex-col gap-[7px]">
               <div className=" bg-[#3D3D3D] h-[3px] w-[30px] rounded-md" />

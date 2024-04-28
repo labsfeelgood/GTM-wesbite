@@ -4,7 +4,7 @@ import Button from "./Button";
 // import Navbar from "./Navbar";
 const Gateway = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen ">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${gatewayImage})` }}
