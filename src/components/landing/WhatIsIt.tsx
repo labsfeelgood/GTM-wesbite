@@ -13,7 +13,7 @@ const WhatIsIt = () => {
           $GTM -
         </p>
         <p className=" text-white text-[12px] text-right font-d-din-regular sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px]">
-          a TOKEN/NFT project, rooted in Elon Musk's mission to colonize Mars
+          a TOKEN/NFT project, rooted in Elon Musk's mission to Colonize Mars
           and safeguard humanity.
         </p>
       </div>

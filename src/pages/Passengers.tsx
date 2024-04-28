@@ -414,7 +414,7 @@ const Passengers = () => {
 
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 5th Passenger */}
-              <div className=" hidden xl:block absolute inset-0  top-[289px] left-[528px] z-10 ">
+              <div className=" hidden xl:block absolute inset-0  top-[289px] left-[530px] z-10 ">
                 <div
                   className={`bg-opacity-0 h-[62px] w-[45px] shadow ${
                     isVisible5
@@ -770,7 +770,7 @@ const Passengers = () => {
               </div>
               {/* ------------------------------------------------------------------------------------------------------------------- */}
               {/* 17th passenger */}
-              <div className=" hidden xl:block absolute inset-0  top-[804px] left-[388px] z-10">
+              <div className=" hidden xl:block absolute inset-0  top-[804px] left-[390px] z-10">
                 <div
                   className={`bg-opacity-0 h-[77px] w-[55px]  ${
                     isVisible17

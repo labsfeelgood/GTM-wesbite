@@ -20,7 +20,7 @@ const WhyGTM = () => {
             </h3>
             <p className=" text-white text-[12px] font-d-din-regular text-center pr-4 pl-4 lg:pr-0 lg:pl-0 sm:text-[18px] md:text-[22px] lg:w-[300px] xl:w-[400px] ">
               Seamlessly integrates into gaming, AI betting, shopping, and
-              staking, creating a comprehensive $GTM ecosystem
+              staking, creating a comprehensive $GTM ecosystem.
             </p>
           </div>
           <div className=" flex flex-col items-center gap-2">
@@ -34,7 +34,7 @@ const WhyGTM = () => {
             <p className=" text-white text-[12px] font-d-din-regular text-center pr-4 pl-4 lg:pr-0 lg:pl-0 sm:text-[18px] md:text-[22px] lg:w-[300px] xl:w-[400px]">
               Led by a fully disclosed developer and backed by reputable
               blockchain agencies, $GTM prioritizes transparency and community
-              engagement
+              engagement.
             </p>
           </div>
           <div className=" flex flex-col items-center gap-2">
@@ -47,7 +47,7 @@ const WhyGTM = () => {
             </h3>
             <p className=" text-white text-[12px] font-d-din-regular text-center pr-4 pl-4 lg:pr-0 lg:pl-0 sm:text-[18px] md:text-[22px] lg:w-[300px] xl:w-[400px]">
               Embodies ELONS quest to explore Mars for survival and advancement,
-              Elon's grand vision
+              Elon's grand vision.
             </p>
           </div>
         </div>
