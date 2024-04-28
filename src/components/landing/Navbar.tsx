@@ -172,23 +172,23 @@ const Navbar: React.FC<Navbar> = ({ toggleMenu, isMenuOpen }) => {
       {/* ------------------- */}
       <div className=" hidden xl:block  ">
         <div className=" absolute inset-0 flex justify-between mt-[75px] ml-[120px] mr-[120px] z-20  h-1/2">
-          <Link to="/vision">
-            <h3 className=" text-[24px] text-white font-d-din-bold uppercase  2xl:text-[35px]">
+          <Link to="/vision"  className="  h-[40px]" >
+            <h3 className=" text-[24px] text-white font-d-din-bold uppercase  2xl:text-[35px] ">
               VISION
             </h3>
           </Link>
-          <Link to="utility">
+          <Link to="utility" className="  h-[40px]">
             <h3 className=" text-[24px] text-white font-d-din-bold uppercase x 2xl:text-[35px]">
               UTILITY
             </h3>
           </Link>
           <img src={logo1} alt="" className=" mt-[-10px] 2xl:h-[188px] 2xl:w-[509px] h-[150px] w-[450px]" />
-          <Link to="/roadmap">
+          <Link to="/roadmap" className="  h-[40px]">
             <h3 className=" text-[24px] text-white font-d-din-bold uppercase 2xl:text-[35px]">
               ROADMAP
             </h3>
           </Link>
-          <Link to="/passengers">
+          <Link to="/passengers" className="  h-[40px]">
             <h3 className=" text-[24px] text-white font-d-din-bold uppercase 2xl:text-[35px]">
               VIEW PASSENGERS
             </h3>

@@ -76,7 +76,7 @@ const Landing = () => {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           >
             <source src={bgVideo} type="video/mp4" />
             {/* Add additional source tags for other video formats if needed */}
