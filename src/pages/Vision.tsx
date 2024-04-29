@@ -78,7 +78,7 @@ const Vision = () => {
               <br />
               How many times have you invested in something, thinking, "This is
               the one!" only to face letdowns from incompetent developers,
-              scammers, tax farms, and pump-and-dump schemes? Mission Mars
+              scammers, tax farms, and pump-and-dump schemes? Colonize Mars
               breaks that cycle. It's more than just another coin; it's a
               celestial journey backed by a solid foundation, a fully doxxed
               team, and a mission to redefine the crypto experience.

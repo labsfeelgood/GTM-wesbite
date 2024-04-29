@@ -84,7 +84,7 @@ const Arcade = () => {
                     GAMES
                   </p>
                   <p className=" font-d-din-bold text-[#C2DAF2] text-[16px] lg:text-[20px]">
-                    10
+                    06
                   </p>
                 </div>
                 <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[580px]" />
