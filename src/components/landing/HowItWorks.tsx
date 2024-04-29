@@ -24,7 +24,7 @@ const HowItWorks = () => {
                   </h3>
                   <p className=" font-d-din-regular text-white text-[10px] sm:text-[20px]">
                     Stake your $GTM tokens and earn rewards while contributing
-                    to the security and stability of our network
+                    to the security and stability of our network.
                   </p>
                 </div>
               </div>
@@ -47,7 +47,7 @@ const HowItWorks = () => {
                   <p className=" font-d-din-regular text-white text-[10px] sm:text-[20px]">
                     Fuel our outreach efforts and amplify our brand presence
                     through strategic marketing campaigns that drive awareness
-                    and engagement
+                    and engagement.
                   </p>
                 </div>
               </div>
@@ -70,7 +70,7 @@ const HowItWorks = () => {
                   <p className=" font-d-din-regular text-white text-[10px] sm:text-[20px]">
                     Reward our loyal community members for their contributions,
                     participation, and support, fostering a vibrant and
-                    inclusive ecosystem
+                    inclusive ecosystem.
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const HowItWorks = () => {
                     The $GTM Treasury serves as the central repository for
                     profits generated from our various revenue streams,
                     including merchandise sales, signal bots, betting profits,
-                    and staking fees
+                    and staking fees.
                   </p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const HowItWorks = () => {
                     Utilize funds from the treasury to purchase additional $GTM
                     tokens, initiate buybacks, contribute to liquidity pools,
                     and facilitate token burns, enhancing liquidity and value
-                    for our stakeholders
+                    for our stakeholders.
                   </p>
                 </div>
               </div>

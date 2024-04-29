@@ -44,7 +44,7 @@ export const TaxAndTreasury = () => {
             </div>
             <p className=" font-d-din-regular text-white  text-[12px] sm:text-[16px]">
               2% is dedicated to Technological Advancements, where innovation
-              knows no bounds
+              knows no bounds.
             </p>
           </div>
           <div className=" flex flex-col  ">
@@ -58,7 +58,7 @@ export const TaxAndTreasury = () => {
             <p className=" font-d-din-regular text-white  text-[12px] sm:text-[16px]">
               Within every buy and sell, 2% is allocated to Moon Fund,
               strategically dedicated to fostering partnerships and elevating
-              our cosmic presence through marketing endeavors
+              our cosmic presence through marketing endeavors.
             </p>
           </div>
           <div className=" flex flex-col  ">
@@ -72,7 +72,7 @@ export const TaxAndTreasury = () => {
             <p className=" font-d-din-regular text-white  text-[12px] sm:text-[16px]">
               Stability is key to a successful space journey. By dedicating 1%
               of each transaction to liquidity, we ensure that Mission Mars
-              remains on a secure trajectory
+              remains on a secure trajectory.
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export const TaxAndTreasury = () => {
               </div>
               <p className=" font-d-din-regular text-[20px] text-white w-[350px]">
                 2% is dedicated to Technological Advancements, where innovation
-                knows no bounds
+                knows no bounds.
               </p>
             </div>
             {/* --------- */}
@@ -136,7 +136,7 @@ export const TaxAndTreasury = () => {
               <p className=" font-d-din-regular text-[20px] text-white w-[400px] text-right">
                 Within every buy and sell, 2% is allocated to Moon Fund,
                 strategically dedicated to fostering partnerships and elevating
-                our cosmic presence through marketing endeavors
+                our cosmic presence through marketing endeavors.
               </p>
             </div>
             {/* ----------- */}
@@ -149,7 +149,7 @@ export const TaxAndTreasury = () => {
               </div>
               <p className=" font-d-din-regular text-[20px] text-white w-[350px] text-center">
                 2% is dedicated to Technological Advancements, where innovation
-                knows no bounds
+                knows no bounds.
               </p>
             </div>
           </div>

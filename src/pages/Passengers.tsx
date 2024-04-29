@@ -17,28 +17,28 @@ const Passengers = () => {
       ml: 100,
       heading: "Collaboration",
       content:
-        "The success of the team is rooted in collaboration, bringing people closer together for impactful outcomes",
+        "The success of the team is rooted in collaboration, bringing people closer together for impactful outcomes.",
     },
     {
       key: 2,
       ml: 5,
       heading: "Continuous Learning",
       content:
-        "Investment in the team's growth and knowledge-sharing fosters new ideas and opportunities for both the team and clients",
+        "Investment in the team's growth and knowledge-sharing fosters new ideas and opportunities for both the team and clients.",
     },
     {
       key: 3,
       ml: 10,
       heading: "Truth",
       content:
-        "Transparency is a cornerstone. Being truthful and honest promotes openness within the team and with clients",
+        "Transparency is a cornerstone. Being truthful and honest promotes openness within the team and with clients.",
     },
     {
       ml: 15,
       key: 4,
       heading: "Creativity",
       content:
-        "Embracing and channeling creativity is a driving force, encouraging innovative thinking beyond the status quo",
+        "Embracing and channeling creativity is a driving force, encouraging innovative thinking beyond the status quo.",
     },
   ];
 
