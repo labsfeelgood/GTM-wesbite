@@ -16,7 +16,7 @@ const Overview = () => {
           sustainability, and prosperity for our community members. More than
           just a financial hub, it serves as a catalyst for innovation and
           empowerment, fueling our mission to revolutionize the world of trading
-          and sports betting
+          and sports betting.
         </p>
       </div>
       {/* ------------------------------------- */}

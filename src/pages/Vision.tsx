@@ -32,7 +32,7 @@ const Vision = () => {
               </h3>
               <p className=" font-d-din-regular text-white text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2">
                 Colonize Mars isn't just a meme coin – it's a movement fuelled
-                by the power of community
+                by the power of community.
               </p>
               <div className=" flex flex-col gap-2">
                 <a
@@ -60,7 +60,7 @@ const Vision = () => {
               extraordinary. Our holder-first mindset puts you at the forefront
               of every decision we make. We're not just building a coin; we're
               building an interstellar family, united by our shared passion for
-              the cosmos
+              the cosmos.
             </p>
           </div>
           <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
@@ -93,7 +93,7 @@ const Vision = () => {
               <br />
               Say goodbye to disappointments; Colonize Mars is the one you've
               been searching for – a community-driven, innovative, and
-              trustworthy cosmic adventure
+              trustworthy cosmic adventure.
             </p>
           </div>
         </div>

@@ -62,7 +62,7 @@ const Arcade = () => {
               The winner takes home a whopping 90% of the stakes, while the
               remaining 10% is contributed to the project vault. This fund will
               be utilized to drive the project forward, ensuring continuous
-              innovation and improvement
+              innovation and improvement.
             </p>
           </div>
           {/* ------------------------------------------------------------------------------------- */}

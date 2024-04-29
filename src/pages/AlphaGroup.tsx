@@ -49,7 +49,7 @@ const AlphaGroup = () => {
               Unlock the power of cutting-edge technology and expert analysis
               with GTM Signals. We're your premier destination for curated
               cryptocurrency signals backed by specialized Gem hunters, advanced
-              AI aggregation, and Insider Risk analysis
+              AI aggregation, and Insider Risk analysis.
             </p>
           </div>
           <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
@@ -60,7 +60,7 @@ const AlphaGroup = () => {
             </h3>
             <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
               One of the primary attractions of staking $GTM is the opportunity
-              to earn passive Annual Percentage Yield (APY)
+              to earn passive Annual Percentage Yield (APY).
             </p>
           </div>
           <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
@@ -73,7 +73,7 @@ const AlphaGroup = () => {
               At GTM Signals, we go beyond surface-level analysis. Our platform
               utilizes alpha wallets and Kol wallets to provide a comprehensive
               risk score for each cryptocurrency. Empowering you with actionable
-              insights to refine your trading strategy and minimize risk
+              insights to refine your trading strategy and minimize risk.
             </p>
           </div>
           <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
@@ -86,7 +86,7 @@ const AlphaGroup = () => {
               Joining our community is simple. Hold a minimum of $1000 worth of
               GTM tokens and utilize our Collab Bot to verify your holdings.
               Once verified, you'll receive an exclusive invite link granting
-              you access to our premium signals channel
+              you access to our premium signals channel.
             </p>
             <div className=" mt-10 flex flex-col gap-3">
               <h3 className="text-[#3CFF4F] uppercase font-d-din-bold text-[20px] md:text-[25px] lg-text-[40px]">

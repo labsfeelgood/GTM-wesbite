@@ -54,7 +54,7 @@ const Staking = () => {
               $GTM holder will be allowed to claim & stake their $GTM tokens
               with the official $GTM staking pool. The APY earned from staking
               $GTM will fluctuate based on the amount of stakers in the pool.
-              This is what we refer to as "Dynamic MARS Staking"
+              This is what we refer to as "Dynamic MARS Staking".
             </p>
           </div>
           <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000]" />
@@ -65,7 +65,7 @@ const Staking = () => {
             </h3>
             <p className=" text-white font-d-din-regular text-[14px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
               One of the primary attractions of staking $GTM is the opportunity
-              to earn passive Annual Percentage Yield (APY)
+              to earn passive Annual Percentage Yield (APY).
             </p>
           </div>
           {/* <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" /> */}
@@ -91,7 +91,7 @@ const Staking = () => {
                       The implementation of staking algorithms allows for the
                       compounding of interest on $GTM tokens held over a
                       duration, creating an incentive structure for sustained
-                      ecosystem investment
+                      ecosystem investment.
                     </p>
                   </div>
                   <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
@@ -104,7 +104,7 @@ const Staking = () => {
                       The act of staking $GTM inherently contributes to the
                       reduction of circulating supply, thereby mitigating market
                       volatility and enhancing the overall economic stability of
-                      the Meme Kombat ecosystem
+                      the Meme Kombat ecosystem.
                     </p>
                   </div>
                   <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] xl:hidden" />
@@ -119,7 +119,7 @@ const Staking = () => {
                         Through APY earnings, users are financially motivated to
                         maintain a continuous, vested interest in the platform,
                         thereby amplifying community engagement and retention,
-                        particularly crucial during non-active periods on MARS
+                        particularly crucial during non-active periods on MARS.
                       </p>
                     </div>
                   </div>

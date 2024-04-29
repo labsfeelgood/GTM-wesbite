@@ -122,14 +122,14 @@ const Passengers = () => {
     },
     {
       key: 12,
-      name: "Mayhouse",
+      name: "Maythous",
       position: "placeholder",
       twitterUrl: "https://twitter.com/maythous",
       telegramUrl: "https://t.me/maythouscalls/19900",
     },
     {
       key: 13,
-      name: "CrytptoSausage",
+      name: "CryptoSage",
       position: "placeholder",
       twitterUrl: "https://twitter.com/cryptosage27",
       telegramUrl: "",
@@ -150,7 +150,7 @@ const Passengers = () => {
     },
     {
       key: 16,
-      name: "Ceaser",
+      name: "Caesar",
       position: "placeholder",
       twitterUrl: "https://twitter.com/CaesarsCalls",
       telegramUrl: "https://t.me/Caesars_Calls/16812",
@@ -164,7 +164,7 @@ const Passengers = () => {
     },
     {
       key: 18,
-      name: "Gandaf",
+      name: "Gandalf",
       position: "placeholder",
       twitterUrl: "https://twitter.com/gandalfcryptto",
       telegramUrl: "",
@@ -178,7 +178,7 @@ const Passengers = () => {
     },
     {
       key: 20,
-      name: "Lukas",
+      name: "Lucas",
       position: "placeholder",
       twitterUrl: "https://twitter.com/Lukasz16904731",
       telegramUrl: "",
@@ -1868,9 +1868,9 @@ const Passengers = () => {
                   dream team
                 </h3>
                 <p className=" text-[#3D3D3D] font-d-din-regular text-[20px] md:text-[20px] sm:text-[16px] lg:text-[25px] text-left">
-                  Mission Mars is not a solo endeavor; it stands on a robust
+                  Colonize Mars is not a solo endeavor; it stands on a robust
                   foundation with a dedicated blockchain agency and team of
-                  clever KOLS supporting its trajectory
+                  clever KOLS supporting its trajectory.
                 </p>
               </div>
               {/* --------------------------------------------------------------------- */}

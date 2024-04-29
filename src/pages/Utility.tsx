@@ -39,7 +39,7 @@ const Utility = () => {
                 Each $GTM holder will be allowed to claim & stake their $GTM
                 tokens with the official $GTM staking pool. The APY earned from
                 staking $GTM will fluctuate based on the amount of stakers in
-                the pool. This is what we refer to as "Dynamic MARS Staking"
+                the pool. This is what we refer to as "Dynamic MARS Staking".
               </p>
               <div className=" flex flex-col gap-2">
                 <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
@@ -71,7 +71,7 @@ const Utility = () => {
                 Our games are designed for everyone to enjoy, focusing on simple
                 and pure fun rather than complex skill-based mechanics. Join a
                 lobby of your choice and face off against other players. The
-                winner takes home a whopping 90% of the stakes
+                winner takes home a whopping 90% of the stakes.
               </p>
               <div className=" flex flex-col gap-2">
                 <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">
@@ -103,7 +103,7 @@ const Utility = () => {
                 Merchandise stores are often mentioned but rarely delivered in
                 the crypto world. Colonize Mars not only shares profits from its
                 own Merch Store with holders but extends this to other partnered
-                Merch Stores
+                Merch Stores.
               </p>
               <div className=" flex flex-col gap-2">
                 <div className=" flex gap-3 items-center mt-5 justify-center  lg:justify-normal">

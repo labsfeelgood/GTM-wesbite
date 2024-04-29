@@ -26,7 +26,7 @@ const Roadmap = () => {
             </h3>
             <p className=" font-d-din-regular text-white text-[15px] text-center md:text-[20px] sm:text-[16px] lg:text-[25px] pl-2 pr-2">
               Colonize Mars isn't just a meme coin – it's a movement fueled by
-              the power of community
+              the power of community.
             </p>
             <div className=" flex flex-col gap-2">
               <a href="https://app.uniswap.org/swap?outputCurrency=0xe8b1e79d937c648ce1fe96e6739ddb2714058a18" target="_blank">
@@ -50,7 +50,7 @@ const Roadmap = () => {
             Colonize Mars recognizes the vital role of marketing and community
             engagement in the project's success. By fostering an active and
             interconnected community, Colonize Mars aims to create a supportive
-            ecosystem where users feel valued, engaged, and informed
+            ecosystem where users feel valued, engaged, and informed.
           </p>
         </div>
         <div className="w-full h-[1px] bg-gradient-to-r from-[#7A8A99] to-[#000000] sm:hidden " />
@@ -93,7 +93,7 @@ const Roadmap = () => {
                     </h3>
                     <div className=" flex flex-col gap-2">
                       <p className=" font-d-din-regular text-white text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px]:w-[500px] md:w-[600px] lg:w-[700px] xl:w-[800px] 2xl:w-[850px]">
-                        Merch store I Betting I Partnerships I Marketing
+                        Merch store I Betting I Partnerships I Marketing.
                       </p>
                       <div className=" bg-gradient-to-r from-[#7A8A99] via-black  to-[#000000] w-full h-[1px]" />
                     </div>
@@ -114,7 +114,7 @@ const Roadmap = () => {
                     <div className=" flex flex-col gap-2">
                       <p className=" font-d-din-regular text-white text-[16px] md:text-[20px] lg:text-[24px]  w-[300px] sm:w-[500px] md:w-[600px] lg:w-[700px] xl:w-[800px] 2xl:w-[850px]">
                         Rev share I Staking 2.0 I Partnerships I Marketing 2.0 I
-                        New Elon video I Tournaments/competitions I CEX listing
+                        New Elon video I Tournaments/competitions I CEX listing.
                       </p>
                       <div className=" bg-gradient-to-r from-[#7A8A99] via-black  to-[#000000] w-full h-[1px]" />
                     </div>
@@ -135,7 +135,7 @@ const Roadmap = () => {
                     <div className=" flex flex-col gap-2">
                       <p className=" font-d-din-regular text-white text-[16px] md:text-[20px] lg:text-[24px]  w-[300px] sm:w-[500px] md:w-[600px] lg:w-[700px] xl:w-[800px] 2xl:w-[850px]">
                         AI #Alpha Signals I Buybacks & Burns I Partnerships I
-                        Viral Marketing I CEX listing I Colonize Mars Memewar
+                        Viral Marketing I CEX listing I Colonize Mars Memewar.
                       </p>
                       <div className=" bg-gradient-to-r from-[#7A8A99] via-black  to-[#000000] w-full h-[1px]" />
                     </div>
@@ -157,7 +157,7 @@ const Roadmap = () => {
                       <p className=" font-d-din-regular text-white text-[16px] md:text-[20px] lg:text-[24px]  w-[300px] sm:w-[500px] md:w-[600px] lg:w-[700px] xl:w-[800px] 2xl:w-[850px]">
                         Buybacks & Burns I NFT Release I Real World Marketing I
                         Burn Liquidity I Elon vs. Alien, Game Release I T1 Cex
-                        listing
+                        listing.
                       </p>
                       <div className=" bg-gradient-to-r from-[#7A8A99] via-black  to-[#000000] w-full h-[1px]" />
                     </div>
@@ -178,7 +178,7 @@ const Roadmap = () => {
                     <div className=" flex flex-col gap-2">
                       <p className=" font-d-din-regular text-white text-[16px] md:text-[20px] lg:text-[24px]  w-[300px] sm:w-[500px] md:w-[600px] lg:w-[700px] xl:w-[800px] 2xl:w-[850px]">
                         Buybacks & Burns I HUGE giveaway I Partnerships I
-                        Guerilla marketing
+                        Guerilla marketing.
                       </p>
                     </div>
                   </div>
