@@ -1846,7 +1846,7 @@ const Passengers = () => {
               <p className=" text-[#3D3D3D] font-d-din-regular text-[20px] md:text-[20px] sm:text-[20px] lg:text-[25px] text-left">
                 Mission Mars is not a solo endeavor; it stands on a robust
                 foundation with a dedicated blockchain agency and team of clever
-                KOLS supporting its trajectory
+                KOLS supporting its trajectory.
               </p>
             </div>
             <div className=" flex flex-col gap-5 xl:justify-between xl:flex-row ">
