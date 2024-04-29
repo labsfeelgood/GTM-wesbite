@@ -83,7 +83,7 @@ const Ecosystem = () => {
           <div className=" bg-[#7A8A99] h-[1px] w-full lg:w-[690px] xl:w-[740px]" />
           <div className=" flex justify-between  lg:justify-normal lg:gap-[420px] xl:gap-[450px]">
             <p className=" uppercase font-d-din-regular text-white text-[16px] lg:text-[20px]  w-[240px] xl:w-[260px] xl:text-[25px]">
-              COMMUNITY PORTAL(coming soon)
+              COMMUNITY PORTAL (coming soon)
             </p>
             <img src={loader2} className=" w-[30px] h-[30px] " />
           </div>
