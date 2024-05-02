@@ -94,7 +94,7 @@ const Passengers = () => {
     },
     {
       key: 8,
-      name: "sahil",
+      name: "Bonoquak",
       position: "placeholder",
       twitterUrl: "https://twitter.com/BonoQuak",
       telegramUrl: "",
